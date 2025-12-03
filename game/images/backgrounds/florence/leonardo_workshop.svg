@@ -1,0 +1,206 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080">
+  <defs>
+    <!-- Stone wall -->
+    <linearGradient id="stoneWall" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#a89878"/>
+      <stop offset="100%" style="stop-color:#8a7a5a"/>
+    </linearGradient>
+
+    <!-- Wood gradients -->
+    <linearGradient id="darkWood" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#5a4030"/>
+      <stop offset="100%" style="stop-color:#3a2820"/>
+    </linearGradient>
+    <linearGradient id="workbenchWood" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#7a6a5a"/>
+      <stop offset="100%" style="stop-color:#5a4a3a"/>
+    </linearGradient>
+
+    <!-- Floor stone -->
+    <pattern id="stoneFloor" x="0" y="0" width="100" height="100" patternUnits="userSpaceOnUse">
+      <rect width="100" height="100" fill="#6a6a5a"/>
+      <rect x="5" y="5" width="42" height="42" fill="#7a7a6a"/>
+      <rect x="53" y="5" width="42" height="42" fill="#5a5a4a"/>
+      <rect x="5" y="53" width="42" height="42" fill="#5a5a4a"/>
+      <rect x="53" y="53" width="42" height="42" fill="#7a7a6a"/>
+    </pattern>
+
+    <!-- Parchment -->
+    <linearGradient id="parchment" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f5e8d0"/>
+      <stop offset="100%" style="stop-color:#e8d8c0"/>
+    </linearGradient>
+
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="3" dy="5" stdDeviation="4" flood-color="#000" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <!-- Back wall -->
+  <rect width="1920" height="650" fill="url(#stoneWall)"/>
+
+  <!-- Exposed wooden beams -->
+  <g fill="url(#darkWood)" filter="url(#shadow)">
+    <rect x="0" y="60" width="1920" height="50"/>
+    <rect x="200" y="60" width="40" height="590"/>
+    <rect x="600" y="60" width="40" height="590"/>
+    <rect x="1280" y="60" width="40" height="590"/>
+    <rect x="1680" y="60" width="40" height="590"/>
+  </g>
+
+  <!-- HIGH ARCHED WINDOWS -->
+  <g>
+    <!-- Left window -->
+    <path d="M280 150 L280 450 Q400 500 520 450 L520 150 Q400 100 280 150" fill="#87ceeb"/>
+    <path d="M280 150 L280 450 Q400 500 520 450 L520 150 Q400 100 280 150" fill="none" stroke="url(#darkWood)" stroke-width="12"/>
+    <line x1="400" y1="100" x2="400" y2="500" stroke="url(#darkWood)" stroke-width="8"/>
+    <line x1="280" y1="300" x2="520" y2="300" stroke="url(#darkWood)" stroke-width="8"/>
+    <!-- Light through window -->
+    <path d="M280 450 L100 1080 L700 1080 L520 450 Z" fill="#fff8e0" opacity="0.12"/>
+
+    <!-- Right window -->
+    <path d="M1400 150 L1400 450 Q1520 500 1640 450 L1640 150 Q1520 100 1400 150" fill="#87ceeb"/>
+    <path d="M1400 150 L1400 450 Q1520 500 1640 450 L1640 150 Q1520 100 1400 150" fill="none" stroke="url(#darkWood)" stroke-width="12"/>
+    <line x1="1520" y1="100" x2="1520" y2="500" stroke="url(#darkWood)" stroke-width="8"/>
+    <line x1="1400" y1="300" x2="1640" y2="300" stroke="url(#darkWood)" stroke-width="8"/>
+    <path d="M1400 450 L1220 1080 L1820 1080 L1640 450 Z" fill="#fff8e0" opacity="0.12"/>
+  </g>
+
+  <!-- Floor -->
+  <rect x="0" y="650" width="1920" height="430" fill="url(#stoneFloor)"/>
+
+  <!-- MAIN WORKBENCH (center) -->
+  <g filter="url(#shadow)">
+    <rect x="600" y="550" width="720" height="200" fill="url(#workbenchWood)"/>
+    <rect x="580" y="540" width="760" height="20" fill="#8a7a6a"/>
+    <!-- Legs -->
+    <rect x="620" y="750" width="40" height="150" fill="url(#darkWood)"/>
+    <rect x="1260" y="750" width="40" height="150" fill="url(#darkWood)"/>
+
+    <!-- ITEMS ON WORKBENCH -->
+    <!-- Sketches/drawings -->
+    <g>
+      <rect x="650" y="480" width="120" height="90" fill="url(#parchment)" transform="rotate(-5 710 525)"/>
+      <!-- Sketch lines (Vitruvian Man style) -->
+      <circle cx="710" cy="520" r="25" fill="none" stroke="#3a2a1a" stroke-width="1"/>
+      <line x1="710" y1="495" x2="710" y2="555" stroke="#3a2a1a" stroke-width="1"/>
+      <line x1="685" y1="520" x2="735" y2="520" stroke="#3a2a1a" stroke-width="1"/>
+    </g>
+
+    <!-- Another sketch (flying machine) -->
+    <g>
+      <rect x="800" y="490" width="100" height="70" fill="url(#parchment)" transform="rotate(3 850 525)"/>
+      <path d="M820 520 L850 505 L880 520 M850 505 L850 545" stroke="#3a2a1a" stroke-width="1" fill="none"/>
+    </g>
+
+    <!-- Ink pot -->
+    <ellipse cx="950" cy="520" rx="20" ry="25" fill="#2a2020"/>
+    <ellipse cx="950" cy="505" rx="15" ry="8" fill="#1a1010"/>
+
+    <!-- Quills -->
+    <line x1="970" y1="530" x2="1000" y2="480" stroke="#8a7a6a" stroke-width="3"/>
+    <line x1="975" y1="535" x2="1010" y2="490" stroke="#9a8a7a" stroke-width="3"/>
+
+    <!-- Compass/dividers -->
+    <g stroke="#5a5a5a" stroke-width="2" fill="none">
+      <line x1="1050" y1="540" x2="1070" y2="490"/>
+      <line x1="1050" y1="540" x2="1090" y2="510"/>
+    </g>
+
+    <!-- Gears/mechanical parts -->
+    <circle cx="1150" cy="520" r="25" fill="#c9a227" stroke="#8a7a20" stroke-width="3"/>
+    <circle cx="1150" cy="520" r="10" fill="url(#workbenchWood)"/>
+    <circle cx="1190" cy="530" r="18" fill="#b89a27" stroke="#7a6a10" stroke-width="2"/>
+    <circle cx="1190" cy="530" r="6" fill="url(#workbenchWood)"/>
+
+    <!-- Wooden model pieces -->
+    <rect x="1230" y="510" width="50" height="30" fill="#8a7a5a" rx="2"/>
+    <rect x="1240" y="480" width="30" height="35" fill="#7a6a4a" rx="2"/>
+  </g>
+
+  <!-- EASEL with painting (left side) -->
+  <g filter="url(#shadow)">
+    <!-- Easel legs -->
+    <line x1="150" y1="400" x2="100" y2="900" stroke="url(#darkWood)" stroke-width="15"/>
+    <line x1="350" y1="400" x2="400" y2="900" stroke="url(#darkWood)" stroke-width="15"/>
+    <line x1="250" y1="450" x2="250" y2="950" stroke="url(#darkWood)" stroke-width="15"/>
+    <!-- Cross bar -->
+    <rect x="100" y="700" width="300" height="20" fill="url(#darkWood)"/>
+
+    <!-- Canvas -->
+    <rect x="120" y="300" width="260" height="350" fill="#f5e8d0"/>
+    <!-- Painting in progress (portrait) -->
+    <ellipse cx="250" cy="420" rx="60" ry="80" fill="#e8c8a8"/>
+    <ellipse cx="230" cy="400" rx="8" ry="6" fill="#4a3a2a"/>
+    <ellipse cx="270" cy="400" rx="8" ry="6" fill="#4a3a2a"/>
+    <path d="M240 450 Q250 460 260 450" stroke="#9a6a5a" stroke-width="2" fill="none"/>
+    <!-- Hair -->
+    <path d="M190 380 Q200 320 250 310 Q300 320 310 380" fill="#4a3020"/>
+    <!-- Clothing hint -->
+    <rect x="200" y="500" width="100" height="80" fill="#722f37"/>
+  </g>
+
+  <!-- FLYING MACHINE MODEL (hanging from ceiling) -->
+  <g filter="url(#shadow)">
+    <!-- Wings -->
+    <path d="M900 150 L800 200 L900 180 L1000 200 Z" fill="#c8b898" stroke="url(#darkWood)" stroke-width="3"/>
+    <path d="M900 180 L850 220 L900 200 L950 220 Z" fill="#b8a888" stroke="url(#darkWood)" stroke-width="2"/>
+    <!-- Body -->
+    <ellipse cx="900" cy="200" rx="30" ry="15" fill="url(#darkWood)"/>
+    <!-- Hanging rope -->
+    <line x1="900" y1="60" x2="900" y2="150" stroke="#8a7a5a" stroke-width="4"/>
+  </g>
+
+  <!-- SHELVES with bottles and specimens (right wall) -->
+  <g filter="url(#shadow)">
+    <rect x="1700" y="200" width="200" height="20" fill="url(#workbenchWood)"/>
+    <rect x="1700" y="350" width="200" height="20" fill="url(#workbenchWood)"/>
+    <rect x="1700" y="500" width="200" height="20" fill="url(#workbenchWood)"/>
+
+    <!-- Bottles and jars -->
+    <ellipse cx="1740" cy="185" rx="15" ry="25" fill="#4a6a4a" opacity="0.7"/>
+    <ellipse cx="1780" cy="180" rx="18" ry="30" fill="#6a4a3a" opacity="0.7"/>
+    <ellipse cx="1830" cy="188" rx="14" ry="22" fill="#4a5a6a" opacity="0.7"/>
+    <ellipse cx="1870" cy="182" rx="16" ry="28" fill="#6a6a4a" opacity="0.7"/>
+
+    <ellipse cx="1750" cy="335" rx="20" ry="25" fill="#5a5a3a" opacity="0.7"/>
+    <ellipse cx="1800" cy="330" rx="15" ry="30" fill="#4a4a5a" opacity="0.7"/>
+    <ellipse cx="1850" cy="338" rx="18" ry="22" fill="#6a5a4a" opacity="0.7"/>
+
+    <!-- Skull (anatomical study) -->
+    <ellipse cx="1760" cy="480" rx="25" ry="30" fill="#e8e0d8"/>
+    <ellipse cx="1750" cy="470" rx="5" ry="8" fill="#2a2a2a"/>
+    <ellipse cx="1770" cy="470" rx="5" ry="8" fill="#2a2a2a"/>
+    <path d="M1755 490 L1760 495 L1765 490" stroke="#2a2a2a" stroke-width="1" fill="none"/>
+  </g>
+
+  <!-- Scattered scrolls on floor -->
+  <g>
+    <ellipse cx="500" cy="850" rx="40" ry="15" fill="#f5e8d0" transform="rotate(15 500 850)"/>
+    <ellipse cx="1500" cy="880" rx="35" ry="12" fill="#e8d8c0" transform="rotate(-20 1500 880)"/>
+  </g>
+
+  <!-- Candle on stand (near workbench) -->
+  <g>
+    <rect x="1350" y="650" width="30" height="80" fill="#5a4a3a"/>
+    <rect x="1340" y="640" width="50" height="15" fill="#6a5a4a"/>
+    <rect x="1355" y="600" width="20" height="50" fill="#f5f0e0"/>
+    <ellipse cx="1365" cy="595" rx="8" ry="12" fill="#ffa040"/>
+    <ellipse cx="1365" cy="590" rx="4" ry="6" fill="#ffff80"/>
+  </g>
+
+  <!-- Tools hanging on wall -->
+  <g stroke="#5a5a5a" stroke-width="3">
+    <line x1="700" y1="180" x2="700" y2="280"/>
+    <line x1="730" y1="190" x2="730" y2="260"/>
+    <line x1="760" y1="175" x2="760" y2="270"/>
+  </g>
+  <g fill="#5a5a5a">
+    <circle cx="700" cy="290" r="15"/>
+    <rect x="720" y="265" width="20" height="30"/>
+    <path d="M750 275 L770 260 L780 280 L760 285 Z"/>
+  </g>
+
+  <!-- Warm interior glow -->
+  <rect width="1920" height="1080" fill="#ffa040" opacity="0.03"/>
+</svg>

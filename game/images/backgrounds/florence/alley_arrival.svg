@@ -1,0 +1,182 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080">
+  <defs>
+    <!-- Evening sky gradient -->
+    <linearGradient id="skyGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#4a3a5a"/>
+      <stop offset="50%" style="stop-color:#6a4a6a"/>
+      <stop offset="100%" style="stop-color:#8a5a5a"/>
+    </linearGradient>
+
+    <!-- Building gradients -->
+    <linearGradient id="buildingDark" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#3a2a20"/>
+      <stop offset="100%" style="stop-color:#4a3a30"/>
+    </linearGradient>
+    <linearGradient id="buildingLight" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#5a4a3a"/>
+      <stop offset="100%" style="stop-color:#6a5a4a"/>
+    </linearGradient>
+
+    <!-- Cobblestone pattern -->
+    <pattern id="cobblestone" x="0" y="0" width="60" height="40" patternUnits="userSpaceOnUse">
+      <rect width="60" height="40" fill="#4a4040"/>
+      <ellipse cx="15" cy="10" rx="12" ry="8" fill="#3a3030"/>
+      <ellipse cx="45" cy="10" rx="12" ry="8" fill="#5a4a4a"/>
+      <ellipse cx="30" cy="30" rx="12" ry="8" fill="#4a3a3a"/>
+      <ellipse cx="0" cy="30" rx="12" ry="8" fill="#3a3030"/>
+      <ellipse cx="60" cy="30" rx="12" ry="8" fill="#3a3030"/>
+    </pattern>
+
+    <!-- Time vortex glow -->
+    <radialGradient id="vortexGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#00ffff;stop-opacity:0.6"/>
+      <stop offset="50%" style="stop-color:#0088aa;stop-opacity:0.3"/>
+      <stop offset="100%" style="stop-color:#004466;stop-opacity:0"/>
+    </radialGradient>
+
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="5" dy="8" stdDeviation="5" flood-color="#000" flood-opacity="0.5"/>
+    </filter>
+
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="15" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Evening sky -->
+  <rect width="1920" height="400" fill="url(#skyGrad)"/>
+
+  <!-- Stars appearing -->
+  <g fill="#ffffff" opacity="0.6">
+    <circle cx="200" cy="80" r="2"/>
+    <circle cx="450" cy="120" r="1.5"/>
+    <circle cx="700" cy="60" r="2"/>
+    <circle cx="1200" cy="100" r="1.5"/>
+    <circle cx="1500" cy="70" r="2"/>
+    <circle cx="1700" cy="130" r="1.5"/>
+  </g>
+
+  <!-- Left alley wall (tall, imposing) -->
+  <g filter="url(#shadow)">
+    <rect x="-100" y="0" width="600" height="1080" fill="url(#buildingDark)"/>
+    <!-- Stone texture lines -->
+    <g stroke="#2a1a10" stroke-width="2" opacity="0.5">
+      <line x1="0" y1="100" x2="500" y2="100"/>
+      <line x1="0" y1="250" x2="500" y2="250"/>
+      <line x1="0" y1="400" x2="500" y2="400"/>
+      <line x1="0" y1="550" x2="500" y2="550"/>
+      <line x1="0" y1="700" x2="500" y2="700"/>
+      <line x1="0" y1="850" x2="500" y2="850"/>
+    </g>
+    <!-- Small high window -->
+    <rect x="350" y="150" width="60" height="80" fill="#2a2020"/>
+    <rect x="350" y="150" width="60" height="80" fill="#ffa040" opacity="0.2"/>
+    <!-- Iron bars -->
+    <g stroke="#3a3030" stroke-width="3">
+      <line x1="365" y1="150" x2="365" y2="230"/>
+      <line x1="395" y1="150" x2="395" y2="230"/>
+    </g>
+  </g>
+
+  <!-- Right alley wall -->
+  <g filter="url(#shadow)">
+    <rect x="1400" y="0" width="600" height="1080" fill="url(#buildingLight)"/>
+    <!-- Stone texture -->
+    <g stroke="#4a3a2a" stroke-width="2" opacity="0.5">
+      <line x1="1400" y1="120" x2="1920" y2="120"/>
+      <line x1="1400" y1="280" x2="1920" y2="280"/>
+      <line x1="1400" y1="440" x2="1920" y2="440"/>
+      <line x1="1400" y1="600" x2="1920" y2="600"/>
+      <line x1="1400" y1="760" x2="1920" y2="760"/>
+    </g>
+    <!-- Shuttered window -->
+    <rect x="1450" y="200" width="100" height="130" fill="#3a2a1a"/>
+    <rect x="1450" y="200" width="50" height="130" fill="#2e5a4a"/>
+    <rect x="1500" y="200" width="50" height="130" fill="#2e5a4a"/>
+  </g>
+
+  <!-- Alley floor -->
+  <path d="M500 400 L1400 400 L1920 1080 L0 1080 Z" fill="url(#cobblestone)"/>
+
+  <!-- Wet puddle reflections -->
+  <g fill="#3a3a4a" opacity="0.4">
+    <ellipse cx="700" cy="700" rx="100" ry="40"/>
+    <ellipse cx="1100" cy="850" rx="150" ry="50"/>
+  </g>
+
+  <!-- TIME VORTEX / ARRIVAL POINT -->
+  <g filter="url(#glow)">
+    <!-- Outer glow -->
+    <ellipse cx="960" cy="650" rx="200" ry="150" fill="url(#vortexGlow)"/>
+    <!-- Inner vortex -->
+    <ellipse cx="960" cy="650" rx="120" ry="90" fill="#00ffff" opacity="0.3"/>
+    <ellipse cx="960" cy="650" rx="60" ry="45" fill="#00ffff" opacity="0.5"/>
+    <!-- Sparkle effects -->
+    <g fill="#ffffff" opacity="0.8">
+      <circle cx="900" cy="600" r="4"/>
+      <circle cx="1020" cy="620" r="3"/>
+      <circle cx="940" cy="700" r="3"/>
+      <circle cx="1000" cy="580" r="2"/>
+      <circle cx="880" cy="680" r="2"/>
+    </g>
+    <!-- Swirl lines -->
+    <g stroke="#00ffff" stroke-width="2" fill="none" opacity="0.6">
+      <path d="M860 650 Q900 600 960 620 Q1020 640 1060 600"/>
+      <path d="M880 700 Q920 660 960 680 Q1000 700 1040 660"/>
+    </g>
+  </g>
+
+  <!-- Ground light reflection from vortex -->
+  <ellipse cx="960" cy="800" rx="250" ry="80" fill="#00ffff" opacity="0.1"/>
+
+  <!-- Archway in background (end of alley) -->
+  <g>
+    <path d="M700 400 L700 600 Q850 700 1000 600 L1000 400 Z" fill="#2a1a10" opacity="0.8"/>
+    <!-- Distant street visible through arch -->
+    <rect x="750" y="450" width="200" height="100" fill="#3a2a30" opacity="0.5"/>
+  </g>
+
+  <!-- Hanging sign (tavern) -->
+  <g filter="url(#shadow)">
+    <rect x="1420" y="350" width="80" height="60" fill="#4a3a2a" rx="3"/>
+    <!-- Bracket -->
+    <path d="M1400 340 L1430 340 L1430 360" stroke="#5a4a3a" stroke-width="6" fill="none"/>
+    <!-- Simple icon (cup) -->
+    <path d="M1445 370 L1445 395 Q1460 400 1475 395 L1475 370 Z" fill="#c9a060"/>
+  </g>
+
+  <!-- Crates and barrels (foreground details) -->
+  <g filter="url(#shadow)">
+    <!-- Barrel left -->
+    <ellipse cx="200" cy="900" rx="60" ry="30" fill="#5a4030"/>
+    <rect x="140" y="800" width="120" height="100" fill="#6a5040"/>
+    <ellipse cx="200" cy="800" rx="60" ry="30" fill="#7a6050"/>
+    <!-- Barrel bands -->
+    <rect x="140" y="830" width="120" height="8" fill="#3a2a1a"/>
+    <rect x="140" y="870" width="120" height="8" fill="#3a2a1a"/>
+
+    <!-- Crate right -->
+    <rect x="1600" y="850" width="100" height="80" fill="#5a4a3a"/>
+    <g stroke="#3a2a1a" stroke-width="3">
+      <line x1="1600" y1="870" x2="1700" y2="870"/>
+      <line x1="1600" y1="910" x2="1700" y2="910"/>
+      <line x1="1650" y1="850" x2="1650" y2="930"/>
+    </g>
+  </g>
+
+  <!-- Rats scurrying (small details) -->
+  <g fill="#3a3030">
+    <ellipse cx="350" cy="950" rx="15" ry="8"/>
+    <ellipse cx="340" cy="945" rx="5" ry="4"/>
+  </g>
+
+  <!-- Atmosphere/mist -->
+  <rect x="0" y="600" width="1920" height="480" fill="#4a4a5a" opacity="0.1"/>
+
+  <!-- Vignette -->
+  <rect width="1920" height="1080" fill="url(#skyGrad)" opacity="0.15"/>
+</svg>

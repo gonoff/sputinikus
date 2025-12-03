@@ -1,0 +1,150 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080">
+  <defs>
+    <linearGradient id="skyGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffa07a"/>
+      <stop offset="30%" style="stop-color:#ffd700"/>
+      <stop offset="60%" style="stop-color:#87ceeb"/>
+      <stop offset="100%" style="stop-color:#b0c4de"/>
+    </linearGradient>
+
+    <linearGradient id="hillGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#6b8e23"/>
+      <stop offset="100%" style="stop-color:#556b2f"/>
+    </linearGradient>
+
+    <linearGradient id="distantHill" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#8fbc8f"/>
+      <stop offset="100%" style="stop-color:#6b8e23"/>
+    </linearGradient>
+
+    <linearGradient id="roadDust" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#d2b48c"/>
+      <stop offset="100%" style="stop-color:#c4a67c"/>
+    </linearGradient>
+
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="3" dy="5" stdDeviation="4" flood-color="#000" flood-opacity="0.2"/>
+    </filter>
+  </defs>
+
+  <!-- Sunset/sunrise sky -->
+  <rect width="1920" height="600" fill="url(#skyGrad)"/>
+
+  <!-- Sun on horizon -->
+  <circle cx="300" cy="450" r="80" fill="#ffd700" opacity="0.8"/>
+  <circle cx="300" cy="450" r="60" fill="#ffff80" opacity="0.6"/>
+
+  <!-- Distant mountains -->
+  <g fill="#9a9aaa" opacity="0.5">
+    <path d="M0 400 L200 250 L400 350 L600 200 L800 320 L1000 180 L1200 300 L1400 220 L1600 350 L1800 280 L1920 380 L1920 500 L0 500 Z"/>
+  </g>
+
+  <!-- Distant Florence silhouette -->
+  <g fill="#7a7a8a" opacity="0.6">
+    <rect x="1400" y="350" width="100" height="100"/>
+    <rect x="1520" y="370" width="80" height="80"/>
+    <rect x="1620" y="360" width="120" height="90"/>
+    <!-- Duomo dome -->
+    <ellipse cx="1550" cy="350" rx="50" ry="40"/>
+    <!-- Tower -->
+    <rect x="1680" y="300" width="30" height="150"/>
+  </g>
+
+  <!-- Rolling hills - far -->
+  <ellipse cx="400" cy="550" rx="500" ry="150" fill="url(#distantHill)"/>
+  <ellipse cx="1200" cy="530" rx="600" ry="130" fill="url(#distantHill)"/>
+  <ellipse cx="1700" cy="560" rx="400" ry="140" fill="url(#distantHill)"/>
+
+  <!-- Rolling hills - mid -->
+  <ellipse cx="200" cy="620" rx="400" ry="120" fill="url(#hillGrad)"/>
+  <ellipse cx="800" cy="600" rx="500" ry="150" fill="url(#hillGrad)"/>
+  <ellipse cx="1500" cy="630" rx="450" ry="130" fill="url(#hillGrad)"/>
+
+  <!-- Cypress trees (Tuscan landscape) -->
+  <g fill="#2f4f2f" filter="url(#shadow)">
+    <!-- Far trees -->
+    <ellipse cx="600" cy="480" rx="15" ry="60"/>
+    <ellipse cx="650" cy="490" rx="12" ry="50"/>
+    <ellipse cx="1100" cy="470" rx="14" ry="55"/>
+    <ellipse cx="1150" cy="485" rx="11" ry="45"/>
+
+    <!-- Mid trees -->
+    <ellipse cx="350" cy="550" rx="18" ry="70"/>
+    <ellipse cx="900" cy="540" rx="20" ry="80"/>
+    <ellipse cx="950" cy="560" rx="16" ry="65"/>
+    <ellipse cx="1400" cy="545" rx="18" ry="75"/>
+
+    <!-- Near trees -->
+    <ellipse cx="100" cy="650" rx="25" ry="100"/>
+    <ellipse cx="1800" cy="640" rx="28" ry="110"/>
+  </g>
+
+  <!-- Foreground hill -->
+  <ellipse cx="960" cy="900" rx="1200" ry="350" fill="#4a7a2a"/>
+
+  <!-- DIRT ROAD (winding away) -->
+  <g fill="url(#roadDust)">
+    <path d="M800 1080 Q700 900 600 750 Q550 650 580 550 Q620 480 700 450"
+          stroke="url(#roadDust)" stroke-width="80" fill="none"/>
+    <path d="M1120 1080 Q1100 900 950 750 Q850 650 820 550 Q780 480 800 450"
+          stroke="url(#roadDust)" stroke-width="60" fill="none"/>
+    <!-- Road merging to distance -->
+    <ellipse cx="750" cy="440" rx="60" ry="20" fill="url(#roadDust)"/>
+  </g>
+
+  <!-- Stone wall along road -->
+  <g fill="#8a8a7a" filter="url(#shadow)">
+    <path d="M600 800 Q500 750 450 700 Q400 650 380 600" stroke="#7a7a6a" stroke-width="25" fill="none"/>
+    <path d="M1300 820 Q1200 770 1150 720 Q1100 670 1080 620" stroke="#7a7a6a" stroke-width="25" fill="none"/>
+  </g>
+
+  <!-- Vineyard rows in distance -->
+  <g stroke="#3a5a2a" stroke-width="3" opacity="0.6">
+    <line x1="1400" y1="580" x2="1600" y2="560"/>
+    <line x1="1400" y1="600" x2="1600" y2="580"/>
+    <line x1="1400" y1="620" x2="1600" y2="600"/>
+    <line x1="1400" y1="640" x2="1600" y2="620"/>
+  </g>
+
+  <!-- Farmhouse in distance -->
+  <g filter="url(#shadow)" opacity="0.8">
+    <rect x="1050" y="500" width="80" height="60" fill="#c8a882"/>
+    <path d="M1040 500 L1090 460 L1140 500 Z" fill="#8b4513"/>
+    <rect x="1070" y="520" width="20" height="40" fill="#3a2a1a"/>
+  </g>
+
+  <!-- Wild flowers in foreground -->
+  <g>
+    <circle cx="200" cy="950" r="5" fill="#ff6b6b"/>
+    <circle cx="230" cy="970" r="4" fill="#ffd93d"/>
+    <circle cx="180" cy="980" r="5" fill="#ff6b6b"/>
+    <circle cx="250" cy="960" r="4" fill="#c9b037"/>
+
+    <circle cx="1650" cy="940" r="5" fill="#ffd93d"/>
+    <circle cx="1680" cy="960" r="4" fill="#ff6b6b"/>
+    <circle cx="1620" cy="970" r="5" fill="#c9b037"/>
+    <circle cx="1700" cy="950" r="4" fill="#ff6b6b"/>
+  </g>
+
+  <!-- Grass tufts -->
+  <g stroke="#4a6a2a" stroke-width="2" fill="none">
+    <path d="M150 1000 Q155 970 160 1000"/>
+    <path d="M155 1000 Q160 975 170 1000"/>
+    <path d="M1750 990 Q1755 960 1765 990"/>
+    <path d="M1760 990 Q1770 965 1775 990"/>
+  </g>
+
+  <!-- Atmospheric haze on horizon -->
+  <rect x="0" y="400" width="1920" height="150" fill="#fff8e0" opacity="0.15"/>
+
+  <!-- Birds in sky -->
+  <g fill="none" stroke="#4a4a4a" stroke-width="2">
+    <path d="M500 200 Q510 190 520 200 Q530 190 540 200"/>
+    <path d="M700 150 Q710 140 720 150 Q730 140 740 150"/>
+    <path d="M1200 180 Q1210 170 1220 180"/>
+    <path d="M1400 120 Q1410 110 1420 120 Q1430 110 1440 120"/>
+  </g>
+
+  <!-- Warm sunset glow overlay -->
+  <rect width="1920" height="1080" fill="#ffa040" opacity="0.05"/>
+</svg>

@@ -1,0 +1,183 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080">
+  <defs>
+    <!-- Warm day sky -->
+    <linearGradient id="skyGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#87ceeb"/>
+      <stop offset="100%" style="stop-color:#c8dce8"/>
+    </linearGradient>
+
+    <!-- Building stone -->
+    <linearGradient id="stoneWall" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#c8a882"/>
+      <stop offset="100%" style="stop-color:#b89872"/>
+    </linearGradient>
+
+    <!-- Wood gradients -->
+    <linearGradient id="darkWood" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#5a4030"/>
+      <stop offset="100%" style="stop-color:#3a2820"/>
+    </linearGradient>
+    <linearGradient id="lightWood" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#8b7355"/>
+      <stop offset="100%" style="stop-color:#6b5345"/>
+    </linearGradient>
+
+    <!-- Awning stripes -->
+    <pattern id="awningStripe" x="0" y="0" width="30" height="30" patternUnits="userSpaceOnUse">
+      <rect width="15" height="30" fill="#8b4513"/>
+      <rect x="15" width="15" height="30" fill="#f5e8d0"/>
+    </pattern>
+
+    <!-- Cobblestone -->
+    <pattern id="cobblestone" x="0" y="0" width="60" height="40" patternUnits="userSpaceOnUse">
+      <rect width="60" height="40" fill="#8a7a6a"/>
+      <ellipse cx="15" cy="10" rx="12" ry="8" fill="#7a6a5a"/>
+      <ellipse cx="45" cy="10" rx="12" ry="8" fill="#9a8a7a"/>
+      <ellipse cx="30" cy="30" rx="12" ry="8" fill="#8a7a6a"/>
+    </pattern>
+
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="5" dy="8" stdDeviation="5" flood-color="#000" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <!-- Sky -->
+  <rect width="1920" height="350" fill="url(#skyGrad)"/>
+
+  <!-- Distant buildings -->
+  <g fill="#b8a890" opacity="0.6">
+    <rect x="0" y="100" width="300" height="250"/>
+    <rect x="1600" y="120" width="400" height="230"/>
+  </g>
+
+  <!-- Main building facade (Benedetto's shop) -->
+  <g filter="url(#shadow)">
+    <!-- Building wall -->
+    <rect x="300" y="50" width="1320" height="1030" fill="url(#stoneWall)"/>
+
+    <!-- Upper floor windows -->
+    <g fill="#3a2a20">
+      <rect x="450" y="120" width="120" height="160" rx="5"/>
+      <rect x="700" y="120" width="120" height="160" rx="5"/>
+      <rect x="1100" y="120" width="120" height="160" rx="5"/>
+      <rect x="1350" y="120" width="120" height="160" rx="5"/>
+    </g>
+    <!-- Shutters -->
+    <g fill="#2e5a4a">
+      <rect x="430" y="120" width="20" height="160"/>
+      <rect x="570" y="120" width="20" height="160"/>
+      <rect x="680" y="120" width="20" height="160"/>
+      <rect x="820" y="120" width="20" height="160"/>
+      <rect x="1080" y="120" width="20" height="160"/>
+      <rect x="1220" y="120" width="20" height="160"/>
+      <rect x="1330" y="120" width="20" height="160"/>
+      <rect x="1470" y="120" width="20" height="160"/>
+    </g>
+
+    <!-- Floor divider molding -->
+    <rect x="300" y="320" width="1320" height="25" fill="#9a8a6a"/>
+    <rect x="300" y="340" width="1320" height="8" fill="#7a6a4a"/>
+  </g>
+
+  <!-- SHOP FRONT -->
+  <g filter="url(#shadow)">
+    <!-- Shop opening (dark interior visible) -->
+    <rect x="500" y="400" width="920" height="680" fill="#2a1a10"/>
+
+    <!-- Wooden frame -->
+    <rect x="480" y="380" width="960" height="30" fill="url(#darkWood)"/>
+    <rect x="480" y="380" width="30" height="700" fill="url(#darkWood)"/>
+    <rect x="1410" y="380" width="30" height="700" fill="url(#darkWood)"/>
+
+    <!-- Display counter -->
+    <rect x="500" y="750" width="920" height="100" fill="url(#lightWood)"/>
+    <rect x="500" y="740" width="920" height="15" fill="#9a8365"/>
+
+    <!-- Goods on display -->
+    <!-- Fabric bolts -->
+    <g>
+      <rect x="550" y="680" width="60" height="80" fill="#8b2942" rx="5"/>
+      <rect x="620" y="690" width="55" height="70" fill="#2c3e6e" rx="5"/>
+      <rect x="685" y="675" width="65" height="85" fill="#c9a227" rx="5"/>
+      <rect x="760" y="685" width="50" height="75" fill="#4a6040" rx="5"/>
+    </g>
+    <!-- Pottery/containers -->
+    <g fill="#c9a060">
+      <ellipse cx="900" cy="720" rx="35" ry="45"/>
+      <ellipse cx="970" cy="730" rx="30" ry="40"/>
+      <ellipse cx="1040" cy="715" rx="38" ry="50"/>
+    </g>
+    <!-- Small goods -->
+    <g>
+      <circle cx="1150" cy="720" r="25" fill="#e74c3c"/>
+      <circle cx="1200" cy="730" r="22" fill="#f39c12"/>
+      <circle cx="1250" cy="725" r="28" fill="#e74c3c"/>
+      <circle cx="1320" cy="720" r="24" fill="#f39c12"/>
+    </g>
+  </g>
+
+  <!-- AWNING -->
+  <g filter="url(#shadow)">
+    <path d="M450 380 L1470 380 L1520 500 L400 500 Z" fill="url(#awningStripe)"/>
+    <!-- Awning shadow on ground -->
+    <rect x="400" y="500" width="1120" height="50" fill="rgba(0,0,0,0.15)"/>
+    <!-- Scalloped edge -->
+    <path d="M400 500 Q430 520 460 500 Q490 520 520 500 Q550 520 580 500 Q610 520 640 500 Q670 520 700 500 Q730 520 760 500 Q790 520 820 500 Q850 520 880 500 Q910 520 940 500 Q970 520 1000 500 Q1030 520 1060 500 Q1090 520 1120 500 Q1150 520 1180 500 Q1210 520 1240 500 Q1270 520 1300 500 Q1330 520 1360 500 Q1390 520 1420 500 Q1450 520 1480 500 Q1500 520 1520 500"
+          fill="none" stroke="url(#awningStripe)" stroke-width="25"/>
+  </g>
+
+  <!-- Shop sign -->
+  <g filter="url(#shadow)">
+    <rect x="750" y="340" width="420" height="50" fill="url(#darkWood)" rx="5"/>
+    <text x="960" y="375" font-family="serif" font-size="32" fill="#f5e8d0" text-anchor="middle">BENEDETTO - MERCANTE</text>
+  </g>
+
+  <!-- Hanging scales sign -->
+  <g filter="url(#shadow)">
+    <rect x="350" y="420" width="80" height="60" fill="url(#darkWood)" rx="3"/>
+    <path d="M330 400 L360 400 L360 425" stroke="url(#darkWood)" stroke-width="8" fill="none"/>
+    <!-- Scales icon -->
+    <line x1="390" y1="440" x2="390" y2="465" stroke="#c9a227" stroke-width="3"/>
+    <line x1="370" y1="460" x2="410" y2="460" stroke="#c9a227" stroke-width="3"/>
+    <path d="M370 460 L365 475 L380 475 Z" fill="#c9a227"/>
+    <path d="M410 460 L415 475 L400 475 Z" fill="#c9a227"/>
+  </g>
+
+  <!-- Side buildings -->
+  <g fill="#a89878">
+    <rect x="0" y="200" width="300" height="880"/>
+    <rect x="1620" y="180" width="300" height="900"/>
+  </g>
+
+  <!-- Street -->
+  <rect x="0" y="850" width="1920" height="230" fill="url(#cobblestone)"/>
+
+  <!-- Street vendors/carts -->
+  <g filter="url(#shadow)">
+    <!-- Small cart left -->
+    <rect x="100" y="900" width="120" height="80" fill="#6b5545"/>
+    <circle cx="120" cy="990" r="20" fill="#4a3a2a"/>
+    <circle cx="200" cy="990" r="20" fill="#4a3a2a"/>
+    <!-- Produce on cart -->
+    <circle cx="130" cy="880" r="15" fill="#e74c3c"/>
+    <circle cx="160" cy="885" r="12" fill="#f39c12"/>
+    <circle cx="190" cy="878" r="14" fill="#e74c3c"/>
+  </g>
+
+  <!-- Barrel and crates near shop -->
+  <g filter="url(#shadow)">
+    <ellipse cx="1550" cy="920" rx="50" ry="25" fill="#5a4030"/>
+    <rect x="1500" y="850" width="100" height="70" fill="#6a5040"/>
+    <ellipse cx="1550" cy="850" rx="50" ry="25" fill="#7a6050"/>
+    <rect x="1500" y="875" width="100" height="6" fill="#3a2a1a"/>
+  </g>
+
+  <!-- Passersby silhouettes in distance -->
+  <g fill="#5a4a3a" opacity="0.5">
+    <ellipse cx="200" cy="930" rx="20" ry="60"/>
+    <ellipse cx="1750" cy="940" rx="25" ry="55"/>
+  </g>
+
+  <!-- Sun/light source -->
+  <circle cx="1600" cy="80" r="60" fill="#fff8e0" opacity="0.4"/>
+</svg>

@@ -1,0 +1,167 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080">
+  <defs>
+    <linearGradient id="wallGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#e8e0d8"/>
+      <stop offset="100%" style="stop-color:#d8d0c8"/>
+    </linearGradient>
+
+    <linearGradient id="ceilingGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#f5f5f5"/>
+      <stop offset="100%" style="stop-color:#e8e8e8"/>
+    </linearGradient>
+
+    <linearGradient id="woodFloor" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#b08050"/>
+      <stop offset="50%" style="stop-color:#c89060"/>
+      <stop offset="100%" style="stop-color:#a07040"/>
+    </linearGradient>
+
+    <pattern id="floorPattern" x="0" y="0" width="200" height="40" patternUnits="userSpaceOnUse">
+      <rect width="200" height="40" fill="url(#woodFloor)"/>
+      <line x1="0" y1="0" x2="200" y2="0" stroke="#8a6030" stroke-width="1"/>
+      <line x1="100" y1="0" x2="100" y2="40" stroke="#8a6030" stroke-width="1"/>
+    </pattern>
+
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="3" dy="5" stdDeviation="4" flood-color="#000" flood-opacity="0.2"/>
+    </filter>
+  </defs>
+
+  <!-- Ceiling -->
+  <rect width="1920" height="150" fill="url(#ceilingGrad)"/>
+
+  <!-- Walls -->
+  <rect x="0" y="150" width="1920" height="550" fill="url(#wallGrad)"/>
+
+  <!-- Crown molding -->
+  <rect x="0" y="145" width="1920" height="15" fill="#f0f0f0"/>
+
+  <!-- WINDOW (large, letting in daylight) -->
+  <g filter="url(#shadow)">
+    <rect x="1400" y="200" width="400" height="350" fill="#87ceeb"/>
+    <!-- Window frame -->
+    <rect x="1390" y="190" width="420" height="15" fill="#f5f5f5"/>
+    <rect x="1390" y="545" width="420" height="15" fill="#f5f5f5"/>
+    <rect x="1390" y="190" width="15" height="375" fill="#f5f5f5"/>
+    <rect x="1795" y="190" width="15" height="375" fill="#f5f5f5"/>
+    <!-- Window panes -->
+    <line x1="1600" y1="200" x2="1600" y2="550" stroke="#f5f5f5" stroke-width="10"/>
+    <line x1="1400" y1="375" x2="1800" y2="375" stroke="#f5f5f5" stroke-width="10"/>
+    <!-- Curtains -->
+    <path d="M1380 190 Q1350 350 1380 560" fill="#6b8e9a" opacity="0.8"/>
+    <path d="M1820 190 Q1850 350 1820 560" fill="#6b8e9a" opacity="0.8"/>
+    <!-- View outside (trees, sky) -->
+    <rect x="1405" y="380" width="185" height="165" fill="#4a8040"/>
+    <rect x="1605" y="380" width="185" height="165" fill="#4a8040"/>
+  </g>
+
+  <!-- Floor -->
+  <rect x="0" y="700" width="1920" height="380" fill="url(#floorPattern)"/>
+
+  <!-- Area rug -->
+  <ellipse cx="700" cy="850" rx="400" ry="150" fill="#8b6040" opacity="0.6"/>
+  <ellipse cx="700" cy="850" rx="350" ry="130" fill="#9a7050" opacity="0.7"/>
+
+  <!-- COUCH -->
+  <g filter="url(#shadow)">
+    <rect x="200" y="600" width="500" height="180" fill="#4a5568"/>
+    <rect x="190" y="590" width="520" height="20" fill="#5a6578"/>
+    <!-- Cushions -->
+    <rect x="220" y="540" width="150" height="100" fill="#5a6578" rx="10"/>
+    <rect x="400" y="540" width="150" height="100" fill="#5a6578" rx="10"/>
+    <rect x="580" y="540" width="100" height="100" fill="#5a6578" rx="10"/>
+    <!-- Couch back -->
+    <rect x="200" y="450" width="500" height="160" fill="#4a5568"/>
+    <!-- Pillows -->
+    <ellipse cx="280" cy="520" rx="40" ry="35" fill="#8b9aab"/>
+    <ellipse cx="620" cy="520" rx="40" ry="35" fill="#9aab8b"/>
+  </g>
+
+  <!-- COFFEE TABLE -->
+  <g filter="url(#shadow)">
+    <rect x="400" y="780" width="250" height="80" fill="#3a2a1a"/>
+    <rect x="390" y="770" width="270" height="15" fill="#4a3a2a"/>
+    <!-- Legs -->
+    <rect x="410" y="860" width="20" height="60" fill="#2a1a0a"/>
+    <rect x="620" y="860" width="20" height="60" fill="#2a1a0a"/>
+
+    <!-- Items on coffee table -->
+    <!-- Remote control -->
+    <rect x="430" y="760" width="60" height="20" fill="#2a2a2a" rx="3"/>
+    <!-- Magazine -->
+    <rect x="520" y="755" width="80" height="25" fill="#e74c3c"/>
+    <!-- Coffee mug -->
+    <ellipse cx="610" cy="755" rx="18" ry="12" fill="#f5f5f5"/>
+    <ellipse cx="610" cy="745" rx="15" ry="8" fill="#6a4a3a"/>
+  </g>
+
+  <!-- TV STAND AND TV -->
+  <g filter="url(#shadow)">
+    <!-- Stand -->
+    <rect x="900" y="650" width="350" height="80" fill="#2a2a2a"/>
+    <rect x="890" y="640" width="370" height="15" fill="#3a3a3a"/>
+
+    <!-- Flatscreen TV -->
+    <rect x="950" y="350" width="250" height="280" fill="#1a1a1a"/>
+    <rect x="960" y="360" width="230" height="200" fill="#2a3a4a"/>
+    <!-- TV showing something -->
+    <rect x="970" y="370" width="210" height="180" fill="#4a6a8a"/>
+    <!-- Stand mount -->
+    <rect x="1050" y="630" width="50" height="25" fill="#2a2a2a"/>
+  </g>
+
+  <!-- BOOKSHELF (left wall) -->
+  <g filter="url(#shadow)">
+    <rect x="50" y="200" width="200" height="450" fill="#5a4a3a"/>
+    <!-- Shelves -->
+    <rect x="55" y="250" width="190" height="10" fill="#6a5a4a"/>
+    <rect x="55" y="350" width="190" height="10" fill="#6a5a4a"/>
+    <rect x="55" y="450" width="190" height="10" fill="#6a5a4a"/>
+    <rect x="55" y="550" width="190" height="10" fill="#6a5a4a"/>
+
+    <!-- Books -->
+    <rect x="70" y="210" width="25" height="35" fill="#e74c3c"/>
+    <rect x="100" y="205" width="30" height="40" fill="#3498db"/>
+    <rect x="135" y="215" width="20" height="30" fill="#27ae60"/>
+    <rect x="160" y="208" width="28" height="37" fill="#9b59b6"/>
+    <rect x="195" y="212" width="22" height="33" fill="#f39c12"/>
+
+    <rect x="70" y="305" width="28" height="40" fill="#1abc9c"/>
+    <rect x="103" y="310" width="25" height="35" fill="#e74c3c"/>
+    <rect x="133" y="302" width="30" height="43" fill="#34495e"/>
+    <rect x="168" y="308" width="22" height="37" fill="#f1c40f"/>
+    <rect x="195" y="305" width="26" height="40" fill="#2ecc71"/>
+
+    <!-- Small objects -->
+    <ellipse cx="100" cy="430" rx="20" ry="25" fill="#c9a060"/>
+    <rect x="150" y="420" width="30" height="25" fill="#8a8a8a"/>
+  </g>
+
+  <!-- FLOOR LAMP -->
+  <g filter="url(#shadow)">
+    <rect x="750" y="350" width="15" height="400" fill="#3a3a3a"/>
+    <ellipse cx="757" cy="750" rx="40" ry="15" fill="#2a2a2a"/>
+    <!-- Lampshade -->
+    <path d="M720 350 L720 280 Q757 260 795 280 L795 350 Z" fill="#f5e8d0"/>
+  </g>
+
+  <!-- DOORWAY to other room -->
+  <g>
+    <rect x="1700" y="200" width="120" height="500" fill="#d0c8c0"/>
+    <rect x="1690" y="190" width="140" height="20" fill="#e0d8d0"/>
+    <rect x="1690" y="190" width="15" height="520" fill="#e0d8d0"/>
+    <rect x="1815" y="190" width="15" height="520" fill="#e0d8d0"/>
+  </g>
+
+  <!-- Wall art -->
+  <g filter="url(#shadow)">
+    <rect x="1100" y="220" width="150" height="100" fill="#4a6a4a"/>
+    <rect x="1100" y="210" width="150" height="15" fill="#5a4a3a"/>
+    <rect x="1090" y="210" width="15" height="120" fill="#5a4a3a"/>
+    <rect x="1245" y="210" width="15" height="120" fill="#5a4a3a"/>
+    <rect x="1100" y="315" width="150" height="15" fill="#5a4a3a"/>
+  </g>
+
+  <!-- Light from window -->
+  <path d="M1400 550 L1200 1080 L1920 1080 L1800 550 Z" fill="#fff8e0" opacity="0.1"/>
+</svg>

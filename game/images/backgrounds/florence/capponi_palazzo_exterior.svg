@@ -1,0 +1,172 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080">
+  <defs>
+    <linearGradient id="skyGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#87ceeb"/>
+      <stop offset="100%" style="stop-color:#c8dce8"/>
+    </linearGradient>
+
+    <linearGradient id="stoneWall" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#c8b898"/>
+      <stop offset="100%" style="stop-color:#b8a888"/>
+    </linearGradient>
+
+    <linearGradient id="rustication" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#a89878"/>
+      <stop offset="100%" style="stop-color:#8a7a5a"/>
+    </linearGradient>
+
+    <pattern id="cobblestone" x="0" y="0" width="60" height="40" patternUnits="userSpaceOnUse">
+      <rect width="60" height="40" fill="#8a7a6a"/>
+      <ellipse cx="15" cy="10" rx="12" ry="8" fill="#7a6a5a"/>
+      <ellipse cx="45" cy="10" rx="12" ry="8" fill="#9a8a7a"/>
+      <ellipse cx="30" cy="30" rx="12" ry="8" fill="#8a7a6a"/>
+    </pattern>
+
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="5" dy="8" stdDeviation="5" flood-color="#000" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <!-- Sky -->
+  <rect width="1920" height="400" fill="url(#skyGrad)"/>
+
+  <!-- Distant buildings -->
+  <g fill="#c8b8a8" opacity="0.5">
+    <rect x="0" y="150" width="250" height="250"/>
+    <rect x="1700" y="180" width="220" height="220"/>
+  </g>
+
+  <!-- MAIN PALAZZO FACADE -->
+  <g filter="url(#shadow)">
+    <!-- Main building -->
+    <rect x="250" y="80" width="1420" height="1000" fill="url(#stoneWall)"/>
+
+    <!-- Rusticated ground floor -->
+    <rect x="250" y="550" width="1420" height="530" fill="url(#rustication)"/>
+    <!-- Rustication lines -->
+    <g stroke="#7a6a4a" stroke-width="3">
+      <line x1="250" y1="600" x2="1670" y2="600"/>
+      <line x1="250" y1="660" x2="1670" y2="660"/>
+      <line x1="250" y1="720" x2="1670" y2="720"/>
+      <line x1="250" y1="780" x2="1670" y2="780"/>
+      <line x1="250" y1="840" x2="1670" y2="840"/>
+    </g>
+
+    <!-- Cornice/moldings -->
+    <rect x="240" y="70" width="1440" height="25" fill="#9a8a6a"/>
+    <rect x="240" y="540" width="1440" height="20" fill="#9a8a6a"/>
+
+    <!-- UPPER FLOOR WINDOWS (arched) -->
+    <g>
+      <!-- Row of windows -->
+      <g fill="#3a2a1a">
+        <path d="M350 150 L350 400 Q425 450 500 400 L500 150 Q425 120 350 150"/>
+        <path d="M580 150 L580 400 Q655 450 730 400 L730 150 Q655 120 580 150"/>
+        <path d="M810 150 L810 400 Q885 450 960 400 L960 150 Q885 120 810 150"/>
+        <path d="M1040 150 L1040 400 Q1115 450 1190 400 L1190 150 Q1115 120 1040 150"/>
+        <path d="M1270 150 L1270 400 Q1345 450 1420 400 L1420 150 Q1345 120 1270 150"/>
+        <path d="M1500 150 L1500 400 Q1575 450 1650 400 L1650 150 Q1575 120 1500 150"/>
+      </g>
+      <!-- Window frames -->
+      <g fill="none" stroke="#b8a888" stroke-width="8">
+        <path d="M350 150 L350 400 Q425 450 500 400 L500 150 Q425 120 350 150"/>
+        <path d="M580 150 L580 400 Q655 450 730 400 L730 150 Q655 120 580 150"/>
+        <path d="M810 150 L810 400 Q885 450 960 400 L960 150 Q885 120 810 150"/>
+        <path d="M1040 150 L1040 400 Q1115 450 1190 400 L1190 150 Q1115 120 1040 150"/>
+        <path d="M1270 150 L1270 400 Q1345 450 1420 400 L1420 150 Q1345 120 1270 150"/>
+        <path d="M1500 150 L1500 400 Q1575 450 1650 400 L1650 150 Q1575 120 1500 150"/>
+      </g>
+      <!-- Keystones -->
+      <g fill="#a89878">
+        <ellipse cx="425" cy="115" rx="25" ry="15"/>
+        <ellipse cx="655" cy="115" rx="25" ry="15"/>
+        <ellipse cx="885" cy="115" rx="25" ry="15"/>
+        <ellipse cx="1115" cy="115" rx="25" ry="15"/>
+        <ellipse cx="1345" cy="115" rx="25" ry="15"/>
+        <ellipse cx="1575" cy="115" rx="25" ry="15"/>
+      </g>
+    </g>
+
+    <!-- GROUND FLOOR WINDOWS (smaller, barred) -->
+    <g>
+      <g fill="#2a1a10">
+        <rect x="350" y="600" width="100" height="150" rx="5"/>
+        <rect x="580" y="600" width="100" height="150" rx="5"/>
+        <rect x="1240" y="600" width="100" height="150" rx="5"/>
+        <rect x="1470" y="600" width="100" height="150" rx="5"/>
+      </g>
+      <!-- Iron bars -->
+      <g stroke="#4a4a4a" stroke-width="4">
+        <line x1="380" y1="600" x2="380" y2="750"/>
+        <line x1="420" y1="600" x2="420" y2="750"/>
+        <line x1="610" y1="600" x2="610" y2="750"/>
+        <line x1="650" y1="600" x2="650" y2="750"/>
+        <line x1="1270" y1="600" x2="1270" y2="750"/>
+        <line x1="1310" y1="600" x2="1310" y2="750"/>
+        <line x1="1500" y1="600" x2="1500" y2="750"/>
+        <line x1="1540" y1="600" x2="1540" y2="750"/>
+      </g>
+    </g>
+
+    <!-- MAIN ENTRANCE (grand doorway) -->
+    <g>
+      <rect x="850" y="580" width="220" height="320" fill="#1a1008"/>
+      <!-- Door frame -->
+      <rect x="830" y="560" width="260" height="30" fill="#8a7a5a"/>
+      <rect x="830" y="560" width="25" height="350" fill="#8a7a5a"/>
+      <rect x="1065" y="560" width="25" height="350" fill="#8a7a5a"/>
+      <!-- Actual doors -->
+      <rect x="855" y="590" width="100" height="300" fill="#3a2a1a"/>
+      <rect x="965" y="590" width="100" height="300" fill="#3a2a1a"/>
+      <!-- Door details -->
+      <rect x="870" y="610" width="70" height="120" fill="#4a3a2a"/>
+      <rect x="870" y="750" width="70" height="120" fill="#4a3a2a"/>
+      <rect x="980" y="610" width="70" height="120" fill="#4a3a2a"/>
+      <rect x="980" y="750" width="70" height="120" fill="#4a3a2a"/>
+      <!-- Door handles -->
+      <circle cx="950" cy="750" r="12" fill="#c9a227"/>
+      <circle cx="970" cy="750" r="12" fill="#c9a227"/>
+      <!-- Lanterns by door -->
+      <rect x="800" y="650" width="25" height="40" fill="#4a4a4a"/>
+      <rect x="1095" y="650" width="25" height="40" fill="#4a4a4a"/>
+      <ellipse cx="812" cy="645" rx="8" ry="10" fill="#ffa040" opacity="0.6"/>
+      <ellipse cx="1107" cy="645" rx="8" ry="10" fill="#ffa040" opacity="0.6"/>
+    </g>
+
+    <!-- FAMILY CREST above door -->
+    <g>
+      <ellipse cx="960" cy="520" rx="60" ry="50" fill="#c9a227"/>
+      <ellipse cx="960" cy="520" rx="45" ry="35" fill="#1a3a5a"/>
+      <!-- Simple heraldic design -->
+      <path d="M945 510 L960 490 L975 510 L960 530 Z" fill="#c9a227"/>
+    </g>
+  </g>
+
+  <!-- Side buildings -->
+  <g fill="#a89878">
+    <rect x="0" y="200" width="250" height="880"/>
+    <rect x="1670" y="180" width="250" height="900"/>
+  </g>
+
+  <!-- Street -->
+  <rect x="0" y="900" width="1920" height="180" fill="url(#cobblestone)"/>
+
+  <!-- Street level details -->
+  <!-- Hitching posts -->
+  <g fill="#5a5a5a">
+    <rect x="300" y="850" width="15" height="100"/>
+    <ellipse cx="307" cy="850" rx="12" ry="8"/>
+    <rect x="1600" y="850" width="15" height="100"/>
+    <ellipse cx="1607" cy="850" rx="12" ry="8"/>
+  </g>
+
+  <!-- Nobleman's carriage hint in distance -->
+  <g filter="url(#shadow)" opacity="0.6">
+    <rect x="100" y="880" width="120" height="60" fill="#4a2030"/>
+    <circle cx="120" cy="950" r="25" fill="#3a2a1a"/>
+    <circle cx="200" cy="950" r="25" fill="#3a2a1a"/>
+  </g>
+
+  <!-- Sun -->
+  <circle cx="1650" cy="100" r="70" fill="#fff8e0" opacity="0.4"/>
+</svg>

@@ -1,0 +1,197 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080">
+  <defs>
+    <linearGradient id="skyGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#87ceeb"/>
+      <stop offset="100%" style="stop-color:#b8d8e8"/>
+    </linearGradient>
+
+    <linearGradient id="stoneWall" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#d4c4a4"/>
+      <stop offset="100%" style="stop-color:#c4b494"/>
+    </linearGradient>
+
+    <linearGradient id="terracotta" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#cd853f"/>
+      <stop offset="100%" style="stop-color:#a0522d"/>
+    </linearGradient>
+
+    <linearGradient id="grassGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#4a8a4a"/>
+      <stop offset="100%" style="stop-color:#3a7a3a"/>
+    </linearGradient>
+
+    <linearGradient id="marble" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#e8e0d8"/>
+      <stop offset="50%" style="stop-color:#f5f0e8"/>
+      <stop offset="100%" style="stop-color:#d8d0c8"/>
+    </linearGradient>
+
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="4" dy="6" stdDeviation="5" flood-color="#000" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+
+  <!-- Sky -->
+  <rect width="1920" height="450" fill="url(#skyGrad)"/>
+
+  <!-- Clouds -->
+  <g fill="#ffffff" opacity="0.9">
+    <ellipse cx="400" cy="120" rx="120" ry="60"/>
+    <ellipse cx="500" cy="100" rx="100" ry="50"/>
+    <ellipse cx="1400" cy="150" rx="140" ry="70"/>
+    <ellipse cx="1520" cy="130" rx="100" ry="50"/>
+  </g>
+
+  <!-- Distant Tuscan-style hills -->
+  <ellipse cx="960" cy="480" rx="1200" ry="100" fill="#8a9a7a" opacity="0.5"/>
+  <!-- Cypress trees in distance -->
+  <g fill="#2f4f2f" opacity="0.6">
+    <ellipse cx="200" cy="430" rx="15" ry="50"/>
+    <ellipse cx="250" cy="440" rx="12" ry="40"/>
+    <ellipse cx="1700" cy="420" rx="15" ry="55"/>
+    <ellipse cx="1750" cy="435" rx="12" ry="45"/>
+  </g>
+
+  <!-- Stone wall fence (instead of wood) -->
+  <g fill="#a09080" filter="url(#shadow)">
+    <rect x="0" y="380" width="1920" height="120"/>
+    <!-- Stone texture -->
+    <g fill="#8a7a6a">
+      <ellipse cx="100" cy="420" rx="40" ry="25"/>
+      <ellipse cx="200" cy="430" rx="35" ry="22"/>
+      <ellipse cx="300" cy="415" rx="38" ry="28"/>
+      <ellipse cx="420" cy="425" rx="42" ry="24"/>
+      <ellipse cx="550" cy="420" rx="36" ry="26"/>
+      <ellipse cx="700" cy="430" rx="40" ry="23"/>
+      <ellipse cx="850" cy="418" rx="38" ry="27"/>
+      <ellipse cx="1000" cy="425" rx="42" ry="25"/>
+      <ellipse cx="1150" cy="420" rx="35" ry="28"/>
+      <ellipse cx="1300" cy="428" rx="40" ry="24"/>
+      <ellipse cx="1450" cy="415" rx="38" ry="26"/>
+      <ellipse cx="1600" cy="425" rx="42" ry="25"/>
+      <ellipse cx="1750" cy="420" rx="36" ry="27"/>
+      <ellipse cx="1880" cy="428" rx="40" ry="24"/>
+    </g>
+  </g>
+
+  <!-- Lawn (manicured, Italian garden style) -->
+  <rect x="0" y="500" width="1920" height="580" fill="url(#grassGrad)"/>
+
+  <!-- Formal garden patterns -->
+  <g stroke="#3a7030" stroke-width="3" fill="none" opacity="0.4">
+    <ellipse cx="500" cy="700" rx="150" ry="80"/>
+    <ellipse cx="500" cy="700" rx="100" ry="50"/>
+    <ellipse cx="1420" cy="700" rx="150" ry="80"/>
+    <ellipse cx="1420" cy="700" rx="100" ry="50"/>
+  </g>
+
+  <!-- TRANSFORMED HOUSE - Renaissance villa style -->
+  <g filter="url(#shadow)">
+    <!-- Main building (stone instead of siding) -->
+    <rect x="1200" y="200" width="720" height="550" fill="url(#stoneWall)"/>
+
+    <!-- Terracotta tile roof -->
+    <path d="M1180 200 L1560 100 L1940 200 Z" fill="url(#terracotta)"/>
+
+    <!-- Arched windows (Renaissance style) -->
+    <g fill="#5a8aaa">
+      <path d="M1300 280 L1300 430 Q1380 470 1460 430 L1460 280 Q1380 250 1300 280"/>
+      <path d="M1550 280 L1550 430 Q1630 470 1710 430 L1710 280 Q1630 250 1550 280"/>
+    </g>
+
+    <!-- Window frames -->
+    <g fill="none" stroke="url(#marble)" stroke-width="8">
+      <path d="M1300 280 L1300 430 Q1380 470 1460 430 L1460 280 Q1380 250 1300 280"/>
+      <path d="M1550 280 L1550 430 Q1630 470 1710 430 L1710 280 Q1630 250 1550 280"/>
+    </g>
+
+    <!-- Grand doorway -->
+    <rect x="1750" y="400" width="140" height="220" fill="#3a2a1a"/>
+    <path d="M1745 400 L1820 350 L1895 400" fill="url(#stoneWall)"/>
+    <!-- Ornate door -->
+    <rect x="1760" y="420" width="55" height="190" fill="#4a3a2a"/>
+    <rect x="1825" y="420" width="55" height="190" fill="#4a3a2a"/>
+    <!-- Brass handles -->
+    <circle cx="1810" cy="520" r="8" fill="#c9a227"/>
+    <circle cx="1830" cy="520" r="8" fill="#c9a227"/>
+
+    <!-- Columns at entrance -->
+    <g fill="url(#marble)">
+      <rect x="1730" y="400" width="25" height="220"/>
+      <rect x="1885" y="400" width="25" height="220"/>
+    </g>
+    <ellipse cx="1742" cy="395" rx="18" ry="10" fill="#e8e0d8"/>
+    <ellipse cx="1897" cy="395" rx="18" ry="10" fill="#e8e0d8"/>
+
+    <!-- Balcony above door -->
+    <rect x="1740" y="300" width="160" height="80" fill="url(#stoneWall)"/>
+    <rect x="1730" y="290" width="180" height="15" fill="url(#marble)"/>
+    <!-- Balcony railing -->
+    <g stroke="url(#marble)" stroke-width="5" fill="none">
+      <line x1="1740" y1="310" x2="1900" y2="310"/>
+      <line x1="1760" y1="290" x2="1760" y2="380"/>
+      <line x1="1820" y1="290" x2="1820" y2="380"/>
+      <line x1="1880" y1="290" x2="1880" y2="380"/>
+    </g>
+
+    <!-- Terrace/patio with marble -->
+    <rect x="1200" y="620" width="720" height="130" fill="url(#marble)"/>
+    <g stroke="#c8c0b8" stroke-width="2">
+      <line x1="1200" y1="680" x2="1920" y2="680"/>
+    </g>
+  </g>
+
+  <!-- Garden shed transformed to mini chapel/folly -->
+  <g filter="url(#shadow)">
+    <rect x="50" y="400" width="280" height="300" fill="url(#stoneWall)"/>
+    <!-- Dome top instead of shed roof -->
+    <ellipse cx="190" cy="400" rx="150" ry="80" fill="#c4b494"/>
+    <ellipse cx="190" cy="400" rx="120" ry="60" fill="url(#stoneWall)"/>
+    <!-- Small lantern -->
+    <rect x="175" y="320" width="30" height="40" fill="url(#marble)"/>
+    <!-- Arched doorway -->
+    <path d="M120 500 L120 650 Q190 700 260 650 L260 500 Q190 460 120 500" fill="#3a2a1a"/>
+    <!-- Round window -->
+    <circle cx="190" cy="440" r="30" fill="#5a8aaa"/>
+    <circle cx="190" cy="440" r="30" fill="none" stroke="url(#marble)" stroke-width="5"/>
+  </g>
+
+  <!-- Classical statue in garden -->
+  <g filter="url(#shadow)">
+    <rect x="700" y="700" width="50" height="100" fill="url(#marble)"/>
+    <ellipse cx="725" cy="680" rx="25" ry="40" fill="url(#marble)"/>
+    <ellipse cx="725" cy="650" rx="15" ry="20" fill="url(#marble)"/>
+  </g>
+
+  <!-- Fountain -->
+  <g filter="url(#shadow)">
+    <ellipse cx="500" cy="850" rx="80" ry="35" fill="#6a8a9a"/>
+    <ellipse cx="500" cy="850" rx="100" ry="45" fill="none" stroke="url(#marble)" stroke-width="15"/>
+    <rect x="485" y="780" width="30" height="80" fill="url(#marble)"/>
+    <path d="M500 770 Q490 730 500 700 Q510 730 500 770" fill="#8ab8d8" opacity="0.6"/>
+  </g>
+
+  <!-- Olive trees -->
+  <g filter="url(#shadow)">
+    <rect x="880" y="650" width="20" height="150" fill="#6a5a4a"/>
+    <ellipse cx="890" cy="620" rx="60" ry="50" fill="#6a8a5a"/>
+    <ellipse cx="910" cy="640" rx="50" ry="40" fill="#5a7a4a"/>
+
+    <rect x="1080" y="660" width="20" height="140" fill="#6a5a4a"/>
+    <ellipse cx="1090" cy="630" rx="55" ry="45" fill="#6a8a5a"/>
+    <ellipse cx="1110" cy="650" rx="45" ry="35" fill="#5a7a4a"/>
+  </g>
+
+  <!-- Solar panels integrated into terracotta roof (subtle modern) -->
+  <rect x="1280" y="140" width="80" height="50" fill="#2a3a4a" opacity="0.7" transform="rotate(-20 1320 165)"/>
+  <rect x="1400" y="130" width="80" height="50" fill="#2a3a4a" opacity="0.7" transform="rotate(-20 1440 155)"/>
+
+  <!-- Birds -->
+  <g fill="none" stroke="#4a4a4a" stroke-width="2">
+    <path d="M600 150 Q610 140 620 150 Q630 140 640 150"/>
+    <path d="M1100 100 Q1110 90 1120 100"/>
+  </g>
+
+  <!-- Warm sunlight -->
+  <circle cx="1700" cy="100" r="50" fill="#fff8e0" opacity="0.6"/>
+</svg>

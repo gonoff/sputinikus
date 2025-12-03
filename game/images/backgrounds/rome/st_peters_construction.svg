@@ -1,0 +1,185 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080">
+  <defs>
+    <linearGradient id="skyGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#87a8c8"/>
+      <stop offset="100%" style="stop-color:#b8c8d8"/>
+    </linearGradient>
+
+    <linearGradient id="marble" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#e0d8d0"/>
+      <stop offset="50%" style="stop-color:#f5f0e8"/>
+      <stop offset="100%" style="stop-color:#d0c8c0"/>
+    </linearGradient>
+
+    <linearGradient id="scaffoldWood" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#8a7a5a"/>
+      <stop offset="100%" style="stop-color:#6a5a3a"/>
+    </linearGradient>
+
+    <linearGradient id="stone" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#c8c0b8"/>
+      <stop offset="100%" style="stop-color:#b0a898"/>
+    </linearGradient>
+
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="4" dy="6" stdDeviation="5" flood-color="#000" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <!-- Sky -->
+  <rect width="1920" height="500" fill="url(#skyGrad)"/>
+
+  <!-- PARTIALLY BUILT BASILICA -->
+  <g filter="url(#shadow)">
+    <!-- Foundation/lower structure -->
+    <rect x="200" y="400" width="1520" height="400" fill="url(#marble)"/>
+
+    <!-- Partial walls rising -->
+    <rect x="300" y="250" width="200" height="250" fill="url(#stone)"/>
+    <rect x="1420" y="250" width="200" height="250" fill="url(#stone)"/>
+
+    <!-- Center area under construction -->
+    <rect x="600" y="300" width="720" height="200" fill="url(#stone)"/>
+
+    <!-- DOME FOUNDATION (not yet built, just base) -->
+    <ellipse cx="960" cy="350" rx="200" ry="80" fill="url(#stone)"/>
+    <rect x="800" y="300" width="320" height="80" fill="url(#marble)"/>
+  </g>
+
+  <!-- SCAFFOLDING (extensive) -->
+  <g fill="url(#scaffoldWood)">
+    <!-- Left side scaffolding -->
+    <rect x="280" y="150" width="15" height="550"/>
+    <rect x="350" y="150" width="15" height="550"/>
+    <rect x="420" y="150" width="15" height="550"/>
+    <rect x="490" y="150" width="15" height="550"/>
+    <!-- Horizontal beams -->
+    <rect x="275" y="200" width="235" height="10"/>
+    <rect x="275" y="300" width="235" height="10"/>
+    <rect x="275" y="400" width="235" height="10"/>
+    <rect x="275" y="500" width="235" height="10"/>
+    <!-- Diagonal braces -->
+    <line x1="280" y1="200" x2="350" y2="300" stroke="url(#scaffoldWood)" stroke-width="8"/>
+    <line x1="350" y1="200" x2="420" y2="300" stroke="url(#scaffoldWood)" stroke-width="8"/>
+
+    <!-- Center scaffolding (around dome area) -->
+    <rect x="750" y="100" width="15" height="450"/>
+    <rect x="850" y="80" width="15" height="470"/>
+    <rect x="950" y="60" width="15" height="490"/>
+    <rect x="1050" y="80" width="15" height="470"/>
+    <rect x="1150" y="100" width="15" height="450"/>
+    <!-- Horizontal beams -->
+    <rect x="745" y="150" width="420" height="10"/>
+    <rect x="745" y="250" width="420" height="10"/>
+    <rect x="745" y="350" width="420" height="10"/>
+    <rect x="745" y="450" width="420" height="10"/>
+    <!-- Cross braces -->
+    <line x1="750" y1="150" x2="850" y2="250" stroke="url(#scaffoldWood)" stroke-width="8"/>
+    <line x1="950" y1="150" x2="1050" y2="250" stroke="url(#scaffoldWood)" stroke-width="8"/>
+    <line x1="850" y1="250" x2="950" y2="350" stroke="url(#scaffoldWood)" stroke-width="8"/>
+
+    <!-- Right side scaffolding -->
+    <rect x="1410" y="150" width="15" height="550"/>
+    <rect x="1480" y="150" width="15" height="550"/>
+    <rect x="1550" y="150" width="15" height="550"/>
+    <rect x="1620" y="150" width="15" height="550"/>
+    <rect x="1405" y="200" width="235" height="10"/>
+    <rect x="1405" y="300" width="235" height="10"/>
+    <rect x="1405" y="400" width="235" height="10"/>
+    <rect x="1405" y="500" width="235" height="10"/>
+  </g>
+
+  <!-- WORKERS on scaffolding (small figures) -->
+  <g>
+    <!-- Worker figures -->
+    <ellipse cx="380" cy="280" rx="8" ry="20" fill="#8b4513"/>
+    <ellipse cx="380" cy="265" rx="6" ry="8" fill="#e8c8a8"/>
+
+    <ellipse cx="900" cy="230" rx="8" ry="20" fill="#6a5a4a"/>
+    <ellipse cx="900" cy="215" rx="6" ry="8" fill="#e8c8a8"/>
+
+    <ellipse cx="1000" cy="330" rx="8" ry="20" fill="#5a4a3a"/>
+    <ellipse cx="1000" cy="315" rx="6" ry="8" fill="#e8c8a8"/>
+
+    <ellipse cx="1520" cy="280" rx="8" ry="20" fill="#7a6a5a"/>
+    <ellipse cx="1520" cy="265" rx="6" ry="8" fill="#e8c8a8"/>
+  </g>
+
+  <!-- GROUND LEVEL -->
+  <rect x="0" y="800" width="1920" height="280" fill="#a09080"/>
+
+  <!-- Construction materials scattered -->
+  <g filter="url(#shadow)">
+    <!-- Stone blocks -->
+    <rect x="100" y="820" width="80" height="60" fill="url(#stone)"/>
+    <rect x="200" y="830" width="70" height="50" fill="url(#stone)"/>
+    <rect x="150" y="790" width="60" height="40" fill="url(#marble)"/>
+
+    <rect x="1650" y="810" width="90" height="70" fill="url(#stone)"/>
+    <rect x="1750" y="830" width="80" height="50" fill="url(#stone)"/>
+    <rect x="1700" y="780" width="70" height="40" fill="url(#marble)"/>
+
+    <!-- Marble columns (lying down, waiting to be placed) -->
+    <ellipse cx="500" cy="850" rx="120" ry="35" fill="url(#marble)"/>
+    <ellipse cx="380" cy="850" rx="25" ry="35" fill="#e0d8d0"/>
+    <ellipse cx="620" cy="850" rx="25" ry="35" fill="#e0d8d0"/>
+
+    <!-- Wood piles -->
+    <rect x="1300" y="840" width="100" height="40" fill="url(#scaffoldWood)"/>
+    <rect x="1310" y="820" width="80" height="30" fill="#7a6a4a"/>
+    <rect x="1320" y="800" width="60" height="25" fill="url(#scaffoldWood)"/>
+  </g>
+
+  <!-- CRANE (period-appropriate wooden crane) -->
+  <g filter="url(#shadow)">
+    <!-- Main mast -->
+    <rect x="700" y="500" width="30" height="350" fill="#6a5a3a"/>
+    <!-- Boom arm -->
+    <line x1="715" y1="520" x2="900" y2="400" stroke="#6a5a3a" stroke-width="20"/>
+    <!-- Support lines -->
+    <line x1="715" y1="550" x2="680" y2="850" stroke="#5a5a5a" stroke-width="4"/>
+    <line x1="715" y1="520" x2="900" y2="550" stroke="#5a5a5a" stroke-width="4"/>
+    <!-- Rope with block -->
+    <line x1="880" y1="410" x2="880" y2="600" stroke="#8a7a5a" stroke-width="6"/>
+    <!-- Stone block being lifted -->
+    <rect x="850" y="600" width="60" height="50" fill="url(#stone)"/>
+    <!-- Treadwheel at base (for power) -->
+    <circle cx="720" cy="800" r="50" fill="#7a6a4a" stroke="#5a4a2a" stroke-width="8"/>
+    <circle cx="720" cy="800" r="20" fill="#6a5a3a"/>
+  </g>
+
+  <!-- Ox cart with materials -->
+  <g filter="url(#shadow)">
+    <rect x="1050" y="870" width="150" height="60" fill="#6a5a4a"/>
+    <circle cx="1080" cy="940" r="30" fill="#4a3a2a"/>
+    <circle cx="1170" cy="940" r="30" fill="#4a3a2a"/>
+    <!-- Load -->
+    <rect x="1060" y="830" width="60" height="50" fill="url(#stone)"/>
+    <rect x="1130" y="835" width="50" height="45" fill="url(#stone)"/>
+    <!-- Ox (simplified) -->
+    <ellipse cx="1020" cy="890" rx="40" ry="30" fill="#8b7355"/>
+    <ellipse cx="990" cy="880" rx="15" ry="18" fill="#8b7355"/>
+  </g>
+
+  <!-- Workers on ground -->
+  <g>
+    <ellipse cx="600" cy="900" rx="12" ry="35" fill="#6a5a4a"/>
+    <ellipse cx="600" cy="870" rx="8" ry="12" fill="#e8c8a8"/>
+
+    <ellipse cx="1400" cy="890" rx="12" ry="35" fill="#5a4a3a"/>
+    <ellipse cx="1400" cy="860" rx="8" ry="12" fill="#e8c8a8"/>
+  </g>
+
+  <!-- Dust in air -->
+  <g fill="#c0b8a0" opacity="0.2">
+    <ellipse cx="400" cy="600" rx="100" ry="50"/>
+    <ellipse cx="1500" cy="550" rx="80" ry="40"/>
+    <ellipse cx="960" cy="500" rx="150" ry="60"/>
+  </g>
+
+  <!-- Birds -->
+  <g fill="none" stroke="#4a4a4a" stroke-width="2">
+    <path d="M300 100 Q310 90 320 100 Q330 90 340 100"/>
+    <path d="M1600 150 Q1610 140 1620 150"/>
+  </g>
+</svg>

@@ -1,0 +1,187 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080">
+  <defs>
+    <!-- Interior wall -->
+    <linearGradient id="wallGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#c8b898"/>
+      <stop offset="100%" style="stop-color:#a89878"/>
+    </linearGradient>
+
+    <!-- Wood gradients -->
+    <linearGradient id="darkWood" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#5a4030"/>
+      <stop offset="100%" style="stop-color:#3a2820"/>
+    </linearGradient>
+    <linearGradient id="lightWood" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#8b7355"/>
+      <stop offset="100%" style="stop-color:#6b5345"/>
+    </linearGradient>
+    <linearGradient id="floorWood" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#6a5a4a"/>
+      <stop offset="50%" style="stop-color:#7a6a5a"/>
+      <stop offset="100%" style="stop-color:#5a4a3a"/>
+    </linearGradient>
+
+    <!-- Floor pattern -->
+    <pattern id="floorBoards" x="0" y="0" width="200" height="30" patternUnits="userSpaceOnUse">
+      <rect width="200" height="30" fill="url(#floorWood)"/>
+      <line x1="0" y1="0" x2="200" y2="0" stroke="#4a3a2a" stroke-width="2"/>
+      <line x1="100" y1="0" x2="100" y2="30" stroke="#4a3a2a" stroke-width="1"/>
+    </pattern>
+
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="3" dy="5" stdDeviation="4" flood-color="#000" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <!-- Back wall -->
+  <rect width="1920" height="700" fill="url(#wallGrad)"/>
+
+  <!-- Wooden beam across ceiling -->
+  <rect x="0" y="80" width="1920" height="40" fill="url(#darkWood)" filter="url(#shadow)"/>
+
+  <!-- Shelving on back wall (left side) -->
+  <g filter="url(#shadow)">
+    <rect x="100" y="150" width="500" height="25" fill="url(#lightWood)"/>
+    <rect x="100" y="280" width="500" height="25" fill="url(#lightWood)"/>
+    <rect x="100" y="410" width="500" height="25" fill="url(#lightWood)"/>
+    <!-- Shelf supports -->
+    <rect x="100" y="150" width="20" height="285" fill="url(#darkWood)"/>
+    <rect x="580" y="150" width="20" height="285" fill="url(#darkWood)"/>
+    <rect x="340" y="150" width="15" height="285" fill="url(#darkWood)"/>
+
+    <!-- Items on shelves -->
+    <!-- Top shelf - fabric bolts -->
+    <rect x="130" y="110" width="50" height="40" fill="#8b2942" rx="3"/>
+    <rect x="190" y="105" width="55" height="45" fill="#2c3e6e" rx="3"/>
+    <rect x="255" y="115" width="45" height="35" fill="#c9a227" rx="3"/>
+    <rect x="370" y="108" width="60" height="42" fill="#4a6040" rx="3"/>
+    <rect x="440" y="112" width="50" height="38" fill="#722f37" rx="3"/>
+    <rect x="500" y="105" width="55" height="45" fill="#1a3a5a" rx="3"/>
+
+    <!-- Middle shelf - pottery/containers -->
+    <ellipse cx="160" cy="260" rx="30" ry="35" fill="#c9a060"/>
+    <ellipse cx="230" cy="265" rx="25" ry="30" fill="#b88a50"/>
+    <ellipse cx="300" cy="255" rx="35" ry="40" fill="#c9a060"/>
+    <ellipse cx="400" cy="262" rx="28" ry="33" fill="#a87a40"/>
+    <ellipse cx="470" cy="258" rx="32" ry="37" fill="#c9a060"/>
+    <ellipse cx="540" cy="265" rx="26" ry="30" fill="#b88a50"/>
+
+    <!-- Bottom shelf - boxes and goods -->
+    <rect x="130" y="340" width="70" height="70" fill="#5a4a3a"/>
+    <rect x="220" y="350" width="60" height="60" fill="#6a5a4a"/>
+    <rect x="300" y="335" width="80" height="75" fill="#5a4a3a"/>
+    <rect x="400" y="345" width="65" height="65" fill="#4a3a2a"/>
+    <rect x="485" y="340" width="75" height="70" fill="#5a4a3a"/>
+  </g>
+
+  <!-- Right side shelving -->
+  <g filter="url(#shadow)">
+    <rect x="1320" y="150" width="500" height="25" fill="url(#lightWood)"/>
+    <rect x="1320" y="280" width="500" height="25" fill="url(#lightWood)"/>
+    <rect x="1320" y="410" width="500" height="25" fill="url(#lightWood)"/>
+    <rect x="1320" y="150" width="20" height="285" fill="url(#darkWood)"/>
+    <rect x="1800" y="150" width="20" height="285" fill="url(#darkWood)"/>
+    <rect x="1560" y="150" width="15" height="285" fill="url(#darkWood)"/>
+
+    <!-- Items on right shelves -->
+    <ellipse cx="1380" cy="130" rx="25" ry="30" fill="#c9a060"/>
+    <ellipse cx="1440" cy="125" rx="30" ry="35" fill="#b88a50"/>
+    <rect x="1490" y="105" width="50" height="45" fill="#4a6040" rx="3"/>
+    <rect x="1590" y="110" width="60" height="40" fill="#8b2942" rx="3"/>
+    <ellipse cx="1720" cy="128" rx="28" ry="32" fill="#c9a060"/>
+    <ellipse cx="1780" cy="132" rx="24" ry="28" fill="#a87a40"/>
+
+    <rect x="1350" y="235" width="70" height="45" fill="#2c3e6e" rx="3"/>
+    <rect x="1440" y="240" width="55" height="40" fill="#c9a227" rx="3"/>
+    <ellipse cx="1560" cy="258" rx="30" ry="35" fill="#c9a060"/>
+    <ellipse cx="1640" cy="262" rx="26" ry="30" fill="#b88a50"/>
+    <rect x="1700" y="238" width="60" height="42" fill="#722f37" rx="3"/>
+    <rect x="1770" y="242" width="45" height="38" fill="#1a3a5a" rx="3"/>
+  </g>
+
+  <!-- CENTER COUNTER -->
+  <g filter="url(#shadow)">
+    <rect x="650" y="500" width="620" height="180" fill="url(#darkWood)"/>
+    <rect x="640" y="490" width="640" height="20" fill="url(#lightWood)"/>
+
+    <!-- Items on counter -->
+    <!-- Scales -->
+    <g>
+      <rect x="800" y="440" width="8" height="50" fill="#c9a227"/>
+      <rect x="770" y="430" width="70" height="8" fill="#c9a227"/>
+      <path d="M775 438 L765 470 L790 470 Z" fill="#c9a227"/>
+      <path d="M835 438 L825 470 L850 470 Z" fill="#c9a227"/>
+    </g>
+
+    <!-- Money box -->
+    <rect x="1000" y="445" width="100" height="55" fill="#4a3a2a"/>
+    <rect x="1020" y="455" width="60" height="10" fill="#c9a227"/>
+
+    <!-- Fabric sample -->
+    <rect x="700" y="450" width="80" height="50" fill="#8b2942" rx="2"/>
+
+    <!-- Ledger/book -->
+    <rect x="1120" y="455" width="80" height="50" fill="#3a2a1a"/>
+    <rect x="1125" y="458" width="70" height="2" fill="#f5e8d0"/>
+    <rect x="1125" y="465" width="70" height="2" fill="#f5e8d0"/>
+    <rect x="1125" y="472" width="70" height="2" fill="#f5e8d0"/>
+  </g>
+
+  <!-- Floor -->
+  <rect x="0" y="700" width="1920" height="380" fill="url(#floorBoards)"/>
+
+  <!-- Floor shadow from counter -->
+  <ellipse cx="960" cy="720" rx="400" ry="40" fill="rgba(0,0,0,0.2)"/>
+
+  <!-- Hanging goods from ceiling -->
+  <g>
+    <!-- Dried herbs/garlic -->
+    <ellipse cx="300" cy="130" rx="20" ry="30" fill="#e8d8c8"/>
+    <ellipse cx="330" cy="140" rx="18" ry="25" fill="#d8c8b8"/>
+    <line x1="315" y1="80" x2="315" y2="110" stroke="#5a4a3a" stroke-width="3"/>
+
+    <ellipse cx="1600" cy="125" rx="22" ry="28" fill="#e8d8c8"/>
+    <ellipse cx="1630" cy="135" rx="20" ry="26" fill="#d8c8b8"/>
+    <line x1="1615" y1="80" x2="1615" y2="100" stroke="#5a4a3a" stroke-width="3"/>
+  </g>
+
+  <!-- Window (right side, showing outside light) -->
+  <g filter="url(#shadow)">
+    <rect x="1650" y="500" width="200" height="180" fill="#87ceeb"/>
+    <rect x="1650" y="500" width="200" height="180" fill="none" stroke="url(#darkWood)" stroke-width="15"/>
+    <line x1="1750" y1="500" x2="1750" y2="680" stroke="url(#darkWood)" stroke-width="8"/>
+    <line x1="1650" y1="590" x2="1850" y2="590" stroke="url(#darkWood)" stroke-width="8"/>
+    <!-- Light beam from window -->
+    <path d="M1650 680 L1400 1080 L1920 1080 L1850 680 Z" fill="#fff8e0" opacity="0.15"/>
+  </g>
+
+  <!-- Doorway to back room -->
+  <g>
+    <rect x="900" y="180" width="120" height="250" fill="#1a1008"/>
+    <rect x="890" y="170" width="140" height="20" fill="url(#darkWood)"/>
+    <rect x="890" y="170" width="15" height="265" fill="url(#darkWood)"/>
+    <rect x="1015" y="170" width="15" height="265" fill="url(#darkWood)"/>
+    <!-- Curtain -->
+    <path d="M905 190 Q940 200 960 190 Q980 200 1015 190 L1015 420 L905 420 Z" fill="#722f37" opacity="0.8"/>
+  </g>
+
+  <!-- Barrel in corner -->
+  <g filter="url(#shadow)">
+    <ellipse cx="120" cy="850" rx="70" ry="35" fill="#5a4030"/>
+    <rect x="50" y="700" width="140" height="150" fill="#6a5040"/>
+    <ellipse cx="120" cy="700" rx="70" ry="35" fill="#7a6050"/>
+    <rect x="50" y="750" width="140" height="10" fill="#3a2a1a"/>
+    <rect x="50" y="820" width="140" height="10" fill="#3a2a1a"/>
+  </g>
+
+  <!-- Sacks of goods -->
+  <g filter="url(#shadow)">
+    <ellipse cx="1800" cy="900" rx="60" ry="80" fill="#c8b898"/>
+    <path d="M1760 820 Q1800 800 1840 820" stroke="#8a7a5a" stroke-width="8" fill="none"/>
+    <ellipse cx="1720" cy="920" rx="50" ry="70" fill="#b8a888"/>
+    <path d="M1685 850 Q1720 835 1755 850" stroke="#7a6a4a" stroke-width="6" fill="none"/>
+  </g>
+
+  <!-- Warm interior lighting -->
+  <rect width="1920" height="1080" fill="#ffa040" opacity="0.05"/>
+</svg>
