@@ -1,0 +1,157 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 800">
+  <defs>
+    <linearGradient id="skinGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#e8c8a8"/>
+      <stop offset="100%" style="stop-color:#d4a878"/>
+    </linearGradient>
+    <linearGradient id="hairGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#5a5a5a"/>
+      <stop offset="100%" style="stop-color:#3a3a3a"/>
+    </linearGradient>
+    <linearGradient id="cassockGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#c41e3a"/>
+      <stop offset="100%" style="stop-color:#8b0000"/>
+    </linearGradient>
+    <linearGradient id="mozzettaGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#a01830"/>
+      <stop offset="100%" style="stop-color:#6b0015"/>
+    </linearGradient>
+    <linearGradient id="birettaGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#c41e3a"/>
+      <stop offset="100%" style="stop-color:#8b0000"/>
+    </linearGradient>
+    <linearGradient id="goldAccent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#c9a227"/>
+      <stop offset="50%" style="stop-color:#f0d050"/>
+      <stop offset="100%" style="stop-color:#c9a227"/>
+    </linearGradient>
+
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="2" dy="4" stdDeviation="3" flood-color="#000" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <!-- Red cardinal cassock -->
+  <g filter="url(#shadow)">
+    <path d="M100 340 Q60 400 50 500 L40 780 L360 780 L350 500 Q340 400 300 340 Z"
+          fill="url(#cassockGrad)"/>
+    <!-- Cassock folds -->
+    <path d="M130 400 Q110 550 120 700" stroke="#7a1528" stroke-width="2" fill="none"/>
+    <path d="M200 450 Q200 600 200 750" stroke="#7a1528" stroke-width="2" fill="none"/>
+    <path d="M270 400 Q290 550 280 700" stroke="#7a1528" stroke-width="2" fill="none"/>
+  </g>
+
+  <!-- Cardinal mozzetta (shoulder cape) -->
+  <g filter="url(#shadow)">
+    <path d="M95 290 Q65 330 60 400 L65 470 Q110 490 200 490 Q290 490 335 470 L340 400 Q335 330 305 290 Z"
+          fill="url(#mozzettaGrad)"/>
+    <!-- Mozzetta buttons -->
+    <circle cx="200" cy="350" r="6" fill="url(#goldAccent)"/>
+    <circle cx="200" cy="390" r="6" fill="url(#goldAccent)"/>
+    <circle cx="200" cy="430" r="6" fill="url(#goldAccent)"/>
+  </g>
+
+  <!-- White collar (Roman collar) -->
+  <rect x="175" y="280" width="50" height="15" fill="#f5f5f0" rx="2"/>
+
+  <!-- Cardinal's cross -->
+  <g fill="url(#goldAccent)" filter="url(#shadow)">
+    <rect x="193" y="310" width="14" height="35" rx="1"/>
+    <rect x="185" y="320" width="30" height="10" rx="1"/>
+  </g>
+  <path d="M175 295 Q200 305 225 295" stroke="url(#goldAccent)" stroke-width="2" fill="none"/>
+
+  <!-- Sleeves -->
+  <g fill="url(#cassockGrad)">
+    <path d="M60 380 Q40 450 50 550 L90 550 Q80 480 85 400 Z"/>
+    <path d="M340 380 Q360 450 350 550 L310 550 Q320 480 315 400 Z"/>
+  </g>
+
+  <!-- Hands -->
+  <g fill="url(#skinGrad)">
+    <ellipse cx="65" cy="565" rx="20" ry="26"/>
+    <ellipse cx="335" cy="565" rx="20" ry="26"/>
+    <!-- Cardinal's ring -->
+    <ellipse cx="60" cy="570" rx="5" ry="3" fill="url(#goldAccent)"/>
+  </g>
+
+  <!-- Neck -->
+  <rect x="175" y="245" width="50" height="45" fill="url(#skinGrad)" rx="5"/>
+
+  <!-- Head -->
+  <g filter="url(#shadow)">
+    <ellipse cx="200" cy="160" rx="72" ry="88" fill="url(#skinGrad)"/>
+  </g>
+
+  <!-- Cardinal biretta (square cap) -->
+  <g fill="url(#birettaGrad)" filter="url(#shadow)">
+    <!-- Cap base -->
+    <rect x="130" y="70" width="140" height="45" rx="5"/>
+    <!-- Three ridges on top -->
+    <path d="M145 70 L145 55 Q150 45 160 55 L160 70"/>
+    <path d="M195 70 L195 50 Q200 40 205 50 L205 70"/>
+    <path d="M240 70 L240 55 Q250 45 255 55 L255 70"/>
+    <!-- Tuft/pompom -->
+    <circle cx="200" cy="45" r="10" fill="#c41e3a"/>
+  </g>
+
+  <!-- Gray hair showing at sides -->
+  <g fill="url(#hairGrad)">
+    <path d="M130 95 Q120 120 125 160 Q115 150 118 115 Q120 95 130 95"/>
+    <path d="M270 95 Q280 120 275 160 Q285 150 282 115 Q280 95 270 95"/>
+    <!-- Tonsure visible at back -->
+    <ellipse cx="200" cy="80" rx="50" ry="20" opacity="0.5"/>
+  </g>
+
+  <!-- Ears -->
+  <ellipse cx="128" cy="170" rx="11" ry="19" fill="url(#skinGrad)"/>
+  <ellipse cx="272" cy="170" rx="11" ry="19" fill="url(#skinGrad)"/>
+
+  <!-- Age lines on forehead -->
+  <g stroke="#c4a070" stroke-width="1" fill="none" opacity="0.4">
+    <path d="M155 120 Q200 115 245 120"/>
+    <path d="M160 130 Q200 126 240 130"/>
+  </g>
+
+  <!-- Eyes (wise, cautious) -->
+  <g>
+    <ellipse cx="165" cy="175" rx="14" ry="10" fill="white"/>
+    <ellipse cx="235" cy="175" rx="14" ry="10" fill="white"/>
+    <!-- Gray-blue eyes -->
+    <circle cx="165" cy="175" r="6" fill="#5a6a7a"/>
+    <circle cx="235" cy="175" r="6" fill="#5a6a7a"/>
+    <circle cx="165" cy="175" r="3" fill="#1a1a1a"/>
+    <circle cx="235" cy="175" r="3" fill="#1a1a1a"/>
+    <circle cx="163" cy="173" r="2" fill="white"/>
+    <circle cx="233" cy="173" r="2" fill="white"/>
+  </g>
+
+  <!-- Distinguished eyebrows -->
+  <path d="M145 160 Q165 153 188 162" stroke="#4a4a4a" stroke-width="3" fill="none"/>
+  <path d="M212 162 Q235 153 255 160" stroke="#4a4a4a" stroke-width="3" fill="none"/>
+
+  <!-- Refined nose -->
+  <path d="M200 170 Q194 190 193 208 Q195 218 200 220 Q205 218 207 208 Q206 190 200 170"
+        fill="#d4a070" stroke="#c4986a" stroke-width="1"/>
+
+  <!-- Mouth (neutral, dignified) -->
+  <path d="M178 238 Q200 245 222 238" stroke="#9a6a5a" stroke-width="3" fill="none" stroke-linecap="round"/>
+
+  <!-- Light stubble/shaved -->
+  <g fill="#5a5a5a" opacity="0.08">
+    <ellipse cx="200" cy="248" rx="35" ry="20"/>
+  </g>
+
+  <!-- Cheek lines (age) -->
+  <path d="M140 195 Q145 215 148 235" stroke="#c4a070" stroke-width="1" fill="none" opacity="0.3"/>
+  <path d="M260 195 Q255 215 252 235" stroke="#c4a070" stroke-width="1" fill="none" opacity="0.3"/>
+
+  <!-- Red cardinal shoes (barely visible) -->
+  <g fill="#8b0000">
+    <ellipse cx="160" cy="778" rx="38" ry="12"/>
+    <ellipse cx="240" cy="778" rx="38" ry="12"/>
+    <!-- Gold buckles -->
+    <rect x="150" y="773" width="12" height="7" fill="url(#goldAccent)" rx="1"/>
+    <rect x="238" y="773" width="12" height="7" fill="url(#goldAccent)" rx="1"/>
+  </g>
+</svg>
