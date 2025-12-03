@@ -1,0 +1,142 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <defs>
+    <!-- Device body gradient -->
+    <linearGradient id="deviceBody" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2a2a3a"/>
+      <stop offset="50%" style="stop-color:#1a1a2a"/>
+      <stop offset="100%" style="stop-color:#0a0a15"/>
+    </linearGradient>
+
+    <!-- Screen glow -->
+    <linearGradient id="screenGlow" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#00ffff"/>
+      <stop offset="50%" style="stop-color:#0088aa"/>
+      <stop offset="100%" style="stop-color:#004466"/>
+    </linearGradient>
+
+    <!-- Metallic edge -->
+    <linearGradient id="metalEdge" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#404050"/>
+      <stop offset="50%" style="stop-color:#606070"/>
+      <stop offset="100%" style="stop-color:#404050"/>
+    </linearGradient>
+
+    <!-- Screen reflection -->
+    <linearGradient id="screenReflect" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:rgba(255,255,255,0.3)"/>
+      <stop offset="50%" style="stop-color:rgba(255,255,255,0)"/>
+      <stop offset="100%" style="stop-color:rgba(255,255,255,0)"/>
+    </linearGradient>
+
+    <!-- Glow filter -->
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="softGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="3" dy="5" stdDeviation="4" flood-color="#000" flood-opacity="0.5"/>
+    </filter>
+  </defs>
+
+  <!-- Device body -->
+  <g filter="url(#shadow)">
+    <!-- Main body -->
+    <rect x="25" y="20" width="150" height="260" rx="15" fill="url(#deviceBody)"/>
+
+    <!-- Metallic frame -->
+    <rect x="25" y="20" width="150" height="260" rx="15" fill="none"
+          stroke="url(#metalEdge)" stroke-width="3"/>
+
+    <!-- Inner bevel -->
+    <rect x="30" y="25" width="140" height="250" rx="12" fill="none"
+          stroke="#252535" stroke-width="2"/>
+  </g>
+
+  <!-- Screen -->
+  <g>
+    <!-- Screen background -->
+    <rect x="35" y="35" width="130" height="200" rx="5" fill="#001a22"/>
+
+    <!-- Screen glow effect -->
+    <rect x="35" y="35" width="130" height="200" rx="5" fill="url(#screenGlow)" opacity="0.3"/>
+
+    <!-- Scan lines effect -->
+    <g opacity="0.1">
+      <line x1="35" y1="50" x2="165" y2="50" stroke="#00ffff" stroke-width="1"/>
+      <line x1="35" y1="70" x2="165" y2="70" stroke="#00ffff" stroke-width="1"/>
+      <line x1="35" y1="90" x2="165" y2="90" stroke="#00ffff" stroke-width="1"/>
+      <line x1="35" y1="110" x2="165" y2="110" stroke="#00ffff" stroke-width="1"/>
+      <line x1="35" y1="130" x2="165" y2="130" stroke="#00ffff" stroke-width="1"/>
+      <line x1="35" y1="150" x2="165" y2="150" stroke="#00ffff" stroke-width="1"/>
+      <line x1="35" y1="170" x2="165" y2="170" stroke="#00ffff" stroke-width="1"/>
+      <line x1="35" y1="190" x2="165" y2="190" stroke="#00ffff" stroke-width="1"/>
+      <line x1="35" y1="210" x2="165" y2="210" stroke="#00ffff" stroke-width="1"/>
+    </g>
+
+    <!-- ARIA face/interface - neutral expression -->
+    <g filter="url(#glow)">
+      <!-- Eyes (two horizontal lines) -->
+      <rect x="60" y="90" width="25" height="8" rx="2" fill="#00ffff"/>
+      <rect x="115" y="90" width="25" height="8" rx="2" fill="#00ffff"/>
+
+      <!-- Neutral mouth (straight line) -->
+      <rect x="70" y="160" width="60" height="6" rx="3" fill="#00ffff"/>
+    </g>
+
+    <!-- Status indicators -->
+    <g filter="url(#softGlow)">
+      <!-- Battery indicator -->
+      <rect x="45" y="45" width="30" height="12" rx="2" fill="none" stroke="#00ffff" stroke-width="1"/>
+      <rect x="47" y="47" width="26" height="8" rx="1" fill="#00ffff" opacity="0.8"/>
+      <rect x="75" y="48" width="3" height="6" rx="1" fill="#00ffff"/>
+
+      <!-- Signal bars -->
+      <rect x="130" y="53" width="4" height="4" fill="#00ffff"/>
+      <rect x="136" y="50" width="4" height="7" fill="#00ffff"/>
+      <rect x="142" y="47" width="4" height="10" fill="#00ffff"/>
+      <rect x="148" y="44" width="4" height="13" fill="#00ffff"/>
+    </g>
+
+    <!-- "ARIA" text -->
+    <text x="100" y="205" font-family="monospace" font-size="14" fill="#00ffff"
+          text-anchor="middle" filter="url(#softGlow)">ARIA v8.0</text>
+
+    <!-- Status text -->
+    <text x="100" y="220" font-family="monospace" font-size="10" fill="#00aaaa"
+          text-anchor="middle">READY</text>
+
+    <!-- Screen reflection overlay -->
+    <rect x="35" y="35" width="130" height="200" rx="5" fill="url(#screenReflect)"/>
+  </g>
+
+  <!-- Physical buttons -->
+  <g>
+    <!-- Volume/control buttons on side (represented as indents) -->
+    <rect x="20" y="80" width="5" height="20" rx="2" fill="#353545"/>
+    <rect x="20" y="110" width="5" height="20" rx="2" fill="#353545"/>
+
+    <!-- Power button -->
+    <circle cx="100" cy="260" r="12" fill="#252535" stroke="#353545" stroke-width="2"/>
+    <circle cx="100" cy="260" r="6" fill="none" stroke="#00ffff" stroke-width="1.5" opacity="0.5"/>
+  </g>
+
+  <!-- Subtle corner accents -->
+  <g stroke="#00ffff" stroke-width="1" opacity="0.3">
+    <path d="M35 40 L35 50 M40 35 L50 35" fill="none"/>
+    <path d="M165 40 L165 50 M160 35 L150 35" fill="none"/>
+    <path d="M35 230 L35 220 M40 235 L50 235" fill="none"/>
+    <path d="M165 230 L165 220 M160 235 L150 235" fill="none"/>
+  </g>
+</svg>

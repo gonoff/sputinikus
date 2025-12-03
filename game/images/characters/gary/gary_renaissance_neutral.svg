@@ -1,0 +1,153 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 800">
+  <defs>
+    <linearGradient id="skinGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f5d0b5"/>
+      <stop offset="100%" style="stop-color:#e8b796"/>
+    </linearGradient>
+    <linearGradient id="hairGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#4a3728"/>
+      <stop offset="100%" style="stop-color:#2d1f16"/>
+    </linearGradient>
+    <linearGradient id="doubletGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#2c3e6e"/>
+      <stop offset="100%" style="stop-color:#1a2a4a"/>
+    </linearGradient>
+    <linearGradient id="sleeveGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#8b7355"/>
+      <stop offset="100%" style="stop-color:#6b5344"/>
+    </linearGradient>
+    <linearGradient id="hoseGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#6b5344"/>
+      <stop offset="100%" style="stop-color:#4a3728"/>
+    </linearGradient>
+    <linearGradient id="capGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#722f37"/>
+      <stop offset="100%" style="stop-color:#4a1f24"/>
+    </linearGradient>
+    <linearGradient id="silverTrim" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#c0c0c0"/>
+      <stop offset="50%" style="stop-color:#e8e8e8"/>
+      <stop offset="100%" style="stop-color:#a0a0a0"/>
+    </linearGradient>
+
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="2" dy="4" stdDeviation="3" flood-color="#000" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <!-- Doublet (body) -->
+  <g filter="url(#shadow)">
+    <path d="M130 300 Q100 330 95 400 L95 520 Q95 540 115 550 L285 550 Q305 540 305 520 L305 400 Q300 330 270 300 Z"
+          fill="url(#doubletGrad)"/>
+
+    <!-- Silver trim on doublet -->
+    <path d="M130 300 L200 560 L270 300" stroke="url(#silverTrim)" stroke-width="4" fill="none"/>
+    <path d="M95 400 L305 400" stroke="url(#silverTrim)" stroke-width="2" fill="none"/>
+
+    <!-- Buttons -->
+    <circle cx="200" cy="350" r="6" fill="url(#silverTrim)"/>
+    <circle cx="200" cy="400" r="6" fill="url(#silverTrim)"/>
+    <circle cx="200" cy="450" r="6" fill="url(#silverTrim)"/>
+    <circle cx="200" cy="500" r="6" fill="url(#silverTrim)"/>
+  </g>
+
+  <!-- Puffy sleeves -->
+  <g fill="url(#sleeveGrad)" filter="url(#shadow)">
+    <!-- Left sleeve -->
+    <ellipse cx="80" cy="380" rx="40" ry="60"/>
+    <!-- Right sleeve -->
+    <ellipse cx="320" cy="380" rx="40" ry="60"/>
+  </g>
+
+  <!-- Lower arms -->
+  <g fill="url(#doubletGrad)">
+    <path d="M60 420 Q50 480 60 540 L90 540 Q95 480 85 420 Z"/>
+    <path d="M340 420 Q350 480 340 540 L310 540 Q305 480 315 420 Z"/>
+  </g>
+
+  <!-- Collar (white ruff) -->
+  <g fill="#f5f5f0" stroke="#e0e0d8" stroke-width="1">
+    <ellipse cx="200" cy="290" rx="60" ry="20"/>
+    <!-- Ruff pleats -->
+    <path d="M145 290 Q150 280 160 290 Q170 280 180 290 Q190 280 200 290 Q210 280 220 290 Q230 280 240 290 Q250 280 255 290"
+          fill="none" stroke="#d0d0c8" stroke-width="2"/>
+  </g>
+
+  <!-- Neck -->
+  <rect x="175" y="250" width="50" height="50" fill="url(#skinGrad)" rx="5"/>
+
+  <!-- Head -->
+  <g filter="url(#shadow)">
+    <ellipse cx="200" cy="170" rx="70" ry="85" fill="url(#skinGrad)"/>
+  </g>
+
+  <!-- Scholar's cap -->
+  <g fill="url(#capGrad)" filter="url(#shadow)">
+    <ellipse cx="200" cy="100" rx="75" ry="25"/>
+    <path d="M125 100 Q125 60 200 50 Q275 60 275 100 Z"/>
+    <!-- Cap fold/drape -->
+    <path d="M260 85 Q280 70 275 100" fill="#5a2530"/>
+  </g>
+
+  <!-- Hair peeking out -->
+  <g fill="url(#hairGrad)">
+    <path d="M135 115 Q140 130 145 145 Q130 140 135 115"/>
+    <path d="M265 115 Q260 130 255 145 Q270 140 265 115"/>
+  </g>
+
+  <!-- Ears -->
+  <ellipse cx="130" cy="175" rx="12" ry="20" fill="url(#skinGrad)"/>
+  <ellipse cx="270" cy="175" rx="12" ry="20" fill="url(#skinGrad)"/>
+
+  <!-- Glasses (same style, he keeps them!) -->
+  <g fill="none" stroke="#1a1a2e" stroke-width="4">
+    <rect x="145" y="160" width="45" height="35" rx="5" fill="rgba(200,220,255,0.2)"/>
+    <rect x="210" y="160" width="45" height="35" rx="5" fill="rgba(200,220,255,0.2)"/>
+    <path d="M190 175 Q200 170 210 175"/>
+    <path d="M145 170 L130 165"/>
+    <path d="M255 170 L270 165"/>
+  </g>
+
+  <!-- Eyes -->
+  <g>
+    <ellipse cx="167" cy="177" rx="12" ry="10" fill="white"/>
+    <ellipse cx="232" cy="177" rx="12" ry="10" fill="white"/>
+    <circle cx="167" cy="177" r="6" fill="#4a3728"/>
+    <circle cx="232" cy="177" r="6" fill="#4a3728"/>
+    <circle cx="165" cy="175" r="2" fill="white"/>
+    <circle cx="230" cy="175" r="2" fill="white"/>
+  </g>
+
+  <!-- Eyebrows (neutral) -->
+  <path d="M150 150 Q167 145 185 150" stroke="#3d2a1d" stroke-width="3" fill="none"/>
+  <path d="M215 150 Q232 145 250 150" stroke="#3d2a1d" stroke-width="3" fill="none"/>
+
+  <!-- Nose -->
+  <path d="M200 185 Q195 205 200 215 Q205 220 200 220" stroke="#d4a984" stroke-width="2" fill="none"/>
+
+  <!-- Mouth (neutral) -->
+  <path d="M180 240 Q200 250 220 240" stroke="#c4846a" stroke-width="3" fill="none" stroke-linecap="round"/>
+
+  <!-- Hands -->
+  <g fill="url(#skinGrad)">
+    <ellipse cx="75" cy="555" rx="20" ry="25"/>
+    <ellipse cx="325" cy="555" rx="20" ry="25"/>
+  </g>
+
+  <!-- Hose (Renaissance pants) -->
+  <g fill="url(#hoseGrad)">
+    <!-- Left leg -->
+    <path d="M115 545 Q105 600 110 700 L110 780 L160 780 L175 700 Q180 600 175 545 Z"/>
+    <!-- Right leg -->
+    <path d="M225 545 Q220 600 225 700 L240 780 L290 780 L290 700 Q295 600 285 545 Z"/>
+  </g>
+
+  <!-- Simple leather shoes -->
+  <g fill="#3d2a1d">
+    <path d="M105 770 Q100 790 120 795 L165 795 Q175 790 175 770 Z"/>
+    <path d="M225 770 Q225 790 245 795 L290 795 Q300 790 295 770 Z"/>
+    <!-- Shoe buckles -->
+    <rect x="130" y="778" width="15" height="10" fill="url(#silverTrim)" rx="2"/>
+    <rect x="255" y="778" width="15" height="10" fill="url(#silverTrim)" rx="2"/>
+  </g>
+</svg>

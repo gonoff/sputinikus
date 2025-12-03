@@ -1,0 +1,211 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080">
+  <defs>
+    <!-- Sky gradient -->
+    <linearGradient id="skyGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#87ceeb"/>
+      <stop offset="100%" style="stop-color:#b8d4e8"/>
+    </linearGradient>
+
+    <!-- Building gradients -->
+    <linearGradient id="buildingWarm" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#d4a574"/>
+      <stop offset="100%" style="stop-color:#c89660"/>
+    </linearGradient>
+    <linearGradient id="buildingCool" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#c8a882"/>
+      <stop offset="100%" style="stop-color:#b89a72"/>
+    </linearGradient>
+    <linearGradient id="buildingShadow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#8a7052"/>
+      <stop offset="100%" style="stop-color:#9a8062"/>
+    </linearGradient>
+
+    <!-- Cobblestone pattern -->
+    <pattern id="cobblestone" x="0" y="0" width="60" height="40" patternUnits="userSpaceOnUse">
+      <rect width="60" height="40" fill="#8a7a6a"/>
+      <ellipse cx="15" cy="10" rx="12" ry="8" fill="#7a6a5a"/>
+      <ellipse cx="45" cy="10" rx="12" ry="8" fill="#9a8a7a"/>
+      <ellipse cx="30" cy="30" rx="12" ry="8" fill="#8a7a6a"/>
+      <ellipse cx="0" cy="30" rx="12" ry="8" fill="#7a6a5a"/>
+      <ellipse cx="60" cy="30" rx="12" ry="8" fill="#7a6a5a"/>
+    </pattern>
+
+    <!-- Awning stripes -->
+    <pattern id="awningStripe" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+      <rect width="10" height="20" fill="#c41e3a"/>
+      <rect x="10" width="10" height="20" fill="#f5f0e0"/>
+    </pattern>
+
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="5" dy="8" stdDeviation="5" flood-color="#000" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <!-- Sky -->
+  <rect width="1920" height="500" fill="url(#skyGrad)"/>
+
+  <!-- Distant buildings/skyline -->
+  <g fill="#b8a890" opacity="0.7">
+    <rect x="0" y="150" width="200" height="350"/>
+    <rect x="220" y="180" width="150" height="320"/>
+    <rect x="400" y="120" width="180" height="380"/>
+    <rect x="1400" y="140" width="200" height="360"/>
+    <rect x="1620" y="170" width="180" height="330"/>
+    <rect x="1820" y="130" width="100" height="370"/>
+    <!-- Church dome in distance -->
+    <ellipse cx="960" cy="200" rx="120" ry="80"/>
+    <rect x="900" y="200" width="120" height="150"/>
+  </g>
+
+  <!-- Main left building -->
+  <g filter="url(#shadow)">
+    <rect x="-50" y="100" width="450" height="980" fill="url(#buildingWarm)"/>
+    <!-- Windows -->
+    <g fill="#4a3a2a">
+      <rect x="50" y="150" width="80" height="120" rx="5"/>
+      <rect x="180" y="150" width="80" height="120" rx="5"/>
+      <rect x="310" y="150" width="80" height="120" rx="5"/>
+      <rect x="50" y="320" width="80" height="120" rx="5"/>
+      <rect x="180" y="320" width="80" height="120" rx="5"/>
+      <rect x="310" y="320" width="80" height="120" rx="5"/>
+    </g>
+    <!-- Window shutters -->
+    <g fill="#2e5a4a">
+      <rect x="35" y="150" width="15" height="120"/>
+      <rect x="130" y="150" width="15" height="120"/>
+      <rect x="165" y="150" width="15" height="120"/>
+      <rect x="260" y="150" width="15" height="120"/>
+    </g>
+    <!-- Overhanging upper floor -->
+    <rect x="-50" y="480" width="500" height="600" fill="url(#buildingShadow)"/>
+    <rect x="-50" y="475" width="500" height="20" fill="#6a5a4a"/>
+
+    <!-- Ground floor shop -->
+    <rect x="50" y="700" width="300" height="380" fill="#3a2a1a"/>
+    <!-- Shop awning -->
+    <path d="M40 700 L360 700 L380 750 L20 750 Z" fill="url(#awningStripe)"/>
+    <!-- Goods on display -->
+    <g fill="#c9a227">
+      <circle cx="120" cy="820" r="25"/>
+      <circle cx="180" cy="830" r="20"/>
+      <circle cx="240" cy="815" r="28"/>
+      <circle cx="300" cy="825" r="22"/>
+    </g>
+  </g>
+
+  <!-- Main right building -->
+  <g filter="url(#shadow)">
+    <rect x="1520" y="80" width="450" height="1000" fill="url(#buildingCool)"/>
+    <!-- Windows -->
+    <g fill="#4a3a2a">
+      <rect x="1560" y="130" width="70" height="100" rx="5"/>
+      <rect x="1680" y="130" width="70" height="100" rx="5"/>
+      <rect x="1800" y="130" width="70" height="100" rx="5"/>
+      <rect x="1560" y="280" width="70" height="100" rx="5"/>
+      <rect x="1680" y="280" width="70" height="100" rx="5"/>
+    </g>
+    <!-- Overhanging floor -->
+    <rect x="1470" y="450" width="500" height="630" fill="#a8947a"/>
+    <rect x="1470" y="445" width="500" height="20" fill="#6a5a4a"/>
+
+    <!-- Shop front -->
+    <rect x="1550" y="680" width="280" height="400" fill="#2a1a10"/>
+    <!-- Blue awning -->
+    <path d="M1540 680 L1840 680 L1860 730 L1520 730 Z" fill="#2c3e6e"/>
+  </g>
+
+  <!-- Center background building -->
+  <g>
+    <rect x="600" y="200" width="700" height="400" fill="#c8b898"/>
+    <!-- Arched windows -->
+    <g fill="#5a4a3a">
+      <path d="M700 250 L700 380 Q750 400 800 380 L800 250 Q750 230 700 250"/>
+      <path d="M900 250 L900 380 Q950 400 1000 380 L1000 250 Q950 230 900 250"/>
+      <path d="M1100 250 L1100 380 Q1150 400 1200 380 L1200 250 Q1150 230 1100 250"/>
+    </g>
+  </g>
+
+  <!-- Street/ground -->
+  <rect x="0" y="650" width="1920" height="430" fill="url(#cobblestone)"/>
+
+  <!-- Ground shadow from buildings -->
+  <rect x="0" y="650" width="500" height="430" fill="rgba(0,0,0,0.2)"/>
+  <rect x="1450" y="650" width="470" height="430" fill="rgba(0,0,0,0.15)"/>
+
+  <!-- Market stalls -->
+  <!-- Left stall -->
+  <g filter="url(#shadow)">
+    <rect x="500" y="750" width="200" height="150" fill="#8b5a2b"/>
+    <path d="M480 750 L720 750 L700 700 L500 700 Z" fill="#c41e3a"/>
+    <!-- Produce -->
+    <g>
+      <circle cx="540" cy="800" r="20" fill="#e74c3c"/>
+      <circle cx="580" cy="810" r="18" fill="#e74c3c"/>
+      <circle cx="620" cy="795" r="22" fill="#f39c12"/>
+      <circle cx="660" cy="805" r="19" fill="#f39c12"/>
+    </g>
+  </g>
+
+  <!-- Center stall -->
+  <g filter="url(#shadow)">
+    <rect x="850" y="780" width="220" height="130" fill="#6b4423"/>
+    <path d="M830 780 L1090 780 L1070 720 L850 720 Z" fill="#2e5a4a"/>
+    <!-- Cloth goods -->
+    <g>
+      <rect x="870" y="810" width="40" height="60" fill="#8b2942" rx="3"/>
+      <rect x="920" y="815" width="35" height="55" fill="#2c3e6e" rx="3"/>
+      <rect x="965" y="805" width="45" height="65" fill="#c9a227" rx="3"/>
+      <rect x="1020" y="812" width="38" height="58" fill="#4a6040" rx="3"/>
+    </g>
+  </g>
+
+  <!-- Right stall -->
+  <g filter="url(#shadow)">
+    <rect x="1200" y="760" width="180" height="140" fill="#5d4e37"/>
+    <path d="M1180 760 L1400 760 L1380 700 L1200 700 Z" fill="#f5f0e0"/>
+    <!-- Pottery -->
+    <g fill="#c9a060">
+      <ellipse cx="1250" cy="820" rx="25" ry="35"/>
+      <ellipse cx="1310" cy="830" rx="20" ry="30"/>
+      <ellipse cx="1360" cy="815" rx="22" ry="32"/>
+    </g>
+  </g>
+
+  <!-- Laundry lines between buildings -->
+  <g stroke="#8a7a6a" stroke-width="2" fill="none">
+    <path d="M400 400 Q960 420 1520 380"/>
+    <path d="M400 450 Q960 480 1520 440"/>
+  </g>
+  <!-- Hanging laundry -->
+  <g>
+    <rect x="500" y="405" width="40" height="50" fill="#f5f0e0" transform="rotate(5 520 430)"/>
+    <rect x="700" y="415" width="35" height="45" fill="#c41e3a" transform="rotate(-3 717 437)"/>
+    <rect x="900" y="425" width="45" height="55" fill="#f5f0e0" transform="rotate(8 922 452)"/>
+    <rect x="1100" y="410" width="38" height="48" fill="#2c3e6e" transform="rotate(-5 1119 434)"/>
+    <rect x="1300" y="395" width="42" height="52" fill="#f5f0e0" transform="rotate(4 1321 421)"/>
+  </g>
+
+  <!-- Signs hanging from buildings -->
+  <g>
+    <!-- Bakery sign (bread shape) -->
+    <ellipse cx="250" cy="670" rx="40" ry="25" fill="#c9a060" filter="url(#shadow)"/>
+    <!-- Tavern sign -->
+    <rect x="1600" y="640" width="60" height="50" fill="#5d4e37" filter="url(#shadow)"/>
+    <circle cx="1630" cy="665" r="15" fill="#c9a227"/>
+  </g>
+
+  <!-- Ambient details -->
+  <!-- Birds in sky -->
+  <g fill="none" stroke="#4a4a4a" stroke-width="2">
+    <path d="M300 100 Q310 90 320 100 Q330 90 340 100"/>
+    <path d="M1500 150 Q1510 140 1520 150 Q1530 140 1540 150"/>
+    <path d="M800 80 Q810 70 820 80"/>
+  </g>
+
+  <!-- Sun glow effect -->
+  <circle cx="1600" cy="100" r="80" fill="#fff5e0" opacity="0.4"/>
+  <circle cx="1600" cy="100" r="40" fill="#fffaf0" opacity="0.6"/>
+
+  <!-- Atmosphere/haze at horizon -->
+  <rect x="0" y="400" width="1920" height="100" fill="url(#skyGrad)" opacity="0.3"/>
+</svg>

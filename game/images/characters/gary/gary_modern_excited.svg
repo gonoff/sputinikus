@@ -1,0 +1,128 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 800">
+  <defs>
+    <!-- Gradients (same as neutral) -->
+    <linearGradient id="skinGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f5d0b5"/>
+      <stop offset="100%" style="stop-color:#e8b796"/>
+    </linearGradient>
+    <linearGradient id="hairGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#4a3728"/>
+      <stop offset="100%" style="stop-color:#2d1f16"/>
+    </linearGradient>
+    <linearGradient id="hoodieGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#4a5568"/>
+      <stop offset="100%" style="stop-color:#2d3748"/>
+    </linearGradient>
+    <linearGradient id="jeansGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#3b5998"/>
+      <stop offset="100%" style="stop-color:#2d4373"/>
+    </linearGradient>
+    <linearGradient id="glassesGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#1a1a2e"/>
+      <stop offset="100%" style="stop-color:#16213e"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="2" dy="4" stdDeviation="3" flood-color="#000" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <!-- Body/Hoodie (SAME AS NEUTRAL) -->
+  <g filter="url(#shadow)">
+    <path d="M140 320 Q120 340 110 400 L110 580 Q110 600 130 610 L270 610 Q290 600 290 580 L290 400 Q280 340 260 320 Z"
+          fill="url(#hoodieGrad)"/>
+    <path d="M150 480 L250 480 L250 540 Q200 560 150 540 Z" fill="#3d4654" opacity="0.7"/>
+    <path d="M175 340 L175 400" stroke="#2d3748" stroke-width="3" fill="none"/>
+    <path d="M225 340 L225 400" stroke="#2d3748" stroke-width="3" fill="none"/>
+    <circle cx="175" cy="405" r="5" fill="#2d3748"/>
+    <circle cx="225" cy="405" r="5" fill="#2d3748"/>
+    <ellipse cx="200" cy="280" rx="85" ry="60" fill="#3d4654"/>
+  </g>
+
+  <!-- Neck -->
+  <rect x="175" y="260" width="50" height="70" fill="url(#skinGrad)" rx="5"/>
+
+  <!-- Head -->
+  <g filter="url(#shadow)">
+    <ellipse cx="200" cy="180" rx="70" ry="85" fill="url(#skinGrad)"/>
+  </g>
+
+  <!-- Hair (SAME AS NEUTRAL) -->
+  <g fill="url(#hairGrad)">
+    <ellipse cx="200" cy="115" rx="65" ry="40"/>
+    <path d="M140 130 Q130 100 150 90 Q170 85 180 95 Q190 80 210 85 Q230 80 245 95 Q260 90 270 110 Q275 130 260 140 Q200 150 140 130 Z"/>
+    <path d="M145 120 Q135 100 155 95" fill="none" stroke="url(#hairGrad)" stroke-width="8" stroke-linecap="round"/>
+    <path d="M255 120 Q265 100 250 90" fill="none" stroke="url(#hairGrad)" stroke-width="8" stroke-linecap="round"/>
+    <path d="M190 95 Q185 75 200 80" fill="none" stroke="url(#hairGrad)" stroke-width="6" stroke-linecap="round"/>
+  </g>
+
+  <!-- Ears -->
+  <ellipse cx="130" cy="180" rx="12" ry="20" fill="url(#skinGrad)"/>
+  <ellipse cx="270" cy="180" rx="12" ry="20" fill="url(#skinGrad)"/>
+
+  <!-- Glasses (SAME AS NEUTRAL) -->
+  <g fill="none" stroke="url(#glassesGrad)" stroke-width="4">
+    <rect x="145" y="165" width="45" height="35" rx="5" fill="rgba(200,220,255,0.2)"/>
+    <rect x="210" y="165" width="45" height="35" rx="5" fill="rgba(200,220,255,0.2)"/>
+    <path d="M190 180 Q200 175 210 180"/>
+    <path d="M145 175 L130 170"/>
+    <path d="M255 175 L270 170"/>
+  </g>
+
+  <!-- EYES - EXCITED (wider, sparkly) -->
+  <g>
+    <ellipse cx="167" cy="182" rx="14" ry="12" fill="white"/>
+    <ellipse cx="232" cy="182" rx="14" ry="12" fill="white"/>
+    <circle cx="167" cy="182" r="7" fill="#4a3728"/>
+    <circle cx="232" cy="182" r="7" fill="#4a3728"/>
+    <!-- Smaller pupils (excitement) -->
+    <circle cx="167" cy="182" r="3" fill="#1a1a1a"/>
+    <circle cx="232" cy="182" r="3" fill="#1a1a1a"/>
+    <!-- Multiple sparkles! -->
+    <circle cx="164" cy="179" r="2.5" fill="white"/>
+    <circle cx="170" cy="185" r="1.5" fill="white"/>
+    <circle cx="229" cy="179" r="2.5" fill="white"/>
+    <circle cx="235" cy="185" r="1.5" fill="white"/>
+  </g>
+
+  <!-- EYEBROWS - EXCITED (raised high) -->
+  <path d="M150 148 Q167 140 185 148" stroke="#3d2a1d" stroke-width="3" fill="none"/>
+  <path d="M215 148 Q232 140 250 148" stroke="#3d2a1d" stroke-width="3" fill="none"/>
+
+  <!-- Nose (SAME) -->
+  <path d="M200 190 Q195 210 200 220 Q205 225 200 225" stroke="#d4a984" stroke-width="2" fill="none"/>
+
+  <!-- MOUTH - EXCITED (big open smile) -->
+  <path d="M175 240 Q200 265 225 240" stroke="#c4846a" stroke-width="3" fill="#8b4040" stroke-linecap="round"/>
+  <!-- Teeth showing -->
+  <path d="M180 245 L220 245" stroke="white" stroke-width="6" stroke-linecap="round"/>
+
+  <!-- Slight blush (excitement) -->
+  <ellipse cx="145" cy="210" rx="15" ry="8" fill="#ffb8b8" opacity="0.4"/>
+  <ellipse cx="255" cy="210" rx="15" ry="8" fill="#ffb8b8" opacity="0.4"/>
+
+  <!-- Arms (SAME AS NEUTRAL) -->
+  <g fill="url(#hoodieGrad)">
+    <path d="M110 340 Q80 380 70 450 Q65 500 80 540 L100 540 Q110 500 105 450 Q110 400 120 370 Z"/>
+    <path d="M290 340 Q320 380 330 450 Q335 500 320 540 L300 540 Q290 500 295 450 Q290 400 280 370 Z"/>
+  </g>
+
+  <!-- Hands -->
+  <g fill="url(#skinGrad)">
+    <ellipse cx="85" cy="555" rx="20" ry="25"/>
+    <ellipse cx="315" cy="555" rx="20" ry="25"/>
+  </g>
+
+  <!-- Jeans (SAME) -->
+  <g fill="url(#jeansGrad)">
+    <path d="M130 600 L120 780 L170 780 L175 600 Z"/>
+    <path d="M225 600 L230 780 L280 780 L270 600 Z"/>
+  </g>
+
+  <!-- Sneakers (SAME) -->
+  <g>
+    <path d="M115 770 L115 795 Q140 800 175 795 L175 770 Z" fill="#f0f0f0"/>
+    <path d="M225 770 L225 795 Q255 800 285 795 L285 770 Z" fill="#f0f0f0"/>
+    <path d="M115 780 L175 780" stroke="#e0e0e0" stroke-width="2"/>
+    <path d="M225 780 L285 780" stroke="#e0e0e0" stroke-width="2"/>
+  </g>
+</svg>
