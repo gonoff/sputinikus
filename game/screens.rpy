@@ -27,10 +27,14 @@ style gui_text:
     size 24
 
 style button:
-    properties gui.button_properties("button")
+    xpadding 20
+    ypadding 10
 
 style button_text is gui_text:
-    properties gui.button_text_properties("button")
+    idle_color "#8b7355"
+    hover_color "#ffd700"
+    selected_color "#c9a227"
+    insensitive_color "#4a4a4a"
 
 style label_text is gui_text:
     color "#ffd700"
@@ -487,7 +491,7 @@ screen file_slots(title):
                 spacing 25
 
                 textbutton _("<") action FilePagePrevious()
-                text "{}" format page_name_value.get_text()
+                text "[page_name_value!t]"
                 textbutton _(">") action FilePageNext()
 
 style slot_button is gui_button

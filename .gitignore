@@ -1,0 +1,32 @@
+# Ren'Py SDK (downloaded separately)
+renpy-*/
+
+# Ren'Py cache and compiled files
+game/cache/
+game/saves/
+game/*.rpyc
+game/**/*.rpyc
+
+# Build outputs
+build/
+dist/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor/IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs
+log.txt
+traceback.txt
+errors.txt

@@ -7,7 +7,7 @@ import os
 import cairosvg
 from pathlib import Path
 
-BASE_PATH = Path("/workspaces/sputinikus/game/images")
+BASE_PATH = Path(__file__).parent / "game" / "images"
 
 # Output dimensions by type
 DIMENSIONS = {
