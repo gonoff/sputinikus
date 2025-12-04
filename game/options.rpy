@@ -45,6 +45,10 @@ define config.has_voice = False
 
 define config.main_menu_music = None  # Add later: "audio/music/main_theme.ogg"
 
+## Voice blip channel for Animal Crossing style speech
+init -10 python:
+    renpy.music.register_channel("voice_blip", mixer="sfx", loop=True, tight=True)
+
 ## Text display
 define config.default_text_cps = 30  # Characters per second
 define gui.text_size = 28
@@ -115,6 +119,11 @@ init python:
     build.classify('**.svg', None)  # Don't include SVG source files
     build.classify('**.rpy', None)  # Don't include script source
     build.classify('**.rpyc', 'all')  # Only compiled scripts
+
+    # Audio assets - explicitly include in all builds
+    build.classify('game/audio/**.ogg', 'all')
+    build.classify('game/audio/**.mp3', 'all')
+    build.classify('game/audio/**.wav', 'all')
 
     # Documentation
     build.documentation('*.html')

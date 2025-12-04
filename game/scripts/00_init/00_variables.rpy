@@ -3,7 +3,59 @@
 # All variables that track player choices and game state
 ###############################################################################
 
-init python:
+init -5 python:
+    import random
+
+    ###########################################################################
+    # VOICE BLIP SYSTEM - Animal Crossing style gibberish speech
+    ###########################################################################
+
+    # Map character names to their voice blip files
+    VOICE_BLIPS = {
+        "Gary": "audio/voice/voice_gary.ogg",
+        "ARIA": "audio/voice/voice_aria.ogg",
+        "Leonardo da Vinci": "audio/voice/voice_leonardo.ogg",
+        "Lorenzo de' Medici": "audio/voice/voice_lorenzo.ogg",
+        "Pope Julius II": "audio/voice/voice_pope.ogg",
+        # Use shared voices for characters without specific blips
+        "Benedetto": "audio/voice/voice_gary.ogg",
+        "Pietro": "audio/voice/voice_gary.ogg",
+        "Lorenzo Capponi": "audio/voice/voice_lorenzo.ogg",
+        "Francesco Guicciardini": "audio/voice/voice_savonarola.ogg",
+        "Giuliano de' Medici": "audio/voice/voice_lorenzo.ogg",
+        "Michelangelo": "audio/voice/voice_leonardo.ogg",
+        "Maestro Sangallo": "audio/voice/voice_leonardo.ogg",
+        "Machiavelli": "audio/voice/voice_savonarola.ogg",
+        "Cardinal della Rovere": "audio/voice/voice_pope.ogg",
+        "Bramante": "audio/voice/voice_leonardo.ogg",
+        "Franco": "audio/voice/voice_gary.ogg",
+        "Maestro Roberto": "audio/voice/voice_leonardo.ogg",
+        "Francesco Soderini": "audio/voice/voice_lorenzo.ogg",
+        "Inquisitor": "audio/voice/voice_savonarola.ogg",
+        "???": "audio/voice/voice_gary.ogg",
+    }
+
+    # Current speaking character for blip system
+    current_speaker = None
+
+    def voice_blip_callback(event, interact=True, **kwargs):
+        """
+        Character callback that plays looping voice blips while text displays.
+        Uses cb_data to identify which character is speaking.
+        """
+        global current_speaker
+        if event == "begin":
+            # cb_data="X" becomes just "data" in kwargs (cb_ prefix is stripped by Ren'Py)
+            who = kwargs.get("data", None)
+            if who and who in VOICE_BLIPS:
+                current_speaker = who
+                # Play looping blip sound while character speaks
+                renpy.music.play(VOICE_BLIPS[who], channel="voice_blip", loop=True, fadein=0.0)
+        elif event == "slow_done":
+            # Stop when text animation finishes, not when player clicks
+            current_speaker = None
+            renpy.music.stop(channel="voice_blip", fadeout=0.1)
+
     def calculate_ending():
         """Determines which ending the player gets based on accumulated choices."""
 

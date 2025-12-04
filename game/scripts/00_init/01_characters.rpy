@@ -12,7 +12,10 @@ define gary = Character(
     "Gary",
     who_color="#4A90D9",
     who_bold=True,
-    image="gary"
+    image="gary",
+    callback=voice_blip_callback,
+    cb_data="Gary",
+    what_slow_cps=30
 )
 
 # ARIA - AI Device
@@ -23,7 +26,10 @@ define aria = Character(
     who_italic=True,
     what_prefix="[[",
     what_suffix="]]",
-    image="aria"
+    image="aria",
+    callback=voice_blip_callback,
+    cb_data="ARIA",
+    what_slow_cps=30
 )
 
 ###############################################################################
@@ -34,28 +40,40 @@ define aria = Character(
 define benedetto = Character(
     "Benedetto",
     who_color="#8B4513",
-    image="benedetto"
+    image="benedetto",
+    callback=voice_blip_callback,
+    cb_data="Benedetto",
+    what_slow_cps=30
 )
 
 # Pietro - Cart driver who first helps Gary
 define pietro = Character(
     "Pietro",
     who_color="#654321",
-    image="pietro"
+    image="pietro",
+    callback=voice_blip_callback,
+    cb_data="Pietro",
+    what_slow_cps=30
 )
 
 # Lorenzo Capponi - Wealthy Florentine banker
 define capponi = Character(
     "Lorenzo Capponi",
     who_color="#FFD700",
-    image="capponi"
+    image="capponi",
+    callback=voice_blip_callback,
+    cb_data="Lorenzo Capponi",
+    what_slow_cps=30
 )
 
 # Francesco Guicciardini - Intelligence official
 define guicciardini = Character(
     "Francesco Guicciardini",
     who_color="#800000",
-    image="guicciardini"
+    image="guicciardini",
+    callback=voice_blip_callback,
+    cb_data="Francesco Guicciardini",
+    what_slow_cps=30
 )
 
 # Lorenzo de' Medici - Unofficial ruler of Florence
@@ -63,14 +81,20 @@ define lorenzo = Character(
     "Lorenzo de' Medici",
     who_color="#4B0082",
     who_bold=True,
-    image="lorenzo_medici"
+    image="lorenzo_medici",
+    callback=voice_blip_callback,
+    cb_data="Lorenzo de' Medici",
+    what_slow_cps=30
 )
 
 # Giuliano de' Medici - Lorenzo's brother
 define giuliano_medici = Character(
     "Giuliano de' Medici",
     who_color="#6B238E",
-    image="giuliano_medici"
+    image="giuliano_medici",
+    callback=voice_blip_callback,
+    cb_data="Giuliano de' Medici",
+    what_slow_cps=30
 )
 
 ###############################################################################
@@ -82,28 +106,40 @@ define leonardo = Character(
     "Leonardo da Vinci",
     who_color="#2E8B57",
     who_bold=True,
-    image="leonardo"
+    image="leonardo",
+    callback=voice_blip_callback,
+    cb_data="Leonardo da Vinci",
+    what_slow_cps=30
 )
 
 # Michelangelo - Sculptor
 define michelangelo = Character(
     "Michelangelo",
     who_color="#483D8B",
-    image="michelangelo"
+    image="michelangelo",
+    callback=voice_blip_callback,
+    cb_data="Michelangelo",
+    what_slow_cps=30
 )
 
 # Giuliano da Sangallo - Chief architect
 define sangallo = Character(
     "Maestro Sangallo",
     who_color="#696969",
-    image="sangallo"
+    image="sangallo",
+    callback=voice_blip_callback,
+    cb_data="Maestro Sangallo",
+    what_slow_cps=30
 )
 
 # Niccolò Machiavelli - Political thinker
 define machiavelli = Character(
     "Machiavelli",
     who_color="#2F4F4F",
-    image="machiavelli"
+    image="machiavelli",
+    callback=voice_blip_callback,
+    cb_data="Machiavelli",
+    what_slow_cps=30
 )
 
 ###############################################################################
@@ -116,21 +152,30 @@ define pope = Character(
     who_color="#FFFFFF",
     who_bold=True,
     what_color="#F5F5DC",
-    image="pope_julius"
+    image="pope_julius",
+    callback=voice_blip_callback,
+    cb_data="Pope Julius II",
+    what_slow_cps=30
 )
 
 # Cardinal Giuliano della Rovere
 define cardinal = Character(
     "Cardinal della Rovere",
     who_color="#8B0000",
-    image="cardinal"
+    image="cardinal",
+    callback=voice_blip_callback,
+    cb_data="Cardinal della Rovere",
+    what_slow_cps=30
 )
 
 # Donato Bramante - Chief architect of St. Peter's
 define bramante = Character(
     "Bramante",
     who_color="#A0522D",
-    image="bramante"
+    image="bramante",
+    callback=voice_blip_callback,
+    cb_data="Bramante",
+    what_slow_cps=30
 )
 
 ###############################################################################
@@ -140,26 +185,38 @@ define bramante = Character(
 # Franco - Carpenter neighbor
 define franco = Character(
     "Franco",
-    who_color="#8B7355"
+    who_color="#8B7355",
+    callback=voice_blip_callback,
+    cb_data="Franco",
+    what_slow_cps=30
 )
 
 # Roberto - Engineer
 define roberto = Character(
     "Maestro Roberto",
-    who_color="#5F5F5F"
+    who_color="#5F5F5F",
+    callback=voice_blip_callback,
+    cb_data="Maestro Roberto",
+    what_slow_cps=30
 )
 
 # Francesco Soderini - Banker
 define soderini = Character(
     "Francesco Soderini",
-    who_color="#B8860B"
+    who_color="#B8860B",
+    callback=voice_blip_callback,
+    cb_data="Francesco Soderini",
+    what_slow_cps=30
 )
 
 # Inquisitor - unnamed threat
 define inquisitor = Character(
     "Inquisitor",
     who_color="#2F2F2F",
-    what_italic=True
+    what_italic=True,
+    callback=voice_blip_callback,
+    cb_data="Inquisitor",
+    what_slow_cps=30
 )
 
 ###############################################################################
@@ -196,7 +253,10 @@ define thoughts = Character(
 # Unknown speaker
 define unknown = Character(
     "???",
-    who_color="#666666"
+    who_color="#666666",
+    callback=voice_blip_callback,
+    cb_data="???",
+    what_slow_cps=30
 )
 
 ###############################################################################
