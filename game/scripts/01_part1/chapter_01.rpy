@@ -369,7 +369,7 @@ label chapter_3:
 
     narrator "When the chaos finally stops, Gary finds himself face-down in something that smells organic, earthy, and definitely not pleasant."
 
-    show gary renaissance neutral at center_pos with dissolve
+    show gary modern neutral at center_pos with dissolve
 
     gary "Oh good. I've time-traveled into a sewer."
 
@@ -411,7 +411,7 @@ label chapter_3:
 
     scene bg florence_market_day with fade
 
-    show gary renaissance neutral at center_pos with dissolve
+    show gary modern neutral at center_pos with dissolve
     show aria neutral at aria_pos
 
     narrator "The first thing that hits him is the smell—not bad exactly, but intensely organic and alive."
@@ -426,7 +426,7 @@ label chapter_3:
 
     narrator "Men in tunics and hose, women in long dresses with elaborate headpieces, children in smaller versions of adult clothes."
 
-    show gary renaissance neutral
+    show gary modern neutral
 
     gary "This is incredible."
 
@@ -538,7 +538,7 @@ label chapter_4:
 
     scene bg florence_market_day with fade
 
-    show gary renaissance neutral at right_pos
+    show gary modern neutral at right_pos
     show pietro neutral at left_pos
     show aria neutral at aria_pos
 
@@ -558,7 +558,7 @@ label chapter_4:
 
     scene bg benedetto_shop_ext with fade
 
-    show gary renaissance neutral at right_pos
+    show gary modern neutral at right_pos
     show pietro neutral at left_pos
     show aria neutral at aria_pos
 
@@ -575,7 +575,7 @@ label chapter_4:
     scene bg benedetto_shop with fade
 
     show benedetto neutral at center_pos with dissolve
-    show gary renaissance neutral at right_pos
+    show gary modern neutral at right_pos
     show aria neutral at aria_pos
 
     with dissolve
