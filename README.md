@@ -14,6 +14,7 @@ Gary Sputnik stumbles upon a time travel device while burying his goldfish. Arme
 - 7 distinct endings
 - Full branching narrative with compounding choices
 - Meet historical Renaissance figures
+- Custom Renaissance-themed GUI with gold accents
 - Visual novel style with backgrounds and character sprites
 
 ## Endings
@@ -28,58 +29,129 @@ Gary Sputnik stumbles upon a time travel device while burying his goldfish. Arme
 | Paradox | Timeline fractures |
 | Early Return | Fled before making impact |
 
-## Project Structure
+## Running the Game
 
+### Requirements
+
+- [Ren'Py SDK](https://www.renpy.org/latest.html) (version 8.x recommended)
+
+### Quick Start
+
+1. **Download Ren'Py SDK** from https://www.renpy.org/latest.html
+2. **Clone this repository:**
+   ```bash
+   git clone https://github.com/YOUR_USERNAME/sputinikus.git
+   ```
+3. **Open Ren'Py Launcher**
+4. **Add project directory:**
+   - Click "preferences" in the launcher
+   - Add the path to your cloned `sputinikus` folder
+5. **Launch the game:**
+   - Select "The Chronicler's Device" from the projects list
+   - Click "Launch Project"
+
+### Alternative: Command Line
+
+If you have Ren'Py installed and in your PATH:
+
+```bash
+# Linux/Mac
+renpy.sh /path/to/sputinikus
+
+# Windows
+renpy.exe C:\path\to\sputinikus
 ```
-game/                    # Ren'Py game files
-├── scripts/             # Story scripts (.rpy)
-│   ├── 00_init/         # Variables, characters
-│   ├── part1-3/         # Chapter scripts
-│   ├── endings/         # 7 ending scripts
-│   └── branches/        # Branch variations
-├── images/              # Backgrounds, sprites, CGs
-└── audio/               # Music and sound effects
 
-docs/                    # Documentation
-├── DESIGN_DOCUMENT.md   # Full game design doc
+### Building Distributions
 
-gary_renaissance_*.md    # Source story (3 parts)
+**Desktop (Windows/Mac/Linux):**
 ```
-
-## Development
-
-### Engine
-- **Ren'Py** (Python-based visual novel engine)
-
-### Current Status
-- [x] Project structure
-- [x] Variable system
-- [x] Character definitions
-- [x] Placeholder images
-- [ ] Chapter scripts (in progress)
-- [ ] Real artwork
-- [ ] Audio
-
-### Testing
-
-This project is developed in GitHub Codespaces. Since Ren'Py requires a GUI:
-
-1. Clone locally
-2. Download [Ren'Py SDK](https://www.renpy.org/latest.html)
-3. Open project in Ren'Py launcher
-4. Click "Launch Project"
-
-### Building
-
-**Desktop:**
-```
-Ren'Py Launcher → Build Distributions
+Ren'Py Launcher → Build Distributions → Select platforms → Build
 ```
 
 **Android APK:**
 ```
 Ren'Py Launcher → Android → Build Package
 ```
+
+## Project Structure
+
+```
+game/                    # Ren'Py game files
+├── gui.rpy              # GUI configuration
+├── screens.rpy          # Custom screen definitions
+├── options.rpy          # Game options
+├── script.rpy           # Main entry point
+├── gui/                 # GUI assets (PNG)
+│   ├── main_menu_bg.png # Renaissance night sky background
+│   ├── logo.png         # Gold game title
+│   ├── textbox.png      # Dialog box
+│   ├── namebox.png      # Character name box
+│   ├── button_*.png     # Menu buttons
+│   ├── choice_*.png     # Choice buttons
+│   ├── frame.png        # Menu frame
+│   ├── bar/             # Slider assets
+│   └── scrollbar/       # Scrollbar assets
+├── scripts/             # Story scripts (.rpy)
+│   ├── 00_init/         # Variables, characters
+│   ├── 01_part1/        # Chapters 1-6
+│   ├── 02_part2/        # Chapters 7-11
+│   ├── 03_part3/        # Chapters 12-16
+│   └── 04_endings/      # 7 ending scripts
+├── images/              # Backgrounds, sprites, CGs
+│   ├── backgrounds/     # 23 scene backgrounds
+│   ├── characters/      # Character sprites
+│   └── cg/              # 12 CG event images
+└── audio/               # Music and sound effects
+    └── AUDIO_MANIFEST.md # Audio requirements
+
+docs/                    # Documentation
+└── DESIGN_DOCUMENT.md   # Full game design doc
+
+gary_renaissance_*.md    # Source story (3 parts)
+convert_svg_to_png.py    # Asset conversion script
+convert_gui_svg.py       # GUI asset conversion
+```
+
+## Visual Style
+
+The game features a custom Renaissance-themed GUI:
+
+- **Color Palette:** Deep purples, golds, and bronze
+- **Main Menu:** Florence skyline at night with time vortex effect
+- **Dialog Box:** Parchment-style with ornate gold corners
+- **Buttons:** Gold glow on hover
+- **Typography:** Clean sans-serif with gold accents for names
+
+## Development
+
+### Asset Pipeline
+
+All artwork is created as SVG and converted to PNG:
+
+```bash
+# Convert character/background SVGs
+python convert_svg_to_png.py
+
+# Convert GUI SVGs
+python convert_gui_svg.py
+```
+
+### Current Status
+
+- [x] Project structure
+- [x] Variable system
+- [x] Character definitions (24 characters)
+- [x] All backgrounds (23 scenes)
+- [x] All character sprites (18 sprites)
+- [x] All CG images (12 event illustrations)
+- [x] Custom GUI (Renaissance theme)
+- [x] Part 1 scripts (Chapters 1-6)
+- [x] Part 2 scripts (Chapters 7-11)
+- [x] Part 3 scripts (Chapters 12-16)
+- [x] All 7 endings
+- [ ] Audio (music and sound effects)
+- [ ] Additional character expressions
 
 ## License
 

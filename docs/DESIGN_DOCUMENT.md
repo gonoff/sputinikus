@@ -93,6 +93,22 @@ SVG artwork → cairosvg library → PNG (Ren'Py compatible)
 | Part 3 | 12-16 | **COMPLETE** - The Legend of Gary |
 | Endings | 7 endings | **COMPLETE** - All 7 endings written |
 
+### GUI Status
+
+| Asset | File | Status |
+|-------|------|--------|
+| Main Menu Background | `gui/main_menu_bg.png` | **COMPLETE** - Florence skyline with time vortex |
+| Game Logo | `gui/logo.png` | **COMPLETE** - Gold title with cyan accents |
+| Dialog Textbox | `gui/textbox.png` | **COMPLETE** - Parchment style with gold corners |
+| Name Box | `gui/namebox.png` | **COMPLETE** - Gold-bordered tab |
+| Menu Buttons | `gui/button_*.png` | **COMPLETE** - Idle and hover states |
+| Choice Buttons | `gui/choice_button_*.png` | **COMPLETE** - Wide buttons with arrows |
+| Menu Frame | `gui/frame.png` | **COMPLETE** - Dark frame with gold border |
+| Slider Bars | `gui/bar/*.png` | **COMPLETE** - Gold thumb, dark track |
+| Scrollbars | `gui/scrollbar/*.png` | **COMPLETE** - Vertical and horizontal |
+| screens.rpy | `game/screens.rpy` | **COMPLETE** - Full custom screen system |
+| gui.rpy | `game/gui.rpy` | **COMPLETE** - GUI configuration |
+
 ### Hand-Drawn SVG Assets (Completed)
 
 **Characters:**
@@ -345,40 +361,54 @@ game/
 - [x] Placeholder images (all generated)
 - [x] Design document
 
-### Phase 2: Part 1 Scripts (PENDING)
-- [ ] Chapter 1: A Fish, A Hole, and Destiny
-- [ ] Chapter 2: Making of a Plan
-- [ ] Chapter 3: Arrival and Regrets
-- [ ] Chapter 4: The Art of Survival
-- [ ] Chapter 5: First Patron
-- [ ] Chapter 6: Establishing
+### Phase 2: Part 1 Scripts (COMPLETE)
+- [x] Chapter 1: A Fish, A Hole, and Destiny
+- [x] Chapter 2: Making of a Plan
+- [x] Chapter 3: Arrival and Regrets
+- [x] Chapter 4: The Art of Survival
+- [x] Chapter 5: First Patron
+- [x] Chapter 6: Establishing
 
-### Phase 3: Part 2 Scripts (PENDING)
-- [ ] Chapter 7: The Great Deception
-- [ ] Chapter 8: The Miracle Worker
-- [ ] Chapter 9: The Dinner Party
-- [ ] Chapter 10: The Performance
-- [ ] Chapter 11: The Job Interview
+### Phase 3: Part 2 Scripts (COMPLETE)
+- [x] Chapter 7: The Great Deception
+- [x] Chapter 8: The Miracle Worker
+- [x] Chapter 9: The Dinner Party
+- [x] Chapter 10: The Performance
+- [x] Chapter 11: The Job Interview
 
-### Phase 4: Part 3 Scripts (PENDING)
-- [ ] Chapter 12: The God of Innovation
-- [ ] Chapter 13: Renaissance Startup
-- [ ] Chapter 14: The Tipping Point
-- [ ] Chapter 15: Divine Architecture
-- [ ] Chapter 16: The Return
+### Phase 4: Part 3 Scripts (COMPLETE)
+- [x] Chapter 12: The God of Innovation
+- [x] Chapter 13: Renaissance Startup
+- [x] Chapter 14: The Tipping Point
+- [x] Chapter 15: Divine Architecture
+- [x] Chapter 16: The Return
 
-### Phase 5: Endings (PENDING)
-- [ ] Legendary ending
-- [ ] Fraud Exposed ending
-- [ ] Inquisition ending
-- [ ] Limited Impact ending
-- [ ] Corruption ending
-- [ ] Paradox ending
-- [ ] Early Return ending
+### Phase 5: Endings (COMPLETE)
+- [x] Legendary ending
+- [x] Fraud Exposed ending
+- [x] Inquisition ending
+- [x] Limited Impact ending
+- [x] Corruption ending
+- [x] Paradox ending
+- [x] Early Return ending
 
-### Phase 6: Polish (PENDING)
-- [ ] Real artwork
-- [ ] Music and sound effects
+### Phase 6: Custom GUI (COMPLETE)
+- [x] Main menu background (Florence skyline with time vortex)
+- [x] Game logo (gold gradient with cyan accents)
+- [x] Dialog textbox (parchment style with gold corners)
+- [x] Name box (gold-bordered tab)
+- [x] Menu buttons (idle/hover states)
+- [x] Choice buttons (wide with arrow accents)
+- [x] Menu frame (dark with gold border)
+- [x] Slider bars (preferences screen)
+- [x] Scrollbars (vertical/horizontal)
+- [x] screens.rpy (complete custom screen system)
+- [x] gui.rpy (GUI configuration variables)
+
+### Phase 7: Polish (IN PROGRESS)
+- [x] SVG artwork for all assets
+- [ ] Music and sound effects (documented in AUDIO_MANIFEST.md)
+- [ ] Additional character expressions
 - [ ] Testing all paths
 - [ ] Bug fixes
 

@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 500">
+  <defs>
+    <linearGradient id="frameGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#2a2035;stop-opacity:0.95"/>
+      <stop offset="100%" style="stop-color:#150f1a;stop-opacity:0.98"/>
+    </linearGradient>
+
+    <linearGradient id="frameBorder" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#c9a227"/>
+      <stop offset="50%" style="stop-color:#ffd700"/>
+      <stop offset="100%" style="stop-color:#c9a227"/>
+    </linearGradient>
+
+    <filter id="frameGlow" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Main frame -->
+  <rect x="10" y="10" width="580" height="480" rx="15" ry="15" fill="url(#frameGrad)"/>
+
+  <!-- Gold border -->
+  <rect x="10" y="10" width="580" height="480" rx="15" ry="15"
+        fill="none" stroke="url(#frameBorder)" stroke-width="3" filter="url(#frameGlow)"/>
+
+  <!-- Inner border -->
+  <rect x="25" y="25" width="550" height="450" rx="10" ry="10"
+        fill="none" stroke="#c9a227" stroke-width="1" opacity="0.4"/>
+
+  <!-- Corner ornaments -->
+  <g fill="#c9a227" filter="url(#frameGlow)">
+    <circle cx="25" cy="25" r="6"/>
+    <circle cx="575" cy="25" r="6"/>
+    <circle cx="25" cy="475" r="6"/>
+    <circle cx="575" cy="475" r="6"/>
+  </g>
+
+  <!-- Top center ornament -->
+  <g transform="translate(300, 10)" fill="#c9a227" filter="url(#frameGlow)">
+    <ellipse cx="0" cy="0" rx="30" ry="10"/>
+    <circle cx="0" cy="-15" r="5"/>
+  </g>
+</svg>

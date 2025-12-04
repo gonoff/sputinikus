@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 18">
+  <defs>
+    <linearGradient id="barBgH" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#3d2b4a"/>
+      <stop offset="50%" style="stop-color:#2a1a35"/>
+      <stop offset="100%" style="stop-color:#1a0a25"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background track -->
+  <rect x="0" y="0" width="500" height="18" rx="9" fill="url(#barBgH)"/>
+
+  <!-- Border -->
+  <rect x="0" y="0" width="500" height="18" rx="9"
+        fill="none" stroke="#6b5344" stroke-width="1"/>
+</svg>
