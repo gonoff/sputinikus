@@ -1,0 +1,160 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 800">
+  <defs>
+    <!-- Skin gradient -->
+    <linearGradient id="giuliano_skin" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f0d0b8"/>
+      <stop offset="100%" style="stop-color:#e0b898"/>
+    </linearGradient>
+    <!-- Hair gradient - dark, youthful -->
+    <linearGradient id="giuliano_hair" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#2d1f14"/>
+      <stop offset="100%" style="stop-color:#1a1208"/>
+    </linearGradient>
+    <!-- Doublet gradient - rich purple (Medici color) -->
+    <linearGradient id="giuliano_doublet" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#5c3d6e"/>
+      <stop offset="100%" style="stop-color:#3d2848"/>
+    </linearGradient>
+    <!-- Cloak - deep burgundy -->
+    <linearGradient id="giuliano_cloak" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#722f37"/>
+      <stop offset="100%" style="stop-color:#4a1f24"/>
+    </linearGradient>
+    <!-- Shirt - white silk -->
+    <linearGradient id="giuliano_shirt" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#faf8f5"/>
+      <stop offset="100%" style="stop-color:#e8e4df"/>
+    </linearGradient>
+    <!-- Drop shadow filter -->
+    <filter id="giuliano_shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="2" dy="4" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <g filter="url(#giuliano_shadow)">
+    <!-- Cloak (outer layer) -->
+    <path d="M80 360 Q50 500 60 800 L100 800 L100 450 Q110 400 120 360 Z"
+          fill="url(#giuliano_cloak)"/>
+    <path d="M320 360 Q350 500 340 800 L300 800 L300 450 Q290 400 280 360 Z"
+          fill="url(#giuliano_cloak)"/>
+
+    <!-- Body/Doublet -->
+    <path d="M120 340 Q100 400 95 500 L95 800 L305 800 L305 500 Q300 400 280 340 Z"
+          fill="url(#giuliano_doublet)"/>
+
+    <!-- Doublet details - slashed sleeves showing shirt -->
+    <path d="M95 400 Q80 450 75 520 L95 520 Q90 450 100 400 Z"
+          fill="url(#giuliano_doublet)"/>
+    <path d="M305 400 Q320 450 325 520 L305 520 Q310 450 300 400 Z"
+          fill="url(#giuliano_doublet)"/>
+    <!-- Shirt showing through slashes -->
+    <ellipse cx="87" cy="440" rx="8" ry="15" fill="url(#giuliano_shirt)"/>
+    <ellipse cx="87" cy="480" rx="8" ry="15" fill="url(#giuliano_shirt)"/>
+    <ellipse cx="313" cy="440" rx="8" ry="15" fill="url(#giuliano_shirt)"/>
+    <ellipse cx="313" cy="480" rx="8" ry="15" fill="url(#giuliano_shirt)"/>
+
+    <!-- Doublet front - decorative buttons -->
+    <line x1="200" y1="380" x2="200" y2="650" stroke="#2d1d38" stroke-width="2"/>
+    <circle cx="200" cy="400" r="6" fill="#ffd700"/>
+    <circle cx="200" cy="450" r="6" fill="#ffd700"/>
+    <circle cx="200" cy="500" r="6" fill="#ffd700"/>
+    <circle cx="200" cy="550" r="6" fill="#ffd700"/>
+    <circle cx="200" cy="600" r="6" fill="#ffd700"/>
+
+    <!-- Belt -->
+    <rect x="100" y="520" width="200" height="20" fill="#4a3520"/>
+    <rect x="185" y="515" width="30" height="30" fill="#ffd700" rx="3"/>
+    <!-- Medici palle on belt -->
+    <circle cx="200" cy="530" r="8" fill="#c9a227"/>
+
+    <!-- Collar - white ruffled -->
+    <path d="M150 340 Q200 370 250 340 Q260 355 250 370 Q200 395 150 370 Q140 355 150 340"
+          fill="url(#giuliano_shirt)"/>
+    <!-- Ruffle details -->
+    <path d="M155 355 Q160 350 165 355" stroke="#d4d0cb" stroke-width="1" fill="none"/>
+    <path d="M175 360 Q180 355 185 360" stroke="#d4d0cb" stroke-width="1" fill="none"/>
+    <path d="M195 362 Q200 357 205 362" stroke="#d4d0cb" stroke-width="1" fill="none"/>
+    <path d="M215 360 Q220 355 225 360" stroke="#d4d0cb" stroke-width="1" fill="none"/>
+    <path d="M235 355 Q240 350 245 355" stroke="#d4d0cb" stroke-width="1" fill="none"/>
+
+    <!-- Gold chain necklace -->
+    <path d="M160 370 Q200 400 240 370" fill="none" stroke="#ffd700" stroke-width="3"/>
+    <!-- Medici medallion -->
+    <circle cx="200" cy="395" r="15" fill="#ffd700"/>
+    <circle cx="200" cy="395" r="11" fill="#daa520"/>
+    <!-- Six palle (balls) of Medici -->
+    <circle cx="200" cy="388" r="3" fill="#c9a227"/>
+    <circle cx="194" cy="395" r="3" fill="#c9a227"/>
+    <circle cx="206" cy="395" r="3" fill="#c9a227"/>
+    <circle cx="197" cy="402" r="3" fill="#c9a227"/>
+    <circle cx="203" cy="402" r="3" fill="#c9a227"/>
+
+    <!-- Hands -->
+    <ellipse cx="75" cy="540" rx="20" ry="28" fill="url(#giuliano_skin)"/>
+    <ellipse cx="325" cy="540" rx="20" ry="28" fill="url(#giuliano_skin)"/>
+
+    <!-- Sword hilt at belt -->
+    <rect x="260" y="510" width="8" height="40" fill="#8b7355"/>
+    <ellipse cx="264" cy="510" rx="15" ry="5" fill="#ffd700"/>
+    <rect x="261" y="495" width="6" height="20" fill="#c9a227"/>
+
+    <!-- Neck -->
+    <rect x="175" y="300" width="50" height="50" fill="url(#giuliano_skin)"/>
+
+    <!-- Head shape - youthful, handsome -->
+    <ellipse cx="200" cy="210" rx="70" ry="90" fill="url(#giuliano_skin)"/>
+
+    <!-- Hair - full, styled, fashionable -->
+    <path d="M130 180 Q130 100 200 85 Q270 100 270 180 Q250 140 200 130 Q150 140 130 180"
+          fill="url(#giuliano_hair)"/>
+    <!-- Flowing hair sides -->
+    <path d="M125 180 Q110 230 120 290 Q130 240 140 200 Z" fill="url(#giuliano_hair)"/>
+    <path d="M275 180 Q290 230 280 290 Q270 240 260 200 Z" fill="url(#giuliano_hair)"/>
+    <!-- Hair wave detail -->
+    <path d="M150 150 Q170 140 190 150" stroke="#1a1208" stroke-width="2" fill="none"/>
+    <path d="M210 150 Q230 140 250 150" stroke="#1a1208" stroke-width="2" fill="none"/>
+
+    <!-- Ears -->
+    <ellipse cx="128" cy="210" rx="10" ry="18" fill="url(#giuliano_skin)"/>
+    <ellipse cx="272" cy="210" rx="10" ry="18" fill="url(#giuliano_skin)"/>
+
+    <!-- Eyebrows - youthful, well-shaped -->
+    <path d="M148 180 Q165 173 182 178" stroke="#2d1f14" stroke-width="3" fill="none"/>
+    <path d="M218 178 Q235 173 252 180" stroke="#2d1f14" stroke-width="3" fill="none"/>
+
+    <!-- Eyes - bright, confident -->
+    <ellipse cx="165" cy="200" rx="18" ry="14" fill="white"/>
+    <ellipse cx="235" cy="200" rx="18" ry="14" fill="white"/>
+    <!-- Irises - warm brown like Lorenzo -->
+    <circle cx="165" cy="200" r="9" fill="#5c4033"/>
+    <circle cx="235" cy="200" r="9" fill="#5c4033"/>
+    <!-- Pupils -->
+    <circle cx="165" cy="200" r="4" fill="#1a1a1a"/>
+    <circle cx="235" cy="200" r="4" fill="#1a1a1a"/>
+    <!-- Eye highlights -->
+    <circle cx="168" cy="197" r="3" fill="white"/>
+    <circle cx="238" cy="197" r="3" fill="white"/>
+
+    <!-- Nose - refined, Medici features -->
+    <path d="M200 195 L200 238 Q196 248 192 252 Q200 256 208 252 Q204 248 200 238"
+          fill="#d4a088" stroke="#c49478" stroke-width="1"/>
+
+    <!-- Mouth - pleasant, slight smile -->
+    <path d="M178 268 Q200 278 222 268" stroke="#a67563" stroke-width="2.5" fill="none"/>
+    <!-- Upper lip -->
+    <path d="M182 268 Q200 262 218 268" stroke="#b08070" stroke-width="1.5" fill="none"/>
+
+    <!-- Light stubble/shadow -->
+    <ellipse cx="200" cy="285" rx="30" ry="15" fill="#c49478" opacity="0.2"/>
+
+    <!-- Cap - fashionable beret style -->
+    <ellipse cx="200" cy="120" rx="75" ry="30" fill="url(#giuliano_doublet)"/>
+    <ellipse cx="200" cy="115" rx="65" ry="25" fill="#6b4d7d"/>
+    <!-- Feather ornament -->
+    <path d="M250 100 Q280 60 290 30 Q285 70 260 105" fill="#faf8f5"/>
+    <path d="M255 100 Q275 70 282 50" stroke="#e8e4df" stroke-width="1" fill="none"/>
+    <!-- Jeweled brooch -->
+    <circle cx="245" cy="110" r="8" fill="#ffd700"/>
+    <circle cx="245" cy="110" r="5" fill="#e53935"/>
+  </g>
+</svg>
