@@ -134,7 +134,9 @@ default persistent.best_ending_seen = False  # Has player seen legendary ending
 # Part 1 choices
 default mr_bubbles_buried = False        # Did Gary finish burying the fish?
 default first_impression = "confused"    # First impression in Florence
-default benedetto_deal = "forty_percent" # Deal negotiated
+default benedetto_deal = 40              # Deal percentage negotiated
+default chapter_1_complete = False       # Completed chapter 1?
+default aria_revealed = "basic"          # How much revealed to Benedetto: "basic", "astronomy"
 
 # Part 2 choices
 default dinner_performance = "moderate"  # "failed", "moderate", "impressive", "legendary"

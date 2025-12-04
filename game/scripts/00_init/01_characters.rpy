@@ -272,6 +272,21 @@ image pope_julius angry = "images/characters/pope_julius/pope_julius_angry.png"
 image cardinal neutral = "images/characters/cardinal/cardinal_neutral.png"
 image cardinal warning = "images/characters/cardinal/cardinal_warning.png"
 
+# Bramante
+image bramante neutral = "images/characters/bramante/bramante_neutral.png"
+
+# Lorenzo Capponi
+image capponi neutral = "images/characters/capponi/capponi_neutral.png"
+
+# Giuliano de' Medici
+image giuliano_medici neutral = "images/characters/giuliano_medici/giuliano_medici_neutral.png"
+
+# Sangallo
+image sangallo neutral = "images/characters/sangallo/sangallo_neutral.png"
+
+# Machiavelli
+image machiavelli neutral = "images/characters/machiavelli/machiavelli_neutral.png"
+
 ###############################################################################
 # BACKGROUND IMAGE DEFINITIONS - Modern
 ###############################################################################

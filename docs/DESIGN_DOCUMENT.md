@@ -80,9 +80,18 @@ SVG artwork → cairosvg library → PNG (Ren'Py compatible)
 
 | Asset Type | Total Needed | SVG Created | PNG Ready | Status |
 |------------|--------------|-------------|-----------|--------|
-| Backgrounds | 23 | 2 | 23 | 2 hand-drawn, 21 placeholders |
-| Character Sprites | 40 | 7 | 40 | 7 hand-drawn, 33 placeholders |
-| CG Images | 12 | 0 | 12 | All placeholders |
+| Backgrounds | 23 | 23 | 23 | **ALL COMPLETE** |
+| Character Sprites | 18 | 18 | 18 | **ALL COMPLETE** (neutral expressions) |
+| CG Images | 12 | 12 | 12 | **ALL COMPLETE** |
+
+### Script Status
+
+| Part | Chapters | Status |
+|------|----------|--------|
+| Part 1 | 1-6 | **COMPLETE** - The Accidental Time Traveler |
+| Part 2 | 7-11 | **COMPLETE** - The Renaissance Genius |
+| Part 3 | 12-16 | **COMPLETE** - The Legend of Gary |
+| Endings | 7 endings | **COMPLETE** - All 7 endings written |
 
 ### Hand-Drawn SVG Assets (Completed)
 
