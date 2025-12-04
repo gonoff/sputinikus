@@ -452,7 +452,7 @@ label chapter_11:
 
     play sound "audio/sfx/crowd_gasping.ogg"
 
-    show cg cg_first_success with dissolve
+    show cg first_success with dissolve
 
     narrator "The moon slides across the face of the sun, exactly as Gary predicted."
 

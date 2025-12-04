@@ -115,7 +115,7 @@ label chapter_12:
 
 label chapter_13:
 
-    scene bg rome_cityscape with fade
+    scene bg rome_city with fade
 
     play music "audio/music/rome_grandeur.ogg" fadein 2.0
 
@@ -245,7 +245,7 @@ label chapter_13:
 
     narrator "They establish mathematical principles for architectural proportion."
 
-    show cg cg_papal_audience with dissolve
+    show cg papal_audience with dissolve
 
     pope "Master Gary, I believe you may be divinely inspired."
 
@@ -472,7 +472,7 @@ label inquisition_confrontation:
 
 label hiding_sequence:
 
-    scene bg rome_cityscape with fade
+    scene bg rome_city with fade
 
     narrator "Gary spends weeks in hiding, moving between safe houses."
 

@@ -17,7 +17,7 @@ label ending_legendary:
     pause 2.0
     hide text with dissolve
 
-    show cg cg_ending_legendary with dissolve
+    show cg ending_legendary with dissolve
 
     narrator "Gary Sputnik achieved the impossible."
 
@@ -72,7 +72,7 @@ label ending_fraud_exposed:
     pause 2.0
     hide text with dissolve
 
-    show cg cg_ending_fraud with dissolve
+    show cg ending_fraud with dissolve
 
     narrator "It was bound to happen eventually."
 
@@ -128,7 +128,7 @@ label ending_inquisition:
     pause 2.0
     hide text with dissolve
 
-    show cg cg_ending_inquisition with dissolve
+    show cg ending_inquisition with dissolve
 
     narrator "The Holy Office of the Inquisition had dealt with witches, heretics, and blasphemers."
 
@@ -184,7 +184,7 @@ label ending_limited_impact:
     pause 2.0
     hide text with dissolve
 
-    show cg cg_ending_limited with dissolve
+    show cg ending_limited with dissolve
 
     narrator "Gary returned to 2025 to find... not much had changed."
 
@@ -232,7 +232,7 @@ label ending_corruption:
     pause 2.0
     hide text with dissolve
 
-    show cg cg_ending_corruption with dissolve
+    show cg ending_corruption with dissolve
 
     narrator "Power corrupts. Absolute knowledge corrupts absolutely."
 
@@ -286,7 +286,7 @@ label ending_paradox:
     pause 2.0
     hide text with dissolve
 
-    show cg cg_ending_paradox with dissolve
+    show cg ending_paradox with dissolve
 
     narrator "ARIA had warned him. The AI had calculated the risks, identified the dangers, pleaded with Gary to be more careful."
 
@@ -338,7 +338,7 @@ label ending_early_return:
     pause 2.0
     hide text with dissolve
 
-    show cg cg_ending_early with dissolve
+    show cg ending_early with dissolve
 
     narrator "Gary made a choice. He chose safety over adventure. Certainty over risk."
 

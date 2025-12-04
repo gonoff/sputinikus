@@ -99,7 +99,7 @@ label chapter_7:
 
 label chapter_8:
 
-    scene bg capponi_palazzo_dining with fade
+    scene bg capponi_dining with fade
 
     play music "audio/music/elegant_tension.ogg" fadein 2.0
 

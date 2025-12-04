@@ -155,7 +155,7 @@ label chapter_16:
 
     narrator "Thousands of results. Millions of results."
 
-    show cg cg_ending_legendary with dissolve
+    show cg ending_legendary with dissolve
 
     narrator "'Gary Sputnik: The Renaissance Genius Who Changed History'"
 
@@ -229,7 +229,7 @@ label chapter_16:
 
     narrator "And in the park across the street... a statue."
 
-    scene bg transformed_2025_street with fade
+    scene bg transformed_street with fade
 
     show gary modern excited at center_pos with dissolve
 
