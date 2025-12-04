@@ -1,0 +1,174 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080">
+  <defs>
+    <!-- Dark dungeon -->
+    <linearGradient id="dungeon_wall" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a1a"/>
+      <stop offset="100%" style="stop-color:#0a0a0a"/>
+    </linearGradient>
+    <!-- Torch light -->
+    <radialGradient id="inq_torch" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#ff6600;stop-opacity:0.4"/>
+      <stop offset="100%" style="stop-color:#ff6600;stop-opacity:0"/>
+    </radialGradient>
+    <!-- Stone -->
+    <linearGradient id="inq_stone" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3a3a3a"/>
+      <stop offset="100%" style="stop-color:#2a2a2a"/>
+    </linearGradient>
+    <!-- Inquisitor robe -->
+    <linearGradient id="inq_robe" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a1a"/>
+      <stop offset="100%" style="stop-color:#0a0a0a"/>
+    </linearGradient>
+    <filter id="torch_light">
+      <feGaussianBlur stdDeviation="15" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Dark background -->
+  <rect width="1920" height="1080" fill="url(#dungeon_wall)"/>
+
+  <!-- Stone wall texture -->
+  <g stroke="#2a2a2a" stroke-width="3" fill="none">
+    <rect x="0" y="0" width="200" height="150"/>
+    <rect x="200" y="0" width="180" height="150"/>
+    <rect x="380" y="0" width="220" height="150"/>
+    <rect x="600" y="0" width="190" height="150"/>
+    <rect x="790" y="0" width="210" height="150"/>
+    <rect x="1000" y="0" width="200" height="150"/>
+    <rect x="1200" y="0" width="180" height="150"/>
+    <rect x="1380" y="0" width="220" height="150"/>
+    <rect x="1600" y="0" width="200" height="150"/>
+    <rect x="1800" y="0" width="120" height="150"/>
+    <rect x="100" y="150" width="190" height="140"/>
+    <rect x="290" y="150" width="210" height="140"/>
+    <rect x="500" y="150" width="180" height="140"/>
+    <rect x="680" y="150" width="220" height="140"/>
+  </g>
+
+  <!-- Torch light glow left -->
+  <ellipse cx="200" cy="300" rx="300" ry="400" fill="url(#inq_torch)"/>
+  <!-- Torch light glow right -->
+  <ellipse cx="1720" cy="300" rx="300" ry="400" fill="url(#inq_torch)"/>
+
+  <!-- Wall torches -->
+  <g transform="translate(200, 200)">
+    <rect x="-8" y="0" width="16" height="80" fill="#5a4030"/>
+    <rect x="-20" y="75" width="40" height="15" fill="#4a4a4a"/>
+    <ellipse cx="0" cy="-15" rx="20" ry="35" fill="#ff6600" filter="url(#torch_light)"/>
+    <ellipse cx="0" cy="-25" rx="12" ry="22" fill="#ffaa00"/>
+    <ellipse cx="0" cy="-30" rx="6" ry="12" fill="#ffff00"/>
+  </g>
+  <g transform="translate(1720, 200)">
+    <rect x="-8" y="0" width="16" height="80" fill="#5a4030"/>
+    <rect x="-20" y="75" width="40" height="15" fill="#4a4a4a"/>
+    <ellipse cx="0" cy="-15" rx="20" ry="35" fill="#ff6600" filter="url(#torch_light)"/>
+    <ellipse cx="0" cy="-25" rx="12" ry="22" fill="#ffaa00"/>
+    <ellipse cx="0" cy="-30" rx="6" ry="12" fill="#ffff00"/>
+  </g>
+
+  <!-- Stone floor -->
+  <rect x="0" y="650" width="1920" height="430" fill="url(#inq_stone)"/>
+
+  <!-- Iron bars window (high up) -->
+  <rect x="850" y="80" width="220" height="180" fill="#0a0a15"/>
+  <line x1="880" y1="80" x2="880" y2="260" stroke="#4a4a4a" stroke-width="8"/>
+  <line x1="930" y1="80" x2="930" y2="260" stroke="#4a4a4a" stroke-width="8"/>
+  <line x1="980" y1="80" x2="980" y2="260" stroke="#4a4a4a" stroke-width="8"/>
+  <line x1="1030" y1="80" x2="1030" y2="260" stroke="#4a4a4a" stroke-width="8"/>
+  <!-- Faint moonlight -->
+  <rect x="855" y="85" width="210" height="170" fill="#334466" opacity="0.3"/>
+
+  <!-- Inquisitor - menacing silhouette -->
+  <g transform="translate(1400, 350)">
+    <!-- Long black robe -->
+    <path d="M-80 100 Q-120 250 -140 450 L140 450 Q120 250 80 100 Z" fill="url(#inq_robe)"/>
+    <!-- Hood -->
+    <path d="M-60 100 Q-70 50 0 20 Q70 50 60 100 Q40 80 0 75 Q-40 80 -60 100" fill="url(#inq_robe)"/>
+    <!-- Face in shadow - only eyes visible -->
+    <ellipse cx="-15" cy="70" rx="8" ry="5" fill="#ffaa00" opacity="0.8"/>
+    <ellipse cx="15" cy="70" rx="8" ry="5" fill="#ffaa00" opacity="0.8"/>
+    <!-- Holding accusation scroll -->
+    <path d="M80 150 Q120 200 100 300 L70 290 Q85 200 60 160" fill="url(#inq_robe)"/>
+    <rect x="90" y="280" width="80" height="15" fill="#d4c4a8"/>
+    <ellipse cx="90" cy="287" rx="8" ry="8" fill="#c4b498"/>
+    <ellipse cx="170" cy="287" rx="8" ry="8" fill="#c4b498"/>
+    <!-- Pointing accusingly -->
+    <path d="M-80 150 Q-140 180 -180 200" stroke="url(#inq_robe)" stroke-width="25"/>
+    <path d="M-185 195 L-250 180 L-245 190 L-180 205 Z" fill="#c8a888"/>
+  </g>
+
+  <!-- Gary - chained, on knees -->
+  <g transform="translate(700, 500)">
+    <!-- Kneeling body - tattered clothes -->
+    <path d="M-40 50 Q-60 100 -70 200 L70 200 Q60 100 40 50 Z" fill="#4a5a4a"/>
+    <!-- Torn doublet -->
+    <path d="M-40 50 L-50 70 L-35 65 Z" fill="#3a4a3a"/>
+    <path d="M40 50 L50 70 L35 65 Z" fill="#3a4a3a"/>
+    <!-- Arms in chains, raised -->
+    <path d="M-40 70 Q-80 40 -100 0" stroke="#4a5a4a" stroke-width="20"/>
+    <path d="M40 70 Q80 40 100 0" stroke="#4a5a4a" stroke-width="20"/>
+    <!-- Hands -->
+    <ellipse cx="-105" cy="-5" rx="18" ry="20" fill="#d4b898"/>
+    <ellipse cx="105" cy="-5" rx="18" ry="20" fill="#d4b898"/>
+    <!-- Chains -->
+    <g stroke="#5a5a5a" stroke-width="4" fill="none">
+      <circle cx="-90" cy="15" r="8"/>
+      <circle cx="-75" cy="30" r="8"/>
+      <circle cx="-60" cy="45" r="8"/>
+      <circle cx="90" cy="15" r="8"/>
+      <circle cx="75" cy="30" r="8"/>
+      <circle cx="60" cy="45" r="8"/>
+    </g>
+    <!-- Chain to wall -->
+    <path d="M-105 -5 L-105 -100 L0 -150 L105 -100 L105 -5" stroke="#4a4a4a" stroke-width="6" fill="none"/>
+    <!-- Shackles -->
+    <ellipse cx="-105" cy="5" rx="22" ry="12" fill="none" stroke="#4a4a4a" stroke-width="6"/>
+    <ellipse cx="105" cy="5" rx="22" ry="12" fill="none" stroke="#4a4a4a" stroke-width="6"/>
+    <!-- Head bowed -->
+    <ellipse cx="0" cy="-30" rx="45" ry="55" fill="#d4b898" transform="rotate(15 0 -30)"/>
+    <!-- Disheveled hair -->
+    <path d="M-40 -60 Q-45 -95 0 -105 Q45 -95 40 -60 Q20 -80 0 -85 Q-20 -80 -40 -60" fill="#5c4033" transform="rotate(15 0 -30)"/>
+    <!-- Glasses broken/missing -->
+    <!-- Defeated expression -->
+    <g transform="rotate(15 0 -30)">
+      <!-- Closed/downcast eyes -->
+      <path d="M-25 -30 Q-15 -25 -5 -30" stroke="#4a3020" stroke-width="2" fill="none"/>
+      <path d="M5 -28 Q15 -23 25 -28" stroke="#4a3020" stroke-width="2" fill="none"/>
+      <!-- Sad mouth -->
+      <path d="M-15 0 Q0 -8 15 0" stroke="#8b5a4a" stroke-width="2" fill="none"/>
+    </g>
+    <!-- Bruises/dirt -->
+    <ellipse cx="-20" cy="-15" rx="8" ry="6" fill="#8b6b5b" opacity="0.5" transform="rotate(15 0 -30)"/>
+  </g>
+
+  <!-- ARIA confiscated - on inquisitor's table -->
+  <g transform="translate(1500, 700)">
+    <!-- Table -->
+    <rect x="-100" y="0" width="200" height="20" fill="#4a3020"/>
+    <rect x="-90" y="20" width="20" height="80" fill="#3a2010"/>
+    <rect x="70" y="20" width="20" height="80" fill="#3a2010"/>
+    <!-- ARIA disabled -->
+    <rect x="-25" y="-40" width="50" height="35" fill="#2a3a4a" transform="rotate(-10)"/>
+    <!-- Cracked, dark screen -->
+    <rect x="-20" y="-35" width="40" height="25" fill="#1a1a1a" transform="rotate(-10)"/>
+    <path d="M-15 -30 L10 -15" stroke="#333" stroke-width="1" transform="rotate(-10)"/>
+  </g>
+
+  <!-- Documents/evidence on table -->
+  <rect x="1380" y="660" width="60" height="40" fill="#d4c4a8" transform="rotate(5)"/>
+  <rect x="1450" y="665" width="50" height="35" fill="#c4b498" transform="rotate(-8)"/>
+
+  <!-- Ominous crucifix shadow on wall -->
+  <g transform="translate(960, 400)" opacity="0.3">
+    <rect x="-15" y="-150" width="30" height="250" fill="#0a0a0a"/>
+    <rect x="-80" y="-100" width="160" height="25" fill="#0a0a0a"/>
+  </g>
+
+  <!-- "HERESY" text -->
+  <text x="960" y="150" text-anchor="middle" font-family="serif" font-size="80" fill="#8b0000" opacity="0.6" font-weight="bold">HERESY</text>
+</svg>

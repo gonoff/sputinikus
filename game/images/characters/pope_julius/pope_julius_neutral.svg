@@ -1,0 +1,152 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 800">
+  <defs>
+    <linearGradient id="skinGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#e8c8a8"/>
+      <stop offset="100%" style="stop-color:#d4a878"/>
+    </linearGradient>
+    <linearGradient id="beardGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#9a9a9a"/>
+      <stop offset="100%" style="stop-color:#707070"/>
+    </linearGradient>
+    <linearGradient id="cassockGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#f5f5f5"/>
+      <stop offset="100%" style="stop-color:#e0e0e0"/>
+    </linearGradient>
+    <linearGradient id="mozettaGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#c41e3a"/>
+      <stop offset="100%" style="stop-color:#8b0000"/>
+    </linearGradient>
+    <linearGradient id="stoleGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#c9a227"/>
+      <stop offset="50%" style="stop-color:#f5d742"/>
+      <stop offset="100%" style="stop-color:#c9a227"/>
+    </linearGradient>
+    <linearGradient id="camauroGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#c41e3a"/>
+      <stop offset="100%" style="stop-color:#8b0000"/>
+    </linearGradient>
+
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="2" dy="4" stdDeviation="3" flood-color="#000" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <!-- White papal cassock -->
+  <g filter="url(#shadow)">
+    <path d="M100 340 Q60 400 50 500 L40 780 L360 780 L350 500 Q340 400 300 340 Z"
+          fill="url(#cassockGrad)"/>
+    <path d="M130 400 Q110 550 120 700" stroke="#c0c0c0" stroke-width="2" fill="none"/>
+    <path d="M200 450 Q200 600 200 750" stroke="#c0c0c0" stroke-width="2" fill="none"/>
+    <path d="M270 400 Q290 550 280 700" stroke="#c0c0c0" stroke-width="2" fill="none"/>
+  </g>
+
+  <!-- Red papal mozzetta -->
+  <g filter="url(#shadow)">
+    <path d="M90 280 Q60 320 55 400 L60 480 Q100 500 200 500 Q300 500 340 480 L345 400 Q340 320 310 280 Z"
+          fill="url(#mozettaGrad)"/>
+    <path d="M90 280 Q200 260 310 280" stroke="#a01830" stroke-width="2" fill="none"/>
+    <circle cx="200" cy="350" r="8" fill="url(#stoleGrad)"/>
+    <circle cx="200" cy="400" r="8" fill="url(#stoleGrad)"/>
+    <circle cx="200" cy="450" r="8" fill="url(#stoleGrad)"/>
+  </g>
+
+  <!-- Gold pectoral cross -->
+  <g fill="url(#stoleGrad)" filter="url(#shadow)">
+    <rect x="190" y="320" width="20" height="50" rx="2"/>
+    <rect x="180" y="335" width="40" height="15" rx="2"/>
+    <circle cx="200" cy="345" r="5" fill="#8b0000"/>
+  </g>
+
+  <!-- Gold chain -->
+  <path d="M170 290 Q200 300 230 290" stroke="url(#stoleGrad)" stroke-width="3" fill="none"/>
+
+  <!-- Sleeves -->
+  <g fill="url(#cassockGrad)">
+    <path d="M55 420 Q35 480 45 560 L85 560 Q75 500 80 440 Z"/>
+    <path d="M345 420 Q365 480 355 560 L315 560 Q325 500 320 440 Z"/>
+  </g>
+
+  <!-- Papal ring hand -->
+  <g fill="url(#skinGrad)">
+    <ellipse cx="60" cy="575" rx="22" ry="28"/>
+    <ellipse cx="340" cy="575" rx="22" ry="28"/>
+    <ellipse cx="55" cy="580" rx="6" ry="4" fill="url(#stoleGrad)"/>
+  </g>
+
+  <!-- Neck -->
+  <rect x="172" y="240" width="56" height="50" fill="url(#skinGrad)" rx="5"/>
+
+  <!-- Head -->
+  <g filter="url(#shadow)">
+    <ellipse cx="200" cy="155" rx="75" ry="90" fill="url(#skinGrad)"/>
+  </g>
+
+  <!-- Red camauro (papal cap) -->
+  <g fill="url(#camauroGrad)" filter="url(#shadow)">
+    <ellipse cx="200" cy="80" rx="78" ry="30"/>
+    <path d="M122 80 Q122 40 200 30 Q278 40 278 80 Z"/>
+    <!-- White fur trim -->
+    <ellipse cx="200" cy="95" rx="80" ry="15" fill="#f5f5f0"/>
+    <path d="M120 95 Q130 105 145 95 Q160 105 175 95 Q190 105 200 95 Q210 105 225 95 Q240 105 255 95 Q270 105 280 95"
+          stroke="#e0e0d8" stroke-width="1" fill="none"/>
+  </g>
+
+  <!-- Ears -->
+  <ellipse cx="125" cy="165" rx="10" ry="18" fill="url(#skinGrad)"/>
+  <ellipse cx="275" cy="165" rx="10" ry="18" fill="url(#skinGrad)"/>
+
+  <!-- Forehead wrinkles -->
+  <g stroke="#c4a070" stroke-width="1" fill="none" opacity="0.5">
+    <path d="M155 120 Q200 115 245 120"/>
+    <path d="M160 130 Q200 126 240 130"/>
+  </g>
+
+  <!-- Eyes (piercing, commanding) -->
+  <g>
+    <ellipse cx="165" cy="182" rx="15" ry="8" fill="#d4b090" opacity="0.3"/>
+    <ellipse cx="235" cy="182" rx="15" ry="8" fill="#d4b090" opacity="0.3"/>
+    <ellipse cx="165" cy="172" rx="14" ry="10" fill="white"/>
+    <ellipse cx="235" cy="172" rx="14" ry="10" fill="white"/>
+    <circle cx="165" cy="172" r="7" fill="#2a2a2a"/>
+    <circle cx="235" cy="172" r="7" fill="#2a2a2a"/>
+    <circle cx="165" cy="172" r="3" fill="#0a0a0a"/>
+    <circle cx="235" cy="172" r="3" fill="#0a0a0a"/>
+    <circle cx="163" cy="170" r="2" fill="white"/>
+    <circle cx="233" cy="170" r="2" fill="white"/>
+  </g>
+
+  <!-- Heavy eyebrows -->
+  <g fill="url(#beardGrad)">
+    <path d="M140 155 Q165 148 190 158 Q165 152 140 155"/>
+    <path d="M210 158 Q235 148 260 155 Q235 152 210 158"/>
+  </g>
+
+  <!-- Strong nose -->
+  <path d="M200 168 Q192 190 190 210 Q192 222 200 225 Q208 222 210 210 Q208 190 200 168"
+        fill="#d4a070" stroke="#c4986a" stroke-width="1"/>
+
+  <!-- Full beard -->
+  <g fill="url(#beardGrad)">
+    <path d="M140 220 Q125 270 135 330 Q160 360 200 370 Q240 360 265 330 Q275 270 260 220
+             Q240 235 200 240 Q160 235 140 220"/>
+    <path d="M155 220 Q178 235 200 230 Q222 235 245 220 Q230 228 200 225 Q170 228 155 220"/>
+    <path d="M160 260 Q170 310 180 350" stroke="#808080" stroke-width="2" fill="none" opacity="0.4"/>
+    <path d="M200 250 Q200 310 200 360" stroke="#808080" stroke-width="2" fill="none" opacity="0.4"/>
+    <path d="M240 260 Q230 310 220 350" stroke="#808080" stroke-width="2" fill="none" opacity="0.4"/>
+  </g>
+
+  <!-- Mouth -->
+  <path d="M180 228 Q200 232 220 228" stroke="#8a6a5a" stroke-width="2" fill="none"/>
+
+  <!-- Cheek lines -->
+  <path d="M138 200 Q143 220 145 235" stroke="#c4a070" stroke-width="1" fill="none" opacity="0.4"/>
+  <path d="M262 200 Q257 220 255 235" stroke="#c4a070" stroke-width="1" fill="none" opacity="0.4"/>
+
+  <!-- Red papal shoes -->
+  <g fill="#c41e3a">
+    <ellipse cx="160" cy="778" rx="40" ry="12"/>
+    <ellipse cx="240" cy="778" rx="40" ry="12"/>
+    <rect x="150" y="773" width="15" height="8" fill="url(#stoleGrad)" rx="2"/>
+    <rect x="235" y="773" width="15" height="8" fill="url(#stoleGrad)" rx="2"/>
+  </g>
+</svg>

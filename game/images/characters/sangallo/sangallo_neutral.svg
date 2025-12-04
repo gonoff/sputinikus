@@ -1,0 +1,143 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 800">
+  <defs>
+    <!-- Skin gradient -->
+    <linearGradient id="sangallo_skin" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#deb896"/>
+      <stop offset="100%" style="stop-color:#c9a07a"/>
+    </linearGradient>
+    <!-- Hair gradient - gray, distinguished -->
+    <linearGradient id="sangallo_hair" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#808080"/>
+      <stop offset="100%" style="stop-color:#5a5a5a"/>
+    </linearGradient>
+    <!-- Work tunic - practical brown -->
+    <linearGradient id="sangallo_tunic" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#6b5344"/>
+      <stop offset="100%" style="stop-color:#4a3828"/>
+    </linearGradient>
+    <!-- Apron - canvas -->
+    <linearGradient id="sangallo_apron" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#d4c4a8"/>
+      <stop offset="100%" style="stop-color:#bfae8f"/>
+    </linearGradient>
+    <!-- Shirt -->
+    <linearGradient id="sangallo_shirt" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#e8e0d4"/>
+      <stop offset="100%" style="stop-color:#d4cabf"/>
+    </linearGradient>
+    <!-- Drop shadow filter -->
+    <filter id="sangallo_shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="2" dy="4" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <g filter="url(#sangallo_shadow)">
+    <!-- Body base -->
+    <path d="M120 340 Q100 400 95 500 L95 800 L305 800 L305 500 Q300 400 280 340 Z"
+          fill="url(#sangallo_tunic)"/>
+
+    <!-- Work apron -->
+    <path d="M130 420 L130 700 L270 700 L270 420 Q200 400 130 420"
+          fill="url(#sangallo_apron)"/>
+    <!-- Apron ties -->
+    <path d="M130 420 Q100 430 90 450" stroke="#bfae8f" stroke-width="4" fill="none"/>
+    <path d="M270 420 Q300 430 310 450" stroke="#bfae8f" stroke-width="4" fill="none"/>
+    <!-- Apron pocket -->
+    <rect x="150" y="500" width="60" height="50" fill="#c4b494" rx="3"/>
+    <line x1="155" y1="505" x2="205" y2="505" stroke="#a89a7a" stroke-width="2"/>
+    <!-- Tools in pocket -->
+    <rect x="160" y="480" width="8" height="40" fill="#5c4033"/>
+    <rect x="175" y="485" width="6" height="35" fill="#8b7355"/>
+
+    <!-- Arms/Sleeves -->
+    <path d="M95 360 Q60 420 50 520 L80 530 Q75 440 110 380 Z"
+          fill="url(#sangallo_tunic)"/>
+    <path d="M305 360 Q340 420 350 520 L320 530 Q325 440 290 380 Z"
+          fill="url(#sangallo_tunic)"/>
+
+    <!-- Rolled up sleeves showing forearms -->
+    <ellipse cx="70" cy="480" rx="20" ry="35" fill="url(#sangallo_skin)"/>
+    <ellipse cx="330" cy="480" rx="20" ry="35" fill="url(#sangallo_skin)"/>
+
+    <!-- Hands -->
+    <ellipse cx="55" cy="540" rx="22" ry="28" fill="url(#sangallo_skin)"/>
+    <ellipse cx="345" cy="540" rx="22" ry="28" fill="url(#sangallo_skin)"/>
+
+    <!-- Compass/divider tool in hand -->
+    <path d="M30 510 L55 560 L60 555 L40 510 Z" fill="#4a4a4a"/>
+    <path d="M35 505 L55 560" stroke="#6a6a6a" stroke-width="3"/>
+    <circle cx="37" cy="507" r="5" fill="#ffd700"/>
+
+    <!-- Rolled plans in other hand -->
+    <ellipse cx="355" cy="530" rx="12" ry="40" fill="#f5deb3"/>
+    <ellipse cx="355" cy="495" rx="10" ry="6" fill="#e8d8b8"/>
+    <ellipse cx="355" cy="565" rx="10" ry="6" fill="#e8d8b8"/>
+
+    <!-- Collar/Shirt visible -->
+    <path d="M155 340 Q200 360 245 340 L250 370 Q200 385 150 370 Z"
+          fill="url(#sangallo_shirt)"/>
+
+    <!-- Neck -->
+    <rect x="175" y="300" width="50" height="50" fill="url(#sangallo_skin)"/>
+
+    <!-- Head shape - mature, strong -->
+    <ellipse cx="200" cy="210" rx="72" ry="92" fill="url(#sangallo_skin)"/>
+
+    <!-- Hair - gray, receding but dignified -->
+    <path d="M140 170 Q140 120 200 110 Q260 120 260 170 Q245 145 200 140 Q155 145 140 170"
+          fill="url(#sangallo_hair)"/>
+    <!-- Side hair -->
+    <path d="M128 175 Q115 210 125 260 Q135 215 145 185 Z" fill="url(#sangallo_hair)"/>
+    <path d="M272 175 Q285 210 275 260 Q265 215 255 185 Z" fill="url(#sangallo_hair)"/>
+
+    <!-- Ears -->
+    <ellipse cx="128" cy="215" rx="12" ry="22" fill="url(#sangallo_skin)"/>
+    <ellipse cx="272" cy="215" rx="12" ry="22" fill="url(#sangallo_skin)"/>
+
+    <!-- Eyebrows - bushy, gray -->
+    <path d="M145 182 Q162 175 182 182" stroke="#6a6a6a" stroke-width="4" fill="none"/>
+    <path d="M218 182 Q238 175 255 182" stroke="#6a6a6a" stroke-width="4" fill="none"/>
+
+    <!-- Eyes - experienced, focused -->
+    <ellipse cx="163" cy="205" rx="17" ry="12" fill="white"/>
+    <ellipse cx="237" cy="205" rx="17" ry="12" fill="white"/>
+    <!-- Irises - gray -->
+    <circle cx="163" cy="205" r="8" fill="#5a5a5a"/>
+    <circle cx="237" cy="205" r="8" fill="#5a5a5a"/>
+    <!-- Pupils -->
+    <circle cx="163" cy="205" r="4" fill="#1a1a1a"/>
+    <circle cx="237" cy="205" r="4" fill="#1a1a1a"/>
+    <!-- Eye highlights -->
+    <circle cx="166" cy="202" r="2" fill="white"/>
+    <circle cx="240" cy="202" r="2" fill="white"/>
+    <!-- Crow's feet wrinkles -->
+    <path d="M180 205 L188 200 M180 208 L188 210" stroke="#b89a7a" stroke-width="1"/>
+    <path d="M220 205 L212 200 M220 208 L212 210" stroke="#b89a7a" stroke-width="1"/>
+
+    <!-- Nose - strong, practical -->
+    <path d="M200 198 L200 245 Q194 255 188 260 Q200 265 212 260 Q206 255 200 245"
+          fill="#c49a78" stroke="#b08a68" stroke-width="1"/>
+
+    <!-- Mouth - firm, thoughtful -->
+    <path d="M175 275 Q200 280 225 275" stroke="#8b6b5a" stroke-width="2.5" fill="none"/>
+
+    <!-- Beard - short, neat, gray -->
+    <path d="M145 260 Q150 310 200 320 Q250 310 255 260"
+          fill="url(#sangallo_hair)" opacity="0.8"/>
+    <!-- Beard texture -->
+    <path d="M160 280 L165 300" stroke="#6a6a6a" stroke-width="1"/>
+    <path d="M180 285 L182 305" stroke="#6a6a6a" stroke-width="1"/>
+    <path d="M200 287 L200 310" stroke="#6a6a6a" stroke-width="1"/>
+    <path d="M220 285 L218 305" stroke="#6a6a6a" stroke-width="1"/>
+    <path d="M240 280 L235 300" stroke="#6a6a6a" stroke-width="1"/>
+
+    <!-- Cap - practical work cap -->
+    <path d="M130 160 Q130 110 200 100 Q270 110 270 160 Q260 130 200 120 Q140 130 130 160"
+          fill="url(#sangallo_tunic)"/>
+    <ellipse cx="200" cy="155" rx="75" ry="15" fill="#5a4434"/>
+
+    <!-- Forehead lines - wisdom -->
+    <path d="M160 165 Q200 160 240 165" stroke="#b89a7a" stroke-width="1" fill="none"/>
+    <path d="M165 175 Q200 170 235 175" stroke="#b89a7a" stroke-width="1" fill="none"/>
+  </g>
+</svg>

@@ -1,0 +1,180 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080">
+  <defs>
+    <linearGradient id="stoneWall" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#c8b898"/>
+      <stop offset="100%" style="stop-color:#a89878"/>
+    </linearGradient>
+
+    <linearGradient id="woodBench" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#7a6a5a"/>
+      <stop offset="100%" style="stop-color:#5a4a3a"/>
+    </linearGradient>
+
+    <pattern id="stoneFloor" x="0" y="0" width="100" height="100" patternUnits="userSpaceOnUse">
+      <rect width="100" height="100" fill="#8a8a7a"/>
+      <rect x="5" y="5" width="42" height="42" fill="#9a9a8a"/>
+      <rect x="53" y="5" width="42" height="42" fill="#7a7a6a"/>
+      <rect x="5" y="53" width="42" height="42" fill="#7a7a6a"/>
+      <rect x="53" y="53" width="42" height="42" fill="#9a9a8a"/>
+    </pattern>
+
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="3" dy="5" stdDeviation="4" flood-color="#000" flood-opacity="0.3"/>
+    </filter>
+
+    <!-- Cyan glow for ARIA/modern tech -->
+    <filter id="techGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Walls -->
+  <rect width="1920" height="700" fill="url(#stoneWall)"/>
+
+  <!-- Wooden beams -->
+  <g fill="#5a4a3a" filter="url(#shadow)">
+    <rect x="0" y="60" width="1920" height="40"/>
+    <rect x="300" y="60" width="35" height="640"/>
+    <rect x="900" y="60" width="35" height="640"/>
+    <rect x="1580" y="60" width="35" height="640"/>
+  </g>
+
+  <!-- Arched window (left) -->
+  <g filter="url(#shadow)">
+    <path d="M400 150 L400 450 Q550 520 700 450 L700 150 Q550 100 400 150" fill="#87ceeb"/>
+    <path d="M400 150 L400 450 Q550 520 700 450 L700 150 Q550 100 400 150" fill="none" stroke="#5a4a3a" stroke-width="15"/>
+    <line x1="550" y1="100" x2="550" y2="520" stroke="#5a4a3a" stroke-width="8"/>
+    <line x1="400" y1="300" x2="700" y2="300" stroke="#5a4a3a" stroke-width="8"/>
+    <!-- Light beam -->
+    <path d="M400 450 L200 1080 L900 1080 L700 450 Z" fill="#fff8e0" opacity="0.1"/>
+  </g>
+
+  <!-- Floor -->
+  <rect x="0" y="700" width="1920" height="380" fill="url(#stoneFloor)"/>
+
+  <!-- MAIN WORKBENCH (Gary's workspace) -->
+  <g filter="url(#shadow)">
+    <rect x="1000" y="550" width="600" height="180" fill="url(#woodBench)"/>
+    <rect x="990" y="540" width="620" height="20" fill="#8a7a6a"/>
+    <rect x="1020" y="730" width="50" height="170" fill="#5a4a3a"/>
+    <rect x="1530" y="730" width="50" height="170" fill="#5a4a3a"/>
+
+    <!-- MODERN ITEMS (out of place!) -->
+    <!-- Gary's glasses (backup pair?) -->
+    <g stroke="#1a1a2e" stroke-width="3" fill="rgba(200,220,255,0.2)">
+      <rect x="1050" y="510" width="35" height="25" rx="3"/>
+      <rect x="1095" y="510" width="35" height="25" rx="3"/>
+      <path d="M1085 520 Q1090 518 1095 520"/>
+    </g>
+
+    <!-- ARIA device on bench! -->
+    <g filter="url(#techGlow)">
+      <rect x="1200" y="480" width="80" height="130" rx="8" fill="#1a1a2a"/>
+      <rect x="1210" y="490" width="60" height="90" rx="3" fill="#001a22"/>
+      <rect x="1210" y="490" width="60" height="90" rx="3" fill="#00ffff" opacity="0.2"/>
+      <!-- ARIA eyes -->
+      <rect x="1220" y="520" width="15" height="5" rx="1" fill="#00ffff"/>
+      <rect x="1245" y="520" width="15" height="5" rx="1" fill="#00ffff"/>
+      <!-- ARIA mouth -->
+      <rect x="1225" y="555" width="30" height="4" rx="2" fill="#00ffff"/>
+    </g>
+
+    <!-- Notebook with modern writing -->
+    <rect x="1320" y="500" width="100" height="70" fill="#f5f5f5" transform="rotate(5 1370 535)"/>
+    <g stroke="#2a2a2a" stroke-width="1">
+      <line x1="1330" y1="515" x2="1410" y2="520"/>
+      <line x1="1330" y1="530" x2="1400" y2="535"/>
+      <line x1="1330" y1="545" x2="1405" y2="550"/>
+    </g>
+    <!-- Spiral binding hint -->
+    <g fill="#5a5a5a">
+      <circle cx="1325" cy="510" r="3"/>
+      <circle cx="1325" cy="530" r="3"/>
+      <circle cx="1325" cy="550" r="3"/>
+    </g>
+
+    <!-- Renaissance tools mixed with notes -->
+    <!-- Quill and ink (trying to blend in) -->
+    <ellipse cx="1480" cy="520" rx="15" ry="20" fill="#1a1a1a"/>
+    <line x1="1490" y1="530" x2="1520" y2="480" stroke="#8a7a6a" stroke-width="3"/>
+
+    <!-- Sketches of "inventions" -->
+    <rect x="1530" y="495" width="70" height="55" fill="#f5e8d0"/>
+    <!-- Gear drawings -->
+    <circle cx="1565" cy="520" r="15" fill="none" stroke="#3a2a1a" stroke-width="1"/>
+    <circle cx="1565" cy="520" r="5" fill="none" stroke="#3a2a1a" stroke-width="1"/>
+  </g>
+
+  <!-- SECONDARY BENCH (Renaissance tools) -->
+  <g filter="url(#shadow)">
+    <rect x="100" y="600" width="400" height="120" fill="url(#woodBench)"/>
+    <rect x="90" y="590" width="420" height="20" fill="#8a7a6a"/>
+
+    <!-- Traditional tools -->
+    <!-- Hammers -->
+    <rect x="150" y="550" width="10" height="50" fill="#7a6a5a"/>
+    <rect x="140" y="540" width="30" height="15" fill="#5a5a5a"/>
+
+    <!-- Chisels -->
+    <rect x="220" y="555" width="8" height="45" fill="#7a6a5a"/>
+    <path d="M218 600 L226 600 L224 610 L220 610 Z" fill="#8a8a8a"/>
+
+    <!-- Wood pieces -->
+    <rect x="280" y="560" width="80" height="35" fill="#8a7a5a"/>
+    <rect x="300" y="545" width="50" height="50" fill="#7a6a4a"/>
+
+    <!-- Rope coil -->
+    <ellipse cx="420" cy="570" rx="30" ry="25" fill="#a89070"/>
+    <ellipse cx="420" cy="570" rx="15" ry="12" fill="#8a7050"/>
+  </g>
+
+  <!-- Shelves with materials -->
+  <g filter="url(#shadow)">
+    <rect x="1700" y="200" width="200" height="20" fill="url(#woodBench)"/>
+    <rect x="1700" y="350" width="200" height="20" fill="url(#woodBench)"/>
+    <!-- Items on shelves -->
+    <ellipse cx="1750" cy="185" rx="25" ry="30" fill="#c9a060"/>
+    <ellipse cx="1820" cy="180" rx="20" ry="35" fill="#6a5a4a" opacity="0.8"/>
+    <ellipse cx="1870" cy="188" rx="22" ry="28" fill="#8a7a5a"/>
+
+    <rect x="1720" y="310" width="50" height="40" fill="#5a4a3a"/>
+    <rect x="1800" y="305" width="40" height="45" fill="#4a3a2a"/>
+    <ellipse cx="1870" cy="330" rx="20" ry="25" fill="#c9a060"/>
+  </g>
+
+  <!-- Hanging project (partial mechanism) -->
+  <g filter="url(#shadow)">
+    <line x1="550" y1="60" x2="550" y2="200" stroke="#5a4a3a" stroke-width="4"/>
+    <!-- Wooden frame with gears -->
+    <rect x="480" y="200" width="140" height="100" fill="#7a6a5a"/>
+    <circle cx="520" cy="250" r="25" fill="#c9a227" stroke="#8a7a20" stroke-width="3"/>
+    <circle cx="580" cy="250" r="20" fill="#b89a27" stroke="#7a6a10" stroke-width="2"/>
+    <circle cx="520" cy="250" r="8" fill="#7a6a5a"/>
+    <circle cx="580" cy="250" r="6" fill="#7a6a5a"/>
+  </g>
+
+  <!-- Candle for light -->
+  <g>
+    <rect x="1650" y="500" width="30" height="80" fill="#5a4a3a"/>
+    <rect x="1657" y="460" width="16" height="45" fill="#f5f0e0"/>
+    <ellipse cx="1665" cy="455" rx="10" ry="15" fill="#ffa040"/>
+    <ellipse cx="1665" cy="450" rx="5" ry="8" fill="#ffff80"/>
+  </g>
+
+  <!-- Door to other rooms -->
+  <g filter="url(#shadow)">
+    <rect x="750" y="400" width="120" height="300" fill="#3a2a1a"/>
+    <rect x="740" y="390" width="140" height="20" fill="#5a4a3a"/>
+    <rect x="740" y="390" width="15" height="320" fill="#5a4a3a"/>
+    <rect x="865" y="390" width="15" height="320" fill="#5a4a3a"/>
+    <circle cx="850" cy="550" r="8" fill="#c9a227"/>
+  </g>
+
+  <!-- Warm lighting with hint of cyan from ARIA -->
+  <rect width="1920" height="1080" fill="#ffa040" opacity="0.04"/>
+  <ellipse cx="1240" cy="600" rx="200" ry="150" fill="#00ffff" opacity="0.02"/>
+</svg>

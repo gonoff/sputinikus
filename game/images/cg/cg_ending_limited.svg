@@ -1,0 +1,174 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080">
+  <defs>
+    <!-- Muted sky - not triumphant, not tragic -->
+    <linearGradient id="limited_sky" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#4a5a6a"/>
+      <stop offset="50%" style="stop-color:#7a8a9a"/>
+      <stop offset="100%" style="stop-color:#a0a8b0"/>
+    </linearGradient>
+    <!-- Modern room colors -->
+    <linearGradient id="modern_wall" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#e8e4e0"/>
+      <stop offset="100%" style="stop-color:#d4d0cc"/>
+    </linearGradient>
+    <!-- Wood floor -->
+    <linearGradient id="modern_floor" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#8b7355"/>
+      <stop offset="50%" style="stop-color:#9a8265"/>
+      <stop offset="100%" style="stop-color:#8b7355"/>
+    </linearGradient>
+    <!-- Skin -->
+    <linearGradient id="gary_modern_skin" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f0d0b8"/>
+      <stop offset="100%" style="stop-color:#e0b898"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background - modern living room -->
+  <rect width="1920" height="1080" fill="url(#modern_wall)"/>
+
+  <!-- Window showing overcast sky -->
+  <rect x="1300" y="100" width="500" height="400" fill="#3a3a3a"/>
+  <rect x="1320" y="120" width="460" height="360" fill="url(#limited_sky)"/>
+  <!-- Window frame -->
+  <line x1="1550" y1="120" x2="1550" y2="480" stroke="#3a3a3a" stroke-width="15"/>
+  <line x1="1320" y1="300" x2="1780" y2="300" stroke="#3a3a3a" stroke-width="15"/>
+  <!-- Curtains -->
+  <path d="M1300 100 Q1250 250 1280 500 L1320 500 L1320 100 Z" fill="#6a7a8a"/>
+  <path d="M1800 100 Q1850 250 1820 500 L1780 500 L1780 100 Z" fill="#6a7a8a"/>
+
+  <!-- Wood floor -->
+  <rect x="0" y="650" width="1920" height="430" fill="url(#modern_floor)"/>
+  <!-- Floor boards -->
+  <g stroke="#7a6345" stroke-width="1">
+    <line x1="0" y1="720" x2="1920" y2="720"/>
+    <line x1="0" y1="820" x2="1920" y2="820"/>
+    <line x1="0" y1="920" x2="1920" y2="920"/>
+    <line x1="0" y1="1020" x2="1920" y2="1020"/>
+  </g>
+
+  <!-- Couch -->
+  <g transform="translate(600, 550)">
+    <!-- Back -->
+    <rect x="-300" y="-100" width="600" height="150" fill="#5a6a7a" rx="20"/>
+    <!-- Seat -->
+    <rect x="-320" y="50" width="640" height="100" fill="#4a5a6a" rx="15"/>
+    <!-- Armrests -->
+    <rect x="-350" y="-50" width="60" height="200" fill="#5a6a7a" rx="10"/>
+    <rect x="290" y="-50" width="60" height="200" fill="#5a6a7a" rx="10"/>
+    <!-- Cushions -->
+    <ellipse cx="-150" cy="80" rx="120" ry="40" fill="#6a7a8a"/>
+    <ellipse cx="150" cy="80" rx="120" ry="40" fill="#6a7a8a"/>
+    <!-- Legs -->
+    <rect x="-300" y="150" width="20" height="40" fill="#4a4a4a"/>
+    <rect x="280" y="150" width="20" height="40" fill="#4a4a4a"/>
+  </g>
+
+  <!-- Gary sitting on couch - contemplative, slightly melancholic -->
+  <g transform="translate(550, 400)">
+    <!-- Modern clothes - hoodie -->
+    <path d="M-50 100 Q-70 180 -80 300 L80 300 Q70 180 50 100 Z" fill="#4a5a68"/>
+    <!-- Hoodie details -->
+    <path d="M-30 100 L0 130 L30 100" fill="#3a4a58"/>
+    <!-- Drawstrings -->
+    <line x1="-10" y1="120" x2="-15" y2="160" stroke="#aaa" stroke-width="2"/>
+    <line x1="10" y1="120" x2="15" y2="160" stroke="#aaa" stroke-width="2"/>
+    <!-- Arms resting -->
+    <path d="M-50 120 Q-90 180 -100 250 L-70 260 Q-65 200 -40 150" fill="#4a5a68"/>
+    <path d="M50 120 Q90 180 100 250 L70 260 Q65 200 40 150" fill="#4a5a68"/>
+    <!-- Hands -->
+    <ellipse cx="-95" cy="265" rx="20" ry="18" fill="url(#gary_modern_skin)"/>
+    <ellipse cx="95" cy="265" rx="20" ry="18" fill="url(#gary_modern_skin)"/>
+    <!-- Jeans -->
+    <path d="M-60 300 Q-70 380 -80 450 L0 450 Q-5 380 -10 300" fill="#3a4a5a"/>
+    <path d="M60 300 Q70 380 80 450 L0 450 Q5 380 10 300" fill="#3a4a5a"/>
+    <!-- Neck -->
+    <rect x="-18" y="60" width="36" height="45" fill="url(#gary_modern_skin)"/>
+    <!-- Head -->
+    <ellipse cx="0" cy="10" rx="50" ry="60" fill="url(#gary_modern_skin)"/>
+    <!-- Hair - slightly disheveled -->
+    <path d="M-45 -20 Q-50 -55 0 -65 Q50 -55 45 -20 Q25 -40 0 -45 Q-25 -40 -45 -20" fill="#5c4033"/>
+    <!-- Glasses -->
+    <ellipse cx="-17" cy="5" rx="16" ry="12" fill="none" stroke="#4a4a4a" stroke-width="3"/>
+    <ellipse cx="20" cy="5" rx="16" ry="12" fill="none" stroke="#4a4a4a" stroke-width="3"/>
+    <line x1="3" y1="5" x2="4" y2="5" stroke="#4a4a4a" stroke-width="3"/>
+    <!-- Contemplative/wistful expression -->
+    <ellipse cx="-17" cy="5" rx="10" ry="8" fill="white"/>
+    <ellipse cx="20" cy="5" rx="10" ry="8" fill="white"/>
+    <circle cx="-15" cy="6" r="5" fill="#4a7090"/>
+    <circle cx="22" cy="6" r="5" fill="#4a7090"/>
+    <circle cx="-15" cy="6" r="2.5" fill="#1a1a1a"/>
+    <circle cx="22" cy="6" r="2.5" fill="#1a1a1a"/>
+    <!-- Looking slightly downward - reflective -->
+    <!-- Slight sad smile -->
+    <path d="M-12 35 Q0 40 12 35" stroke="#8b5a4a" stroke-width="2" fill="none"/>
+  </g>
+
+  <!-- Coffee table with ARIA and old photo -->
+  <g transform="translate(600, 720)">
+    <!-- Table top -->
+    <rect x="-150" y="-20" width="300" height="15" fill="#5a4a3a"/>
+    <!-- Legs -->
+    <rect x="-140" y="-5" width="10" height="60" fill="#4a3a2a"/>
+    <rect x="130" y="-5" width="10" height="60" fill="#4a3a2a"/>
+    <!-- ARIA on table - functional but quiet -->
+    <rect x="-30" y="-55" width="40" height="30" fill="#2a3a4a"/>
+    <rect x="-25" y="-50" width="30" height="20" fill="#003344"/>
+    <!-- Simple display -->
+    <text x="-10" y="-38" font-family="monospace" font-size="8" fill="#00ffff">...</text>
+    <!-- Coffee mug -->
+    <ellipse cx="80" cy="-35" rx="20" ry="8" fill="#8a6a4a"/>
+    <rect x="60" y="-35" width="40" height="25" fill="#7a5a3a"/>
+    <path d="M100 -30 Q115 -25 100 -15" stroke="#7a5a3a" stroke-width="5" fill="none"/>
+    <!-- Old photo frame -->
+    <rect x="-120" y="-70" width="60" height="50" fill="#4a3a2a"/>
+    <rect x="-115" y="-65" width="50" height="40" fill="#d4c4a8"/>
+    <!-- Faded image of Renaissance scene -->
+    <rect x="-110" y="-60" width="40" height="30" fill="#a09080"/>
+  </g>
+
+  <!-- Bookshelf with history books -->
+  <g transform="translate(150, 300)">
+    <rect x="0" y="0" width="200" height="400" fill="#5a4a3a"/>
+    <!-- Shelves -->
+    <rect x="10" y="50" width="180" height="10" fill="#4a3a2a"/>
+    <rect x="10" y="150" width="180" height="10" fill="#4a3a2a"/>
+    <rect x="10" y="250" width="180" height="10" fill="#4a3a2a"/>
+    <rect x="10" y="350" width="180" height="10" fill="#4a3a2a"/>
+    <!-- Books -->
+    <rect x="20" y="10" width="25" height="38" fill="#8b2942"/>
+    <rect x="50" y="15" width="20" height="33" fill="#2a4a6a"/>
+    <rect x="75" y="12" width="28" height="36" fill="#4a6a3a"/>
+    <rect x="110" y="8" width="22" height="40" fill="#6a4a2a"/>
+    <rect x="140" y="14" width="30" height="34" fill="#3a3a5a"/>
+    <!-- More books on other shelves -->
+    <rect x="20" y="60" width="30" height="85" fill="#5a3a3a"/>
+    <rect x="55" y="65" width="25" height="80" fill="#3a5a5a"/>
+    <rect x="85" y="62" width="28" height="83" fill="#5a5a3a"/>
+    <rect x="120" y="68" width="22" height="77" fill="#4a3a5a"/>
+    <rect x="150" y="60" width="30" height="85" fill="#3a4a3a"/>
+  </g>
+
+  <!-- Lamp - soft light -->
+  <g transform="translate(1100, 400)">
+    <rect x="-5" y="100" width="10" height="150" fill="#4a4a4a"/>
+    <ellipse cx="0" cy="250" rx="40" ry="10" fill="#3a3a3a"/>
+    <path d="M-40 50 Q-50 100 -30 100 L30 100 Q50 100 40 50 Q0 30 -40 50" fill="#e8e0d0"/>
+    <!-- Warm light glow -->
+    <ellipse cx="0" cy="80" rx="60" ry="80" fill="#ffd700" opacity="0.1"/>
+  </g>
+
+  <!-- Text: "What if...?" thought bubble faded -->
+  <text x="800" y="200" font-family="serif" font-size="48" fill="#7a8a9a" opacity="0.5" font-style="italic">What could have been...</text>
+
+  <!-- Calendar on wall showing present day -->
+  <g transform="translate(1650, 550)">
+    <rect x="0" y="0" width="80" height="100" fill="white"/>
+    <rect x="0" y="0" width="80" height="25" fill="#cc0000"/>
+    <text x="40" y="18" text-anchor="middle" font-family="sans-serif" font-size="14" fill="white">2025</text>
+    <text x="40" y="70" text-anchor="middle" font-family="sans-serif" font-size="36" fill="#333">15</text>
+  </g>
+
+  <!-- Muted, grey overlay for melancholic feel -->
+  <rect width="1920" height="1080" fill="#5a6a7a" opacity="0.1"/>
+</svg>

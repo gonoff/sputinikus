@@ -1,0 +1,168 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080">
+  <defs>
+    <linearGradient id="wallGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#f5e8d0"/>
+      <stop offset="100%" style="stop-color:#e8d8c0"/>
+    </linearGradient>
+
+    <linearGradient id="marble" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#d8d0c8"/>
+      <stop offset="30%" style="stop-color:#f5f0e8"/>
+      <stop offset="70%" style="stop-color:#f5f0e8"/>
+      <stop offset="100%" style="stop-color:#c8c0b8"/>
+    </linearGradient>
+
+    <linearGradient id="goldFrame" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#c9a227"/>
+      <stop offset="50%" style="stop-color:#f5d742"/>
+      <stop offset="100%" style="stop-color:#c9a227"/>
+    </linearGradient>
+
+    <pattern id="marbleFloor" x="0" y="0" width="200" height="200" patternUnits="userSpaceOnUse">
+      <rect width="200" height="200" fill="#e8e0d8"/>
+      <rect x="0" y="0" width="100" height="100" fill="#f5f0e8"/>
+      <rect x="100" y="100" width="100" height="100" fill="#f5f0e8"/>
+      <rect x="100" y="0" width="100" height="100" fill="#d8d0c8"/>
+      <rect x="0" y="100" width="100" height="100" fill="#d8d0c8"/>
+    </pattern>
+
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="3" dy="5" stdDeviation="4" flood-color="#000" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+
+  <!-- Vaulted ceiling -->
+  <path d="M0 0 L0 200 Q960 -50 1920 200 L1920 0 Z" fill="#e8d8c0"/>
+  <!-- Ceiling coffers/ribs -->
+  <g stroke="#d0c0b0" stroke-width="8" fill="none">
+    <path d="M200 0 Q200 100 300 200"/>
+    <path d="M500 0 Q500 80 600 180"/>
+    <path d="M800 0 Q800 60 900 160"/>
+    <path d="M1120 0 Q1120 60 1020 160"/>
+    <path d="M1420 0 Q1420 80 1320 180"/>
+    <path d="M1720 0 Q1720 100 1620 200"/>
+  </g>
+  <!-- Decorative molding -->
+  <path d="M0 200 Q960 50 1920 200" fill="none" stroke="url(#goldFrame)" stroke-width="15"/>
+
+  <!-- Left wall -->
+  <rect x="0" y="200" width="400" height="550" fill="url(#wallGrad)"/>
+  <!-- Perspective lines -->
+  <polygon points="0,200 400,200 400,750 0,1080" fill="url(#wallGrad)"/>
+
+  <!-- Right wall -->
+  <rect x="1520" y="200" width="400" height="550" fill="url(#wallGrad)"/>
+  <polygon points="1920,200 1520,200 1520,750 1920,1080" fill="url(#wallGrad)"/>
+
+  <!-- PAINTINGS on left wall -->
+  <g filter="url(#shadow)">
+    <!-- Large painting 1 -->
+    <rect x="80" y="280" width="200" height="280" fill="#2a2a2a"/>
+    <rect x="80" y="270" width="200" height="15" fill="url(#goldFrame)"/>
+    <rect x="70" y="270" width="15" height="300" fill="url(#goldFrame)"/>
+    <rect x="275" y="270" width="15" height="300" fill="url(#goldFrame)"/>
+    <rect x="80" y="555" width="200" height="15" fill="url(#goldFrame)"/>
+    <!-- Religious scene -->
+    <rect x="95" y="295" width="170" height="130" fill="#87ceeb"/>
+    <ellipse cx="180" cy="400" rx="40" ry="60" fill="#f5e8d0"/>
+    <ellipse cx="180" cy="360" rx="20" ry="25" fill="#e8c8a8"/>
+    <rect x="140" y="430" width="80" height="80" fill="#8b2942"/>
+
+    <!-- Painting 2 -->
+    <rect x="350" y="320" width="150" height="200" fill="#1a1a1a"/>
+    <rect x="350" y="310" width="150" height="15" fill="url(#goldFrame)"/>
+    <rect x="340" y="310" width="15" height="220" fill="url(#goldFrame)"/>
+    <rect x="495" y="310" width="15" height="220" fill="url(#goldFrame)"/>
+    <rect x="350" y="515" width="150" height="15" fill="url(#goldFrame)"/>
+    <!-- Portrait -->
+    <ellipse cx="425" cy="400" rx="35" ry="50" fill="#e8c8a8"/>
+    <rect x="385" y="450" width="80" height="50" fill="#722f37"/>
+  </g>
+
+  <!-- PAINTINGS on right wall -->
+  <g filter="url(#shadow)">
+    <rect x="1640" y="280" width="200" height="280" fill="#2a2a2a"/>
+    <rect x="1640" y="270" width="200" height="15" fill="url(#goldFrame)"/>
+    <rect x="1630" y="270" width="15" height="300" fill="url(#goldFrame)"/>
+    <rect x="1835" y="270" width="15" height="300" fill="url(#goldFrame)"/>
+    <rect x="1640" y="555" width="200" height="15" fill="url(#goldFrame)"/>
+    <!-- Biblical scene -->
+    <rect x="1655" y="295" width="170" height="240" fill="#4a6a4a"/>
+    <ellipse cx="1740" cy="380" rx="50" ry="30" fill="#87ceeb"/>
+    <ellipse cx="1700" cy="450" rx="25" ry="40" fill="#e8c8a8"/>
+    <ellipse cx="1780" cy="460" rx="25" ry="35" fill="#e8c8a8"/>
+
+    <rect x="1375" y="320" width="150" height="200" fill="#1a1a1a"/>
+    <rect x="1375" y="310" width="150" height="15" fill="url(#goldFrame)"/>
+    <rect x="1365" y="310" width="15" height="220" fill="url(#goldFrame)"/>
+    <rect x="1520" y="310" width="15" height="220" fill="url(#goldFrame)"/>
+    <rect x="1375" y="515" width="150" height="15" fill="url(#goldFrame)"/>
+    <!-- Madonna -->
+    <ellipse cx="1450" cy="400" rx="40" ry="55" fill="#1a3a5a"/>
+    <ellipse cx="1450" cy="360" rx="20" ry="25" fill="#e8c8a8"/>
+    <ellipse cx="1450" cy="430" rx="15" ry="20" fill="#e8c8a8"/>
+  </g>
+
+  <!-- COLUMNS along walls -->
+  <g fill="url(#marble)" filter="url(#shadow)">
+    <!-- Left side -->
+    <rect x="550" y="200" width="50" height="550"/>
+    <ellipse cx="575" cy="200" rx="35" ry="15" fill="#e8e0d8"/>
+    <rect x="540" y="185" width="70" height="20" fill="#d8d0c8"/>
+
+    <rect x="700" y="220" width="45" height="480"/>
+    <ellipse cx="722" cy="220" rx="32" ry="14" fill="#e8e0d8"/>
+
+    <!-- Right side -->
+    <rect x="1320" y="200" width="50" height="550"/>
+    <ellipse cx="1345" cy="200" rx="35" ry="15" fill="#e8e0d8"/>
+    <rect x="1310" y="185" width="70" height="20" fill="#d8d0c8"/>
+
+    <rect x="1175" y="220" width="45" height="480"/>
+    <ellipse cx="1198" cy="220" rx="32" ry="14" fill="#e8e0d8"/>
+  </g>
+
+  <!-- Floor -->
+  <polygon points="0,750 400,750 1520,750 1920,750 1920,1080 0,1080" fill="url(#marbleFloor)"/>
+
+  <!-- Corridor perspective end (archway) -->
+  <g>
+    <rect x="800" y="300" width="320" height="450" fill="#3a2a20"/>
+    <path d="M800 300 L960 200 L1120 300" fill="#c8b898"/>
+    <!-- Light from beyond -->
+    <rect x="820" y="320" width="280" height="400" fill="#f5e8d0" opacity="0.3"/>
+  </g>
+
+  <!-- Ornate benches along walls -->
+  <g filter="url(#shadow)">
+    <rect x="100" y="680" width="200" height="60" fill="#5a3040"/>
+    <rect x="90" y="670" width="220" height="15" fill="#6a4050"/>
+    <rect x="1620" y="680" width="200" height="60" fill="#5a3040"/>
+    <rect x="1610" y="670" width="220" height="15" fill="#6a4050"/>
+  </g>
+
+  <!-- Decorative urns -->
+  <g fill="#c9a060" filter="url(#shadow)">
+    <ellipse cx="600" cy="720" rx="30" ry="40"/>
+    <ellipse cx="600" cy="690" rx="20" ry="12"/>
+    <rect x="580" y="755" width="40" height="20" fill="#b89050"/>
+
+    <ellipse cx="1320" cy="720" rx="30" ry="40"/>
+    <ellipse cx="1320" cy="690" rx="20" ry="12"/>
+    <rect x="1300" y="755" width="40" height="20" fill="#b89050"/>
+  </g>
+
+  <!-- Hanging lanterns -->
+  <g>
+    <line x1="400" y1="100" x2="400" y2="180" stroke="#5a5a5a" stroke-width="4"/>
+    <rect x="375" y="180" width="50" height="60" fill="#5a5a5a"/>
+    <ellipse cx="400" cy="210" rx="15" ry="20" fill="#ffa040" opacity="0.6"/>
+
+    <line x1="1520" y1="100" x2="1520" y2="180" stroke="#5a5a5a" stroke-width="4"/>
+    <rect x="1495" y="180" width="50" height="60" fill="#5a5a5a"/>
+    <ellipse cx="1520" cy="210" rx="15" ry="20" fill="#ffa040" opacity="0.6"/>
+  </g>
+
+  <!-- Warm ambient light -->
+  <rect width="1920" height="1080" fill="#ffa040" opacity="0.04"/>
+</svg>

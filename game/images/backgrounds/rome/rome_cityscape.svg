@@ -1,0 +1,159 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080">
+  <defs>
+    <linearGradient id="skyGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#5a7a9a"/>
+      <stop offset="100%" style="stop-color:#8aa0b8"/>
+    </linearGradient>
+
+    <linearGradient id="marble" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#e8e0d8"/>
+      <stop offset="50%" style="stop-color:#f5f0e8"/>
+      <stop offset="100%" style="stop-color:#d8d0c8"/>
+    </linearGradient>
+
+    <linearGradient id="terracotta" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#cd853f"/>
+      <stop offset="100%" style="stop-color:#a0522d"/>
+    </linearGradient>
+
+    <linearGradient id="stoneBuilding" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#c8b898"/>
+      <stop offset="100%" style="stop-color:#b8a888"/>
+    </linearGradient>
+
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="4" dy="6" stdDeviation="5" flood-color="#000" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <!-- Sky -->
+  <rect width="1920" height="500" fill="url(#skyGrad)"/>
+
+  <!-- Distant hills -->
+  <ellipse cx="960" cy="520" rx="1200" ry="150" fill="#9ab8a0" opacity="0.5"/>
+
+  <!-- TIBER RIVER -->
+  <path d="M0 750 Q400 700 700 720 Q1000 740 1300 710 Q1600 680 1920 720 L1920 850 L0 850 Z"
+        fill="#5a8a9a" opacity="0.6"/>
+  <!-- River reflections -->
+  <g fill="#7aaaba" opacity="0.3">
+    <ellipse cx="300" cy="780" rx="100" ry="20"/>
+    <ellipse cx="800" cy="760" rx="120" ry="25"/>
+    <ellipse cx="1400" cy="750" rx="90" ry="18"/>
+  </g>
+
+  <!-- ANCIENT RUINS (Colosseum hint in distance) -->
+  <g filter="url(#shadow)" opacity="0.7">
+    <path d="M200 450 L200 580 Q300 600 400 580 L400 450 Q300 430 200 450" fill="#c8b898"/>
+    <!-- Arches -->
+    <g fill="#8a7a5a">
+      <path d="M220 480 L220 550 Q250 560 280 550 L280 480 Q250 470 220 480"/>
+      <path d="M300 480 L300 550 Q330 560 360 550 L360 480 Q330 470 300 480"/>
+    </g>
+  </g>
+
+  <!-- ST. PETER'S BASILICA (prominent, center-right) -->
+  <g filter="url(#shadow)">
+    <!-- Main building -->
+    <rect x="1100" y="280" width="400" height="320" fill="url(#marble)"/>
+
+    <!-- Famous dome -->
+    <ellipse cx="1300" cy="280" rx="120" ry="100" fill="#d8d0c8"/>
+    <ellipse cx="1300" cy="280" rx="100" ry="80" fill="url(#marble)"/>
+    <!-- Lantern on top -->
+    <rect x="1280" y="180" width="40" height="40" fill="url(#marble)"/>
+    <ellipse cx="1300" cy="175" rx="25" ry="15" fill="#d8d0c8"/>
+    <!-- Cross -->
+    <line x1="1300" y1="140" x2="1300" y2="175" stroke="#c9a227" stroke-width="4"/>
+    <line x1="1288" y1="155" x2="1312" y2="155" stroke="#c9a227" stroke-width="4"/>
+
+    <!-- Facade columns -->
+    <g fill="url(#marble)">
+      <rect x="1120" y="350" width="25" height="200"/>
+      <rect x="1170" y="350" width="25" height="200"/>
+      <rect x="1220" y="350" width="25" height="200"/>
+      <rect x="1350" y="350" width="25" height="200"/>
+      <rect x="1400" y="350" width="25" height="200"/>
+      <rect x="1450" y="350" width="25" height="200"/>
+    </g>
+
+    <!-- Pediment -->
+    <path d="M1100 340 L1300 280 L1500 340 Z" fill="#e8e0d8"/>
+  </g>
+
+  <!-- CASTEL SANT'ANGELO -->
+  <g filter="url(#shadow)">
+    <ellipse cx="700" cy="550" rx="100" ry="80" fill="#c8b898"/>
+    <rect x="600" y="480" width="200" height="120" fill="#b8a888"/>
+    <!-- Cylindrical tower -->
+    <ellipse cx="700" cy="480" rx="80" ry="30" fill="#c8b898"/>
+    <!-- Angel statue on top -->
+    <ellipse cx="700" cy="460" rx="15" ry="25" fill="#e8e0d8"/>
+  </g>
+
+  <!-- PONTE SANT'ANGELO (bridge) -->
+  <g filter="url(#shadow)">
+    <rect x="550" y="650" width="300" height="50" fill="url(#marble)"/>
+    <!-- Arches -->
+    <g fill="#5a8a9a">
+      <ellipse cx="600" cy="700" rx="30" ry="25"/>
+      <ellipse cx="700" cy="700" rx="30" ry="25"/>
+      <ellipse cx="800" cy="700" rx="30" ry="25"/>
+    </g>
+    <!-- Statues on bridge -->
+    <g fill="#e8e0d8">
+      <ellipse cx="580" cy="640" rx="8" ry="20"/>
+      <ellipse cx="650" cy="640" rx="8" ry="20"/>
+      <ellipse cx="750" cy="640" rx="8" ry="20"/>
+      <ellipse cx="820" cy="640" rx="8" ry="20"/>
+    </g>
+  </g>
+
+  <!-- Other buildings (cityscape) -->
+  <g filter="url(#shadow)">
+    <!-- Left buildings -->
+    <rect x="0" y="400" width="180" height="250" fill="url(#stoneBuilding)"/>
+    <path d="M0 400 L90 350 L180 400 Z" fill="url(#terracotta)"/>
+
+    <rect x="900" y="420" width="150" height="230" fill="url(#stoneBuilding)"/>
+    <path d="M900 420 L975 370 L1050 420 Z" fill="url(#terracotta)"/>
+
+    <!-- Right buildings -->
+    <rect x="1550" y="380" width="180" height="270" fill="url(#stoneBuilding)"/>
+    <path d="M1550 380 L1640 330 L1730 380 Z" fill="url(#terracotta)"/>
+
+    <rect x="1750" y="420" width="170" height="230" fill="url(#stoneBuilding)"/>
+    <path d="M1750 420 L1835 370 L1920 420 Z" fill="url(#terracotta)"/>
+  </g>
+
+  <!-- Church towers/bell towers -->
+  <g filter="url(#shadow)">
+    <rect x="450" y="380" width="50" height="180" fill="url(#stoneBuilding)"/>
+    <path d="M440 380 L475 340 L510 380 Z" fill="url(#stoneBuilding)"/>
+    <ellipse cx="475" cy="420" rx="15" ry="20" fill="#3a2a1a"/>
+
+    <rect x="1650" y="350" width="40" height="150" fill="url(#stoneBuilding)"/>
+    <path d="M1640 350 L1670 310 L1700 350 Z" fill="url(#stoneBuilding)"/>
+  </g>
+
+  <!-- Foreground embankment -->
+  <rect x="0" y="850" width="1920" height="230" fill="#8a9a7a"/>
+
+  <!-- Trees along river -->
+  <g fill="#4a6a3a" filter="url(#shadow)">
+    <ellipse cx="100" cy="820" rx="50" ry="60"/>
+    <ellipse cx="180" cy="830" rx="40" ry="50"/>
+    <ellipse cx="1700" cy="810" rx="55" ry="65"/>
+    <ellipse cx="1800" cy="830" rx="45" ry="50"/>
+  </g>
+
+  <!-- Atmospheric haze -->
+  <rect x="0" y="350" width="1920" height="200" fill="#8aa0b8" opacity="0.15"/>
+
+  <!-- Birds -->
+  <g fill="none" stroke="#4a4a4a" stroke-width="2">
+    <path d="M600 150 Q610 140 620 150 Q630 140 640 150"/>
+    <path d="M1100 100 Q1110 90 1120 100"/>
+    <path d="M1500 180 Q1510 170 1520 180 Q1530 170 1540 180"/>
+  </g>
+</svg>

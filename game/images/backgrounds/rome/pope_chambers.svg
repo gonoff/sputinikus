@@ -1,0 +1,186 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080">
+  <defs>
+    <linearGradient id="richWall" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#8b0000"/>
+      <stop offset="100%" style="stop-color:#5a0000"/>
+    </linearGradient>
+
+    <linearGradient id="goldTrim" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#c9a227"/>
+      <stop offset="50%" style="stop-color:#f5d742"/>
+      <stop offset="100%" style="stop-color:#c9a227"/>
+    </linearGradient>
+
+    <linearGradient id="marble" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#d8d0c8"/>
+      <stop offset="50%" style="stop-color:#f5f0e8"/>
+      <stop offset="100%" style="stop-color:#c8c0b8"/>
+    </linearGradient>
+
+    <pattern id="marbleFloor" x="0" y="0" width="150" height="150" patternUnits="userSpaceOnUse">
+      <rect width="150" height="150" fill="#d8d0c8"/>
+      <rect x="0" y="0" width="75" height="75" fill="#e8e0d8"/>
+      <rect x="75" y="75" width="75" height="75" fill="#e8e0d8"/>
+      <path d="M20 20 Q40 30 30 60" stroke="#c8c0b8" stroke-width="1" fill="none" opacity="0.4"/>
+    </pattern>
+
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="4" dy="6" stdDeviation="5" flood-color="#000" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+
+  <!-- Ornate ceiling -->
+  <rect width="1920" height="200" fill="#6a0000"/>
+  <!-- Coffered ceiling with gold -->
+  <g stroke="url(#goldTrim)" stroke-width="6" fill="none">
+    <rect x="50" y="30" width="300" height="140"/>
+    <rect x="400" y="30" width="300" height="140"/>
+    <rect x="750" y="30" width="420" height="140"/>
+    <rect x="1220" y="30" width="300" height="140"/>
+    <rect x="1570" y="30" width="300" height="140"/>
+  </g>
+  <!-- Ceiling rosettes -->
+  <g fill="url(#goldTrim)">
+    <circle cx="200" cy="100" r="30"/>
+    <circle cx="550" cy="100" r="30"/>
+    <circle cx="960" cy="100" r="40"/>
+    <circle cx="1370" cy="100" r="30"/>
+    <circle cx="1720" cy="100" r="30"/>
+  </g>
+
+  <!-- Main wall -->
+  <rect x="0" y="200" width="1920" height="500" fill="url(#richWall)"/>
+
+  <!-- Gold wall moldings -->
+  <rect x="0" y="200" width="1920" height="25" fill="url(#goldTrim)"/>
+  <rect x="0" y="450" width="1920" height="12" fill="url(#goldTrim)"/>
+  <rect x="0" y="680" width="1920" height="25" fill="url(#goldTrim)"/>
+
+  <!-- PAPAL THRONE (center) -->
+  <g filter="url(#shadow)">
+    <!-- Throne back (tall, ornate) -->
+    <rect x="800" y="250" width="320" height="450" fill="#6a0000"/>
+    <rect x="790" y="240" width="340" height="20" fill="url(#goldTrim)"/>
+
+    <!-- Throne canopy -->
+    <path d="M780 240 L960 180 L1140 240" fill="#8b0000"/>
+    <path d="M780 240 L960 180 L1140 240" fill="none" stroke="url(#goldTrim)" stroke-width="8"/>
+    <!-- Papal tiara symbol -->
+    <ellipse cx="960" cy="210" rx="25" ry="30" fill="url(#goldTrim)"/>
+    <ellipse cx="960" cy="200" rx="20" ry="15" fill="#f5d742"/>
+    <ellipse cx="960" cy="215" rx="22" ry="12" fill="#f5d742"/>
+    <ellipse cx="960" cy="230" rx="25" ry="10" fill="#f5d742"/>
+
+    <!-- Throne seat -->
+    <rect x="850" y="500" width="220" height="120" fill="#5a0000"/>
+    <rect x="840" y="490" width="240" height="20" fill="url(#goldTrim)"/>
+
+    <!-- Throne cushion -->
+    <ellipse cx="960" cy="540" rx="90" ry="30" fill="#8b2942"/>
+    <ellipse cx="960" cy="530" rx="80" ry="25" fill="#a03050"/>
+
+    <!-- Armrests -->
+    <rect x="820" y="520" width="40" height="80" fill="#6a0000"/>
+    <rect x="820" y="510" width="45" height="15" fill="url(#goldTrim)"/>
+    <rect x="1060" y="520" width="40" height="80" fill="#6a0000"/>
+    <rect x="1055" y="510" width="45" height="15" fill="url(#goldTrim)"/>
+
+    <!-- Throne base/steps -->
+    <rect x="750" y="620" width="420" height="40" fill="url(#marble)"/>
+    <rect x="700" y="660" width="520" height="40" fill="url(#marble)"/>
+  </g>
+
+  <!-- Large tapestries on sides -->
+  <g filter="url(#shadow)">
+    <!-- Left tapestry -->
+    <rect x="150" y="260" width="250" height="350" fill="#1a3a5a"/>
+    <rect x="150" y="250" width="250" height="15" fill="url(#goldTrim)"/>
+    <!-- Papal keys symbol -->
+    <g stroke="url(#goldTrim)" stroke-width="4" fill="none">
+      <line x1="250" y1="380" x2="300" y2="450"/>
+      <line x1="300" y1="380" x2="250" y2="450"/>
+      <circle cx="250" cy="370" r="20"/>
+      <circle cx="300" cy="370" r="20"/>
+    </g>
+
+    <!-- Right tapestry -->
+    <rect x="1520" y="260" width="250" height="350" fill="#1a3a5a"/>
+    <rect x="1520" y="250" width="250" height="15" fill="url(#goldTrim)"/>
+    <!-- Cross symbol -->
+    <rect x="1625" y="340" width="20" height="100" fill="url(#goldTrim)"/>
+    <rect x="1595" y="370" width="80" height="20" fill="url(#goldTrim)"/>
+  </g>
+
+  <!-- Floor -->
+  <rect x="0" y="700" width="1920" height="380" fill="url(#marbleFloor)"/>
+
+  <!-- Red carpet leading to throne -->
+  <path d="M700 700 L750 1080 L1170 1080 L1220 700 Z" fill="#8b0000"/>
+  <path d="M700 700 L750 1080" stroke="url(#goldTrim)" stroke-width="4"/>
+  <path d="M1220 700 L1170 1080" stroke="url(#goldTrim)" stroke-width="4"/>
+
+  <!-- Side tables with candelabras -->
+  <g filter="url(#shadow)">
+    <!-- Left table -->
+    <rect x="500" y="580" width="120" height="80" fill="#4a0000"/>
+    <rect x="490" y="570" width="140" height="15" fill="#5a1010"/>
+    <!-- Candelabra -->
+    <rect x="550" y="500" width="12" height="75" fill="url(#goldTrim)"/>
+    <rect x="530" y="490" width="52" height="15" fill="url(#goldTrim)"/>
+    <rect x="525" y="455" width="10" height="40" fill="#f5f0e0"/>
+    <rect x="545" y="450" width="10" height="45" fill="#f5f0e0"/>
+    <rect x="565" y="455" width="10" height="40" fill="#f5f0e0"/>
+    <ellipse cx="530" cy="450" rx="7" ry="12" fill="#ffa040"/>
+    <ellipse cx="550" cy="445" rx="7" ry="12" fill="#ffa040"/>
+    <ellipse cx="570" cy="450" rx="7" ry="12" fill="#ffa040"/>
+
+    <!-- Right table -->
+    <rect x="1300" y="580" width="120" height="80" fill="#4a0000"/>
+    <rect x="1290" y="570" width="140" height="15" fill="#5a1010"/>
+    <!-- Candelabra -->
+    <rect x="1350" y="500" width="12" height="75" fill="url(#goldTrim)"/>
+    <rect x="1330" y="490" width="52" height="15" fill="url(#goldTrim)"/>
+    <rect x="1325" y="455" width="10" height="40" fill="#f5f0e0"/>
+    <rect x="1345" y="450" width="10" height="45" fill="#f5f0e0"/>
+    <rect x="1365" y="455" width="10" height="40" fill="#f5f0e0"/>
+    <ellipse cx="1330" cy="450" rx="7" ry="12" fill="#ffa040"/>
+    <ellipse cx="1350" cy="445" rx="7" ry="12" fill="#ffa040"/>
+    <ellipse cx="1370" cy="450" rx="7" ry="12" fill="#ffa040"/>
+  </g>
+
+  <!-- Arched doorways on sides -->
+  <g filter="url(#shadow)">
+    <path d="M0 350 L0 650 L150 650 L150 350 Q75 300 0 350" fill="#2a0a0a"/>
+    <path d="M1770 350 L1770 650 L1920 650 L1920 350 Q1845 300 1770 350" fill="#2a0a0a"/>
+  </g>
+
+  <!-- Swiss Guard (subtle) -->
+  <g>
+    <ellipse cx="180" cy="630" rx="15" ry="40" fill="#ff6600"/>
+    <ellipse cx="180" cy="600" rx="8" ry="12" fill="#e8c8a8"/>
+  </g>
+
+  <!-- Grand chandelier -->
+  <g filter="url(#shadow)">
+    <ellipse cx="960" cy="130" rx="120" ry="40" fill="url(#goldTrim)"/>
+    <ellipse cx="960" cy="130" rx="80" ry="25" fill="none" stroke="url(#goldTrim)" stroke-width="6"/>
+    <g fill="#f5f0e0">
+      <rect x="860" y="100" width="12" height="35"/>
+      <rect x="910" y="95" width="12" height="40"/>
+      <rect x="960" y="90" width="12" height="45"/>
+      <rect x="1010" y="95" width="12" height="40"/>
+      <rect x="1060" y="100" width="12" height="35"/>
+    </g>
+    <g fill="#ffa040">
+      <ellipse cx="866" cy="95" rx="8" ry="12"/>
+      <ellipse cx="916" cy="90" rx="8" ry="12"/>
+      <ellipse cx="966" cy="85" rx="8" ry="12"/>
+      <ellipse cx="1016" cy="90" rx="8" ry="12"/>
+      <ellipse cx="1066" cy="95" rx="8" ry="12"/>
+    </g>
+    <line x1="960" y1="0" x2="960" y2="90" stroke="url(#goldTrim)" stroke-width="8"/>
+  </g>
+
+  <!-- Warm candlelight ambiance -->
+  <rect width="1920" height="1080" fill="#ffa040" opacity="0.06"/>
+</svg>

@@ -1,0 +1,190 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080">
+  <defs>
+    <linearGradient id="stoneWall" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#4a4a4a"/>
+      <stop offset="100%" style="stop-color:#2a2a2a"/>
+    </linearGradient>
+
+    <linearGradient id="darkStone" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#3a3a3a"/>
+      <stop offset="100%" style="stop-color:#2a2a2a"/>
+    </linearGradient>
+
+    <pattern id="stoneFloor" x="0" y="0" width="100" height="100" patternUnits="userSpaceOnUse">
+      <rect width="100" height="100" fill="#3a3a3a"/>
+      <rect x="5" y="5" width="42" height="42" fill="#4a4a4a"/>
+      <rect x="53" y="53" width="42" height="42" fill="#4a4a4a"/>
+    </pattern>
+
+    <!-- Torch glow -->
+    <radialGradient id="torchGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#ffa040;stop-opacity:0.6"/>
+      <stop offset="50%" style="stop-color:#ff6020;stop-opacity:0.2"/>
+      <stop offset="100%" style="stop-color:#ff4000;stop-opacity:0"/>
+    </radialGradient>
+
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="3" dy="5" stdDeviation="4" flood-color="#000" flood-opacity="0.5"/>
+    </filter>
+
+    <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Dark stone ceiling with arches -->
+  <rect width="1920" height="200" fill="#1a1a1a"/>
+  <g fill="url(#stoneWall)">
+    <path d="M0 200 Q300 100 600 200"/>
+    <path d="M600 200 Q900 80 1200 200"/>
+    <path d="M1200 200 Q1500 100 1800 200"/>
+    <path d="M1800 200 Q1860 150 1920 200"/>
+  </g>
+
+  <!-- Stone walls -->
+  <rect x="0" y="200" width="1920" height="550" fill="url(#stoneWall)"/>
+
+  <!-- Stone texture lines -->
+  <g stroke="#2a2a2a" stroke-width="3" opacity="0.6">
+    <line x1="0" y1="280" x2="1920" y2="280"/>
+    <line x1="0" y1="380" x2="1920" y2="380"/>
+    <line x1="0" y1="480" x2="1920" y2="480"/>
+    <line x1="0" y1="580" x2="1920" y2="580"/>
+    <line x1="0" y1="680" x2="1920" y2="680"/>
+  </g>
+
+  <!-- BARRED WINDOW (small, high) -->
+  <g filter="url(#shadow)">
+    <rect x="900" y="250" width="120" height="150" fill="#1a2030"/>
+    <!-- Faint outside light -->
+    <rect x="905" y="255" width="110" height="140" fill="#3a4a5a" opacity="0.3"/>
+    <!-- Bars -->
+    <g stroke="#2a2a2a" stroke-width="8">
+      <line x1="930" y1="250" x2="930" y2="400"/>
+      <line x1="960" y1="250" x2="960" y2="400"/>
+      <line x1="990" y1="250" x2="990" y2="400"/>
+    </g>
+  </g>
+
+  <!-- TORCHES on walls -->
+  <g>
+    <!-- Left torch -->
+    <ellipse cx="300" cy="400" rx="100" ry="120" fill="url(#torchGlow)" filter="url(#glow)"/>
+    <rect x="290" y="380" width="20" height="60" fill="#5a4a3a"/>
+    <ellipse cx="300" cy="375" rx="15" ry="20" fill="#ff6020"/>
+    <ellipse cx="300" cy="370" rx="8" ry="12" fill="#ffff80"/>
+
+    <!-- Right torch -->
+    <ellipse cx="1620" cy="400" rx="100" ry="120" fill="url(#torchGlow)" filter="url(#glow)"/>
+    <rect x="1610" y="380" width="20" height="60" fill="#5a4a3a"/>
+    <ellipse cx="1620" cy="375" rx="15" ry="20" fill="#ff6020"/>
+    <ellipse cx="1620" cy="370" rx="8" ry="12" fill="#ffff80"/>
+  </g>
+
+  <!-- Floor -->
+  <rect x="0" y="750" width="1920" height="330" fill="url(#stoneFloor)"/>
+
+  <!-- INQUISITOR'S TABLE (center) -->
+  <g filter="url(#shadow)">
+    <rect x="700" y="600" width="520" height="120" fill="#2a1a10"/>
+    <rect x="690" y="590" width="540" height="20" fill="#3a2a1a"/>
+    <!-- Table legs -->
+    <rect x="720" y="720" width="40" height="120" fill="#2a1a10"/>
+    <rect x="1160" y="720" width="40" height="120" fill="#2a1a10"/>
+
+    <!-- Items on table -->
+    <!-- Large book (records) -->
+    <rect x="750" y="550" width="120" height="60" fill="#2a2a2a"/>
+    <rect x="755" y="545" width="110" height="55" fill="#1a1a1a"/>
+
+    <!-- Quill and inkwell -->
+    <ellipse cx="920" cy="575" rx="15" ry="20" fill="#1a1a1a"/>
+    <line x1="930" y1="580" x2="970" y2="530" stroke="#8a7a6a" stroke-width="3"/>
+
+    <!-- Candle -->
+    <rect x="1050" y="530" width="20" height="65" fill="#3a2a1a"/>
+    <rect x="1055" y="500" width="10" height="35" fill="#f5f0e0"/>
+    <ellipse cx="1060" cy="495" rx="8" ry="12" fill="#ffa040"/>
+
+    <!-- Document with seal -->
+    <rect x="1100" y="555" width="80" height="50" fill="#e8d8c0"/>
+    <ellipse cx="1160" cy="590" rx="15" ry="12" fill="#8b0000"/>
+  </g>
+
+  <!-- CHAIRS -->
+  <g filter="url(#shadow)">
+    <!-- Inquisitor's chair (behind table, tall back) -->
+    <rect x="920" y="620" width="80" height="100" fill="#1a0a05"/>
+    <rect x="910" y="450" width="100" height="180" fill="#1a0a05"/>
+    <rect x="920" y="470" width="80" height="100" fill="#2a1510"/>
+    <!-- Cross on chair back -->
+    <rect x="955" y="480" width="10" height="60" fill="#c9a227"/>
+    <rect x="940" y="505" width="40" height="10" fill="#c9a227"/>
+  </g>
+
+  <!-- ACCUSED'S AREA (lower, in front) -->
+  <g filter="url(#shadow)">
+    <!-- Simple wooden stool -->
+    <rect x="920" y="880" width="80" height="30" fill="#4a3a2a"/>
+    <rect x="930" y="910" width="20" height="60" fill="#3a2a1a"/>
+    <rect x="970" y="910" width="20" height="60" fill="#3a2a1a"/>
+
+    <!-- Chains on floor near stool -->
+    <g stroke="#5a5a5a" stroke-width="6" fill="none">
+      <path d="M880 950 Q900 940 920 950 Q940 960 960 950"/>
+      <path d="M960 950 Q980 940 1000 950 Q1020 960 1040 950"/>
+    </g>
+    <!-- Shackles -->
+    <circle cx="880" cy="950" r="15" fill="none" stroke="#5a5a5a" stroke-width="5"/>
+    <circle cx="1040" cy="950" r="15" fill="none" stroke="#5a5a5a" stroke-width="5"/>
+  </g>
+
+  <!-- OMINOUS DOORWAY (left, to cells) -->
+  <g filter="url(#shadow)">
+    <rect x="50" y="450" width="150" height="300" fill="#0a0a0a"/>
+    <path d="M50 450 L125 400 L200 450" fill="#3a3a3a"/>
+    <!-- Iron door -->
+    <rect x="60" y="460" width="130" height="280" fill="#2a2a2a"/>
+    <circle cx="170" cy="600" r="10" fill="#4a4a4a"/>
+    <!-- Bars on door window -->
+    <rect x="90" y="500" width="70" height="50" fill="#1a1a1a"/>
+    <line x1="110" y1="500" x2="110" y2="550" stroke="#3a3a3a" stroke-width="4"/>
+    <line x1="140" y1="500" x2="140" y2="550" stroke="#3a3a3a" stroke-width="4"/>
+  </g>
+
+  <!-- Religious symbols (intimidating) -->
+  <g>
+    <!-- Large cross on back wall -->
+    <rect x="940" y="280" width="40" height="150" fill="#3a2a1a"/>
+    <rect x="895" y="320" width="130" height="35" fill="#3a2a1a"/>
+  </g>
+
+  <!-- Shadows and atmosphere -->
+  <!-- Light pools from torches -->
+  <ellipse cx="300" cy="800" rx="200" ry="80" fill="#ffa040" opacity="0.08"/>
+  <ellipse cx="1620" cy="800" rx="200" ry="80" fill="#ffa040" opacity="0.08"/>
+
+  <!-- Cobwebs in corners -->
+  <g stroke="#5a5a5a" stroke-width="1" fill="none" opacity="0.3">
+    <path d="M0 200 Q50 220 20 250"/>
+    <path d="M0 200 Q60 210 40 280"/>
+    <path d="M0 200 Q30 240 10 300"/>
+    <path d="M1920 200 Q1870 220 1900 250"/>
+    <path d="M1920 200 Q1860 210 1880 280"/>
+  </g>
+
+  <!-- Dark vignette -->
+  <rect width="1920" height="1080" fill="url(#stoneWall)" opacity="0.15"/>
+
+  <!-- Rats (small details) -->
+  <g fill="#2a2a2a">
+    <ellipse cx="150" cy="930" rx="12" ry="6"/>
+    <ellipse cx="142" cy="926" rx="4" ry="3"/>
+    <ellipse cx="1800" cy="950" rx="12" ry="6"/>
+    <ellipse cx="1808" cy="946" rx="4" ry="3"/>
+  </g>
+</svg>

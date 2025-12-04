@@ -1,0 +1,148 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 800">
+  <defs>
+    <linearGradient id="skinGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f0d0b0"/>
+      <stop offset="100%" style="stop-color:#e0b890"/>
+    </linearGradient>
+    <linearGradient id="hairGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#2a1a0a"/>
+      <stop offset="100%" style="stop-color:#0a0500"/>
+    </linearGradient>
+    <linearGradient id="robeGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#722f37"/>
+      <stop offset="100%" style="stop-color:#4a1a22"/>
+    </linearGradient>
+    <linearGradient id="innerRobeGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a3a5a"/>
+      <stop offset="100%" style="stop-color:#0a2040"/>
+    </linearGradient>
+    <linearGradient id="goldTrim" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#c9a227"/>
+      <stop offset="50%" style="stop-color:#f0d050"/>
+      <stop offset="100%" style="stop-color:#c9a227"/>
+    </linearGradient>
+    <linearGradient id="furGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#f5f0e8"/>
+      <stop offset="100%" style="stop-color:#d0c8b8"/>
+    </linearGradient>
+    <linearGradient id="capGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#5a2030"/>
+      <stop offset="100%" style="stop-color:#3a1020"/>
+    </linearGradient>
+
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="2" dy="4" stdDeviation="3" flood-color="#000" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <!-- Outer robe (lucco) - rich crimson -->
+  <g filter="url(#shadow)">
+    <path d="M90 310 Q50 370 40 450 L30 750 L170 780 L200 650 L230 780 L370 750 L360 450 Q350 370 310 310 Z"
+          fill="url(#robeGrad)"/>
+
+    <!-- Gold embroidery pattern -->
+    <path d="M90 350 Q80 450 75 550" stroke="url(#goldTrim)" stroke-width="2" fill="none" opacity="0.6"/>
+    <path d="M310 350 Q320 450 325 550" stroke="url(#goldTrim)" stroke-width="2" fill="none" opacity="0.6"/>
+
+    <!-- Robe folds -->
+    <path d="M130 400 Q110 500 120 650" stroke="#5a1a25" stroke-width="3" fill="none"/>
+    <path d="M270 400 Q290 500 280 650" stroke="#5a1a25" stroke-width="3" fill="none"/>
+  </g>
+
+  <!-- Inner robe visible at opening -->
+  <path d="M150 320 L145 600 Q200 620 255 600 L250 320 Z" fill="url(#innerRobeGrad)"/>
+
+  <!-- Gold chain of office -->
+  <g stroke="url(#goldTrim)" stroke-width="3" fill="none">
+    <path d="M155 320 Q200 380 245 320"/>
+    <path d="M160 330 Q200 395 240 330"/>
+  </g>
+  <!-- Medici medallion -->
+  <circle cx="200" cy="400" r="18" fill="url(#goldTrim)" filter="url(#shadow)"/>
+  <circle cx="200" cy="400" r="12" fill="#5a2030"/>
+  <!-- Medici palle symbol -->
+  <circle cx="195" cy="395" r="3" fill="url(#goldTrim)"/>
+  <circle cx="205" cy="395" r="3" fill="url(#goldTrim)"/>
+  <circle cx="200" cy="405" r="3" fill="url(#goldTrim)"/>
+
+  <!-- Fur-lined collar -->
+  <g fill="url(#furGrad)">
+    <ellipse cx="200" cy="305" rx="90" ry="25"/>
+    <path d="M115 305 Q120 295 130 305 Q140 295 150 305 Q160 295 170 305 Q180 295 190 305 Q200 295 210 305 Q220 295 230 305 Q240 295 250 305 Q260 295 270 305 Q280 295 285 305"
+          stroke="#c0b8a8" stroke-width="1" fill="none"/>
+  </g>
+
+  <!-- Sleeves -->
+  <g fill="url(#robeGrad)" filter="url(#shadow)">
+    <path d="M40 400 Q20 470 35 560 L80 560 Q70 500 75 430 Z"/>
+    <path d="M360 400 Q380 470 365 560 L320 560 Q330 500 325 430 Z"/>
+  </g>
+
+  <!-- Hands -->
+  <g fill="url(#skinGrad)">
+    <ellipse cx="55" cy="575" rx="20" ry="26"/>
+    <ellipse cx="345" cy="575" rx="20" ry="26"/>
+    <!-- Rings -->
+    <ellipse cx="50" cy="580" rx="4" ry="3" fill="url(#goldTrim)"/>
+    <ellipse cx="350" cy="580" rx="4" ry="3" fill="#8b0000"/>
+  </g>
+
+  <!-- Neck -->
+  <rect x="170" y="250" width="60" height="60" fill="url(#skinGrad)" rx="5"/>
+
+  <!-- Head -->
+  <g filter="url(#shadow)">
+    <ellipse cx="200" cy="165" rx="75" ry="90" fill="url(#skinGrad)"/>
+  </g>
+
+  <!-- Florentine cap -->
+  <g fill="url(#capGrad)" filter="url(#shadow)">
+    <ellipse cx="200" cy="90" rx="80" ry="28"/>
+    <path d="M120 90 Q120 50 200 40 Q280 50 280 90 Z"/>
+    <path d="M260 70 Q280 60 278 85" fill="#4a1525"/>
+    <ellipse cx="200" cy="90" rx="80" ry="28" fill="none" stroke="url(#goldTrim)" stroke-width="2"/>
+  </g>
+
+  <!-- Hair showing under cap -->
+  <g fill="url(#hairGrad)">
+    <path d="M125 100 Q120 130 125 160 Q115 150 120 120 Q118 105 125 100"/>
+    <path d="M275 100 Q280 130 275 160 Q285 150 280 120 Q282 105 275 100"/>
+  </g>
+
+  <!-- Ears -->
+  <ellipse cx="125" cy="175" rx="12" ry="20" fill="url(#skinGrad)"/>
+  <ellipse cx="275" cy="175" rx="12" ry="20" fill="url(#skinGrad)"/>
+
+  <!-- Eyes (intelligent, calculating) -->
+  <g>
+    <ellipse cx="165" cy="178" rx="15" ry="11" fill="white"/>
+    <ellipse cx="235" cy="178" rx="15" ry="11" fill="white"/>
+    <circle cx="165" cy="178" r="7" fill="#2a1a0a"/>
+    <circle cx="235" cy="178" r="7" fill="#2a1a0a"/>
+    <circle cx="165" cy="178" r="3" fill="#0a0a0a"/>
+    <circle cx="235" cy="178" r="3" fill="#0a0a0a"/>
+    <circle cx="163" cy="176" r="2" fill="white"/>
+    <circle cx="233" cy="176" r="2" fill="white"/>
+  </g>
+
+  <!-- Distinctive eyebrows -->
+  <path d="M145 160 Q165 152 188 162" stroke="#1a0a00" stroke-width="3" fill="none"/>
+  <path d="M212 162 Q235 152 255 160" stroke="#1a0a00" stroke-width="3" fill="none"/>
+
+  <!-- Prominent Medici nose -->
+  <path d="M200 172 Q192 195 188 215 Q190 225 200 228 Q210 225 212 215 Q215 195 200 172"
+        fill="#e0b080" stroke="#d0a070" stroke-width="1"/>
+
+  <!-- Mouth (neutral, knowing) -->
+  <path d="M175 245 Q200 252 225 245" stroke="#9a6a5a" stroke-width="3" fill="none" stroke-linecap="round"/>
+
+  <!-- Defined cheekbones -->
+  <path d="M135 195 Q140 210 145 230" stroke="#d0a070" stroke-width="1" fill="none" opacity="0.3"/>
+  <path d="M265 195 Q260 210 255 230" stroke="#d0a070" stroke-width="1" fill="none" opacity="0.3"/>
+
+  <!-- Shoes -->
+  <g fill="#2a1010">
+    <ellipse cx="170" cy="780" rx="35" ry="15"/>
+    <ellipse cx="230" cy="780" rx="35" ry="15"/>
+  </g>
+</svg>

@@ -1,0 +1,194 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080">
+  <defs>
+    <linearGradient id="wallGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#c8a882"/>
+      <stop offset="100%" style="stop-color:#a88862"/>
+    </linearGradient>
+
+    <linearGradient id="goldTrim" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#c9a227"/>
+      <stop offset="50%" style="stop-color:#f5d742"/>
+      <stop offset="100%" style="stop-color:#c9a227"/>
+    </linearGradient>
+
+    <pattern id="tileFloor" x="0" y="0" width="150" height="150" patternUnits="userSpaceOnUse">
+      <rect width="150" height="150" fill="#b8a888"/>
+      <rect x="0" y="0" width="75" height="75" fill="#a89878"/>
+      <rect x="75" y="75" width="75" height="75" fill="#a89878"/>
+    </pattern>
+
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="4" dy="6" stdDeviation="5" flood-color="#000" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <!-- Ceiling with beams -->
+  <rect width="1920" height="150" fill="#8a7a5a"/>
+  <g fill="#6a5a4a">
+    <rect x="0" y="130" width="1920" height="30"/>
+    <rect x="300" y="0" width="50" height="160"/>
+    <rect x="700" y="0" width="50" height="160"/>
+    <rect x="1170" y="0" width="50" height="160"/>
+    <rect x="1570" y="0" width="50" height="160"/>
+  </g>
+
+  <!-- Walls -->
+  <rect x="0" y="160" width="1920" height="550" fill="url(#wallGrad)"/>
+
+  <!-- Decorative wainscoting -->
+  <rect x="0" y="500" width="1920" height="210" fill="#9a8a6a"/>
+  <g fill="none" stroke="#7a6a4a" stroke-width="3">
+    <rect x="50" y="520" width="150" height="170"/>
+    <rect x="220" y="520" width="150" height="170"/>
+    <rect x="390" y="520" width="150" height="170"/>
+    <rect x="1380" y="520" width="150" height="170"/>
+    <rect x="1550" y="520" width="150" height="170"/>
+    <rect x="1720" y="520" width="150" height="170"/>
+  </g>
+
+  <!-- Arched doorways on sides -->
+  <g filter="url(#shadow)">
+    <path d="M0 200 L0 650 L180 650 L180 200 Q90 150 0 200" fill="#3a2a1a"/>
+    <path d="M1740 200 L1740 650 L1920 650 L1920 200 Q1830 150 1740 200" fill="#3a2a1a"/>
+  </g>
+
+  <!-- Floor -->
+  <rect x="0" y="710" width="1920" height="370" fill="url(#tileFloor)"/>
+
+  <!-- LARGE DINING TABLE -->
+  <g filter="url(#shadow)">
+    <!-- Table top -->
+    <rect x="350" y="650" width="1220" height="100" fill="#5a4030"/>
+    <rect x="340" y="640" width="1240" height="20" fill="#6a5040"/>
+    <!-- Table legs -->
+    <rect x="400" y="750" width="60" height="150" fill="#4a3020"/>
+    <rect x="1460" y="750" width="60" height="150" fill="#4a3020"/>
+    <!-- Center support -->
+    <rect x="920" y="750" width="80" height="130" fill="#4a3020"/>
+
+    <!-- TABLE SETTINGS -->
+    <!-- Tablecloth runner -->
+    <rect x="400" y="620" width="1120" height="40" fill="#f5f0e0"/>
+
+    <!-- Plates and goblets -->
+    <g>
+      <!-- Left side settings -->
+      <ellipse cx="500" cy="640" rx="40" ry="20" fill="#d8d0c8"/>
+      <ellipse cx="500" cy="640" rx="30" ry="15" fill="#e8e0d8"/>
+      <ellipse cx="550" cy="620" rx="12" ry="18" fill="#c9a227"/>
+
+      <ellipse cx="700" cy="640" rx="40" ry="20" fill="#d8d0c8"/>
+      <ellipse cx="700" cy="640" rx="30" ry="15" fill="#e8e0d8"/>
+      <ellipse cx="750" cy="620" rx="12" ry="18" fill="#c9a227"/>
+
+      <!-- Center piece (fruit bowl) -->
+      <ellipse cx="960" cy="630" rx="80" ry="35" fill="#c9a227"/>
+      <circle cx="930" cy="610" r="20" fill="#e74c3c"/>
+      <circle cx="970" cy="605" r="18" fill="#f39c12"/>
+      <circle cx="990" cy="615" r="22" fill="#8b0000"/>
+      <ellipse cx="950" cy="600" rx="15" ry="20" fill="#27ae60"/>
+
+      <!-- Right side settings -->
+      <ellipse cx="1220" cy="640" rx="40" ry="20" fill="#d8d0c8"/>
+      <ellipse cx="1220" cy="640" rx="30" ry="15" fill="#e8e0d8"/>
+      <ellipse cx="1170" cy="620" rx="12" ry="18" fill="#c9a227"/>
+
+      <ellipse cx="1420" cy="640" rx="40" ry="20" fill="#d8d0c8"/>
+      <ellipse cx="1420" cy="640" rx="30" ry="15" fill="#e8e0d8"/>
+      <ellipse cx="1370" cy="620" rx="12" ry="18" fill="#c9a227"/>
+    </g>
+
+    <!-- Candelabras -->
+    <g fill="url(#goldTrim)">
+      <rect x="600" y="560" width="15" height="80"/>
+      <rect x="575" y="550" width="65" height="15"/>
+      <rect x="570" y="520" width="10" height="35" fill="#f5f0e0"/>
+      <rect x="595" y="515" width="10" height="40" fill="#f5f0e0"/>
+      <rect x="620" y="520" width="10" height="35" fill="#f5f0e0"/>
+      <ellipse cx="575" cy="515" rx="6" ry="10" fill="#ffa040"/>
+      <ellipse cx="600" cy="510" rx="6" ry="10" fill="#ffa040"/>
+      <ellipse cx="625" cy="515" rx="6" ry="10" fill="#ffa040"/>
+
+      <rect x="1305" y="560" width="15" height="80"/>
+      <rect x="1280" y="550" width="65" height="15"/>
+      <rect x="1275" y="520" width="10" height="35" fill="#f5f0e0"/>
+      <rect x="1300" y="515" width="10" height="40" fill="#f5f0e0"/>
+      <rect x="1325" y="520" width="10" height="35" fill="#f5f0e0"/>
+      <ellipse cx="1280" cy="515" rx="6" ry="10" fill="#ffa040"/>
+      <ellipse cx="1305" cy="510" rx="6" ry="10" fill="#ffa040"/>
+      <ellipse cx="1330" cy="515" rx="6" ry="10" fill="#ffa040"/>
+    </g>
+  </g>
+
+  <!-- CHAIRS -->
+  <g filter="url(#shadow)">
+    <!-- Left chairs -->
+    <rect x="450" y="720" width="80" height="120" fill="#5a3040"/>
+    <rect x="450" y="550" width="80" height="180" fill="#5a3040"/>
+    <rect x="460" y="570" width="60" height="100" fill="#722f37"/>
+
+    <rect x="650" y="720" width="80" height="120" fill="#5a3040"/>
+    <rect x="650" y="550" width="80" height="180" fill="#5a3040"/>
+    <rect x="660" y="570" width="60" height="100" fill="#722f37"/>
+
+    <!-- Right chairs -->
+    <rect x="1190" y="720" width="80" height="120" fill="#5a3040"/>
+    <rect x="1190" y="550" width="80" height="180" fill="#5a3040"/>
+    <rect x="1200" y="570" width="60" height="100" fill="#722f37"/>
+
+    <rect x="1390" y="720" width="80" height="120" fill="#5a3040"/>
+    <rect x="1390" y="550" width="80" height="180" fill="#5a3040"/>
+    <rect x="1400" y="570" width="60" height="100" fill="#722f37"/>
+
+    <!-- Head chair (larger, more ornate) -->
+    <rect x="900" y="800" width="120" height="100" fill="#4a2030"/>
+    <rect x="895" y="520" width="130" height="290" fill="#4a2030"/>
+    <rect x="910" y="540" width="100" height="180" fill="#722f37"/>
+  </g>
+
+  <!-- PAINTINGS on walls -->
+  <g filter="url(#shadow)">
+    <rect x="600" y="200" width="250" height="200" fill="#3a2a1a"/>
+    <rect x="600" y="190" width="250" height="15" fill="url(#goldTrim)"/>
+    <rect x="590" y="190" width="15" height="220" fill="url(#goldTrim)"/>
+    <rect x="845" y="190" width="15" height="220" fill="url(#goldTrim)"/>
+    <rect x="600" y="400" width="250" height="15" fill="url(#goldTrim)"/>
+    <!-- Portrait content -->
+    <ellipse cx="725" cy="300" rx="50" ry="60" fill="#e8c8a8"/>
+    <rect x="675" y="350" width="100" height="40" fill="#1a3a5a"/>
+
+    <rect x="1070" y="200" width="250" height="200" fill="#3a2a1a"/>
+    <rect x="1070" y="190" width="250" height="15" fill="url(#goldTrim)"/>
+    <rect x="1060" y="190" width="15" height="220" fill="url(#goldTrim)"/>
+    <rect x="1315" y="190" width="15" height="220" fill="url(#goldTrim)"/>
+    <rect x="1070" y="400" width="250" height="15" fill="url(#goldTrim)"/>
+    <!-- Landscape content -->
+    <rect x="1085" y="215" width="220" height="80" fill="#87ceeb"/>
+    <rect x="1085" y="295" width="220" height="90" fill="#4a8040"/>
+  </g>
+
+  <!-- CHANDELIER -->
+  <g filter="url(#shadow)">
+    <ellipse cx="960" cy="100" rx="150" ry="40" fill="url(#goldTrim)"/>
+    <ellipse cx="960" cy="100" rx="100" ry="25" fill="none" stroke="url(#goldTrim)" stroke-width="5"/>
+    <!-- Candles around -->
+    <g fill="#f5f0e0">
+      <rect x="820" y="70" width="12" height="35"/>
+      <rect x="880" y="65" width="12" height="40"/>
+      <rect x="940" y="60" width="12" height="45"/>
+      <rect x="1000" y="65" width="12" height="40"/>
+      <rect x="1060" y="70" width="12" height="35"/>
+    </g>
+    <g fill="#ffa040">
+      <ellipse cx="826" cy="65" rx="8" ry="12"/>
+      <ellipse cx="886" cy="60" rx="8" ry="12"/>
+      <ellipse cx="946" cy="55" rx="8" ry="12"/>
+      <ellipse cx="1006" cy="60" rx="8" ry="12"/>
+      <ellipse cx="1066" cy="65" rx="8" ry="12"/>
+    </g>
+    <line x1="960" y1="0" x2="960" y2="60" stroke="url(#goldTrim)" stroke-width="8"/>
+  </g>
+
+  <!-- Warm lighting -->
+  <rect width="1920" height="1080" fill="#ffa040" opacity="0.05"/>
+</svg>
