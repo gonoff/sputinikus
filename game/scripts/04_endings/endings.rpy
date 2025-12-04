@@ -13,11 +13,15 @@ label ending_legendary:
 
     play music "audio/music/triumph.ogg" fadein 2.0
 
-    show text "{size=+30}LEGENDARY ENDING{/size}\n\n{size=+15}The Immortal Genius{/size}" with dissolve
+    # Dramatic title reveal
+    show text "{size=+30}LEGENDARY ENDING{/size}\n\n{size=+15}The Immortal Genius{/size}" at pulse with dissolve
     pause 2.0
     hide text with dissolve
 
-    show cg ending_legendary with dissolve
+    # CG with triumphant reveal and Ken Burns effect
+    show cg ending_legendary at cg_reveal
+    pause 0.5
+    show cg ending_legendary at ken_burns
 
     narrator "Gary Sputnik achieved the impossible."
 
@@ -282,19 +286,27 @@ label ending_paradox:
 
     play music "audio/music/chaos.ogg" fadein 2.0
 
-    show text "{size=+30}PARADOX{/size}\n\n{size=+15}The Broken Timeline{/size}" with dissolve
+    # Glitchy title reveal
+    show text "{size=+30}PARADOX{/size}\n\n{size=+15}The Broken Timeline{/size}" at aria_glitch with dissolve
     pause 2.0
     hide text with dissolve
 
-    show cg ending_paradox with dissolve
+    # CG with distortion effect
+    show cg ending_paradox at time_warp with dissolve
 
     narrator "ARIA had warned him. The AI had calculated the risks, identified the dangers, pleaded with Gary to be more careful."
 
     narrator "But Gary kept pushing. More innovations. Bigger changes. Faster progress."
 
+    # Screen shake as reality breaks
+    show layer master at shake_heavy
+
     narrator "Each modification to history created ripples. Ripples became waves. Waves became tsunamis."
 
     narrator "And somewhere, somewhen, the accumulated changes broke something fundamental."
+
+    # More glitching
+    show cg ending_paradox at aria_glitch
 
     narrator "When Gary activated the time travel device to return home, the universe... hiccuped."
 

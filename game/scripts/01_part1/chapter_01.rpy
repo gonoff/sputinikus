@@ -40,9 +40,12 @@ label chapter_1:
 
     play sound "audio/sfx/metallic_clang.ogg"
 
+    # Screen shake on metallic impact
+    show layer master at shake_light
+
     narrator "The sound is wrong—not the dull thunk of hitting rock, but a sharp metallic clang that rings out across the yard like a bell."
 
-    show gary modern worried
+    show gary modern worried at center_pos
 
     gary "What the hell?"
 
@@ -128,11 +131,15 @@ label chapter_1:
 
     play sound "audio/sfx/box_opening.ogg"
 
+    # Revelation effect when box opens
+    with revelation
+
     narrator "There's a soft hiss, like air being released from a pressurized container."
 
     narrator "And the top of the box simply... opens. Not hinged or slid, but flows like liquid metal."
 
-    show gary modern excited
+    show gary modern excited at center_pos:
+        surprised_jump
 
     gary "Holy shit."
 
@@ -333,18 +340,24 @@ label chapter_2:
 
     narrator "But Gary is already pressing the big red button."
 
-    # Time travel sequence
+    # Time travel sequence - DRAMATIC
     stop music fadeout 1.0
 
+    # Initial flash and shake
+    show layer master at shake_heavy
     scene black with flash
 
     play sound "audio/sfx/time_travel.ogg"
 
-    show cg time_travel with dissolve
+    # Show CG with time warp effect
+    show cg time_travel at time_warp with dissolve
 
     narrator "The universe, Gary discovers, is not designed for time travel."
 
     narrator "The moment his finger touches the activation button, reality takes a coffee break."
+
+    # More screen distortion
+    show cg time_travel at ken_burns
 
     narrator "The world doesn't just spin—it folds, twists, and turns itself inside out."
 
@@ -352,7 +365,8 @@ label chapter_2:
 
     narrator "The sensation lasts either three seconds or three years—Gary's sense of time has apparently joined his sense of direction in taking an unauthorized vacation."
 
-    scene black with dissolve
+    # Final transition with custom effect
+    scene black with time_travel_transition
     pause 1.0
 
     jump chapter_3

@@ -1,6 +1,9 @@
 # Ren'Py SDK (downloaded separately)
 renpy-*/
 
+# JDK (downloaded for Android builds)
+jdk-*/
+
 # Ren'Py cache and compiled files
 game/cache/
 game/saves/
@@ -30,3 +33,14 @@ Thumbs.db
 log.txt
 traceback.txt
 errors.txt
+
+# Android build artifacts
+*.apk
+*.aab
+
+# Android build staging folder (but keep keystores separately)
+Sputnikus/game/
+Sputnikus/log.txt
+
+# Android icon SVG sources (PNGs are used)
+game/android-icon*.svg

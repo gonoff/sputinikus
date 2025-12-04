@@ -21,8 +21,8 @@ define aria = Character(
     "ARIA",
     who_color="#00FFFF",
     who_italic=True,
-    what_prefix="[",
-    what_suffix="]",
+    what_prefix="[[",
+    what_suffix="]]",
     image="aria"
 )
 
@@ -343,22 +343,38 @@ image cg ending_paradox = "images/cg/cg_ending_paradox.png"
 image cg ending_early = "images/cg/cg_ending_early.png"
 
 ###############################################################################
-# SCREEN POSITIONS
+# SCREEN POSITIONS (with subtle breathing animation)
 ###############################################################################
 
 transform left_pos:
     xalign 0.2
     yalign 1.0
+    parallel:
+        ease 3.0 zoom 1.012
+        ease 3.0 zoom 1.0
+        repeat
 
 transform center_pos:
     xalign 0.5
     yalign 1.0
+    parallel:
+        ease 3.5 zoom 1.012
+        ease 3.5 zoom 1.0
+        repeat
 
 transform right_pos:
     xalign 0.8
     yalign 1.0
+    parallel:
+        ease 3.2 zoom 1.012
+        ease 3.2 zoom 1.0
+        repeat
 
 transform aria_pos:
     xalign 0.9
     yalign 0.3
     zoom 0.5
+    parallel:
+        ease 2.0 yoffset -8
+        ease 2.0 yoffset 0
+        repeat

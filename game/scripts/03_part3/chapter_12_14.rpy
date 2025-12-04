@@ -383,19 +383,29 @@ label chapter_14:
 
 label inquisition_confrontation:
 
-    scene bg inquisition_chamber with fade
+    # Ominous scene transition
+    scene bg inquisition_chamber with danger_flash
 
     play music "audio/music/tension_dark.ogg" fadein 2.0
+
+    # Background slowly zooms in - creates tension
+    show layer master at ominous_zoom
 
     narrator "The Inquisition chamber is designed to intimidate."
 
     narrator "Stone walls, flickering torches, and the knowledge that people have been condemned to death in this room."
 
-    show gary renaissance neutral at center_pos with dissolve
+    # Gary enters nervously
+    show gary renaissance neutral at center_pos:
+        nervous
+    with dissolve
 
     narrator "Three inquisitors sit behind a heavy wooden table."
 
     narrator "Their expressions reveal nothing."
+
+    # Shake on accusation
+    show layer master at shake_light
 
     inquisitor "Master Gary di Sputnicus. You stand accused of possessing knowledge that exceeds natural human capability."
 

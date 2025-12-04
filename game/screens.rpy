@@ -73,28 +73,21 @@ screen say(who, what):
 
     window:
         id "window"
+        style "say_window"
 
         if who is not None:
             window:
                 id "namebox"
-                style "namebox"
-                text who id "who"
+                style "say_namebox"
+                text who id "who" style "say_label"
 
-        text what id "what"
+        text what id "what" style "say_dialogue"
 
     # Quick menu at bottom
     if not renpy.variant("small"):
         use quick_menu
 
-style window is default
-style say_label is default
-style say_dialogue is default
-style say_thought is say_dialogue
-
-style namebox is default
-style namebox_label is say_label
-
-style window:
+style say_window:
     xalign 0.5
     xfill True
     yalign 1.0
@@ -102,7 +95,7 @@ style window:
     background Frame("gui/textbox.png", 50, 50, 50, 50)
     padding (100, 60, 100, 40)
 
-style namebox:
+style say_namebox:
     xpos 100
     xanchor 0
     ypos -10
@@ -126,6 +119,10 @@ style say_dialogue:
     color "#f5f0e0"
     size 28
     line_spacing 8
+
+style say_thought:
+    color "#aaaaaa"
+    italic True
 
 ################################################################################
 ## Input Screen

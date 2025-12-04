@@ -112,9 +112,34 @@ init python:
     build.classify('**/.**', None)
     build.classify('**/#**', None)
     build.classify('**/thumbs.db', None)
+    build.classify('**.svg', None)  # Don't include SVG source files
     build.classify('**.rpy', None)  # Don't include script source
     build.classify('**.rpyc', 'all')  # Only compiled scripts
 
     # Documentation
     build.documentation('*.html')
     build.documentation('*.txt')
+
+###############################################################################
+# ANDROID CONFIGURATION
+###############################################################################
+
+init python:
+    # Android package name (reverse domain notation)
+    build.android_package = "com.sputinikus.chroniclersdevice"
+
+    # Android app name
+    build.android_name = "The Chronicler's Device"
+
+    # Version code (increment for each release)
+    build.android_version_code = 1
+
+    # Permissions (none needed for basic VN)
+    build.android_permissions = []
+
+    # Target/minimum SDK (API 21 = Android 5.0)
+    build.android_min_sdk = 21
+    build.android_target_sdk = 33
+
+    # Screen orientation
+    build.android_screen = "sensor"  # Auto-rotate

@@ -256,7 +256,7 @@ label chapter_9_alt:
 
 label chapter_10:
 
-    scene bg leonardo_workshop with fade
+    scene bg leonardo_workshop with dream_fade
 
     play music "audio/music/wonder.ogg" fadein 2.0
 
@@ -266,9 +266,15 @@ label chapter_10:
 
     narrator "And now he stands before a door that represents everything he'd dreamed about when he first pressed that red button."
 
-    show gary renaissance neutral at center_pos with dissolve
+    # Gary enters with anticipation
+    show gary renaissance neutral at center_pos:
+        fade_rise
+    with dissolve
 
     thoughts "Leonardo da Vinci's workshop. THE Leonardo da Vinci."
+
+    # Background slowly zooms as wonder builds
+    show layer master at bg_breathe
 
     narrator "The door opens to reveal a space that looks like a museum exhibit come to life."
 
@@ -276,7 +282,10 @@ label chapter_10:
 
     narrator "And in the center of it all stands a man with long gray hair and intense, curious eyes."
 
-    show leonardo neutral at left_pos with dissolve
+    # Leonardo's dramatic entrance
+    show leonardo neutral at left_pos:
+        dramatic_entrance
+    with dissolve
 
     leonardo "So. You are the German who claims to understand mathematics better than our Italian scholars."
 
@@ -368,7 +377,10 @@ label chapter_10:
     narrator "What follows is either a cautious exchange of ideas or the beginning of history's most unlikely collaboration."
 
     if leonardo_collaboration == "all":
-        show cg leonardo_collab with dissolve
+        # Dramatic CG reveal with Ken Burns
+        show cg leonardo_collab at cg_reveal
+        pause 0.3
+        show cg leonardo_collab at ken_burns
 
         narrator "Gary and Leonardo spend hours together, exploring the possibilities."
 
@@ -385,7 +397,9 @@ label chapter_10:
         $ innovation_score += 5
         $ historical_changes += 2
 
-        hide cg with dissolve
+        # Triumphant flash as collaboration succeeds
+        with revelation
+        hide cg at cg_exit
 
     elif leonardo_collaboration == "some":
         narrator "Leonardo examines ARIA with the intense focus of a master craftsman."
@@ -450,11 +464,18 @@ label chapter_11:
 
     narrator "Then the sky begins to darken."
 
+    # Eclipse effect - dramatic darkening
+    show layer master at eclipse_darken
+
     play sound "audio/sfx/crowd_gasping.ogg"
 
-    show cg first_success with dissolve
+    # CG with dramatic reveal
+    show cg first_success at cg_reveal
 
     narrator "The moon slides across the face of the sun, exactly as Gary predicted."
+
+    # Screen shake from crowd reaction
+    show layer master at shake_light
 
     narrator "The crowd erupts in a mixture of awe and fear."
 
@@ -466,7 +487,10 @@ label chapter_11:
 
     unknown "Or witchcraft..."
 
-    hide cg with dissolve
+    # Return to normal brightness
+    show layer master at eclipse_brighten
+
+    hide cg at cg_exit
 
     capponi "Extraordinary. Absolutely extraordinary."
 
