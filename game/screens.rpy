@@ -544,6 +544,12 @@ screen preferences():
                         textbutton _("Fullscreen") action Preference("display", "fullscreen")
 
                 vbox:
+                    style_prefix "radio"
+                    label _("Language")
+                    textbutton "English" action Language(None)
+                    textbutton "Português" action Language("portuguese")
+
+                vbox:
                     style_prefix "check"
                     label _("Skip")
                     textbutton _("Unseen Text") action Preference("skip", "toggle")

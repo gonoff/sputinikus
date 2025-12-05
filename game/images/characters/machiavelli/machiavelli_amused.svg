@@ -1,0 +1,118 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 800">
+  <defs>
+    <!-- Skin gradient - pale, scholarly -->
+    <linearGradient id="mach_skin" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#e8d4c4"/>
+      <stop offset="100%" style="stop-color:#d4bca8"/>
+    </linearGradient>
+    <!-- Hair gradient - dark -->
+    <linearGradient id="mach_hair" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#2a1f14"/>
+      <stop offset="100%" style="stop-color:#1a1208"/>
+    </linearGradient>
+    <!-- Robe - dark scholarly black -->
+    <linearGradient id="mach_robe" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2f2f2f"/>
+      <stop offset="100%" style="stop-color:#1a1a1a"/>
+    </linearGradient>
+    <!-- Inner doublet - dark red -->
+    <linearGradient id="mach_doublet" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#5c2e2e"/>
+      <stop offset="100%" style="stop-color:#3d1e1e"/>
+    </linearGradient>
+    <!-- Shirt -->
+    <linearGradient id="mach_shirt" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f0ebe5"/>
+      <stop offset="100%" style="stop-color:#ddd5ca"/>
+    </linearGradient>
+    <!-- Drop shadow filter -->
+    <filter id="mach_shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="2" dy="4" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <g filter="url(#mach_shadow)">
+    <!-- Body unchanged -->
+    <path d="M100 350 Q70 450 60 800 L340 800 Q330 450 300 350 Z" fill="url(#mach_robe)"/>
+    <path d="M140 350 Q130 450 130 600 L270 600 Q270 450 260 350 Z" fill="url(#mach_doublet)"/>
+    <circle cx="200" cy="400" r="5" fill="#4a4a4a"/>
+    <circle cx="200" cy="450" r="5" fill="#4a4a4a"/>
+    <circle cx="200" cy="500" r="5" fill="#4a4a4a"/>
+    <circle cx="200" cy="550" r="5" fill="#4a4a4a"/>
+    <path d="M100 350 L140 350 L135 500 L95 500 Z" fill="#3a3a3a"/>
+    <path d="M300 350 L260 350 L265 500 L305 500 Z" fill="#3a3a3a"/>
+    <path d="M60 400 Q30 500 40 620 L80 620 Q60 500 90 420 Z" fill="url(#mach_robe)"/>
+    <path d="M340 400 Q370 500 360 620 L320 620 Q340 500 310 420 Z" fill="url(#mach_robe)"/>
+    <ellipse cx="200" cy="630" rx="50" ry="30" fill="url(#mach_skin)"/>
+    <path d="M160 620 Q155 640 165 645" stroke="#c4a890" stroke-width="2" fill="none"/>
+    <path d="M175 615 Q170 640 180 650" stroke="#c4a890" stroke-width="2" fill="none"/>
+    <path d="M225 615 Q230 640 220 650" stroke="#c4a890" stroke-width="2" fill="none"/>
+    <path d="M240 620 Q245 640 235 645" stroke="#c4a890" stroke-width="2" fill="none"/>
+    <path d="M155 350 Q200 370 245 350 L250 380 Q200 395 150 380 Z" fill="url(#mach_shirt)"/>
+    <rect x="180" y="305" width="40" height="50" fill="url(#mach_skin)"/>
+    <ellipse cx="200" cy="210" rx="65" ry="90" fill="url(#mach_skin)"/>
+    <path d="M140 220 Q150 210 160 220" fill="#d4bca8" opacity="0.5"/>
+    <path d="M260 220 Q250 210 240 220" fill="#d4bca8" opacity="0.5"/>
+    <path d="M135 190 Q135 100 200 90 Q265 100 265 190 Q250 150 200 145 Q150 150 135 190" fill="url(#mach_hair)"/>
+    <path d="M145 180 Q155 165 175 175 Q190 160 200 175 Q210 160 225 175 Q245 165 255 180" fill="url(#mach_hair)"/>
+    <ellipse cx="132" cy="210" rx="10" ry="20" fill="url(#mach_skin)"/>
+    <ellipse cx="268" cy="210" rx="10" ry="20" fill="url(#mach_skin)"/>
+
+    <!-- AMUSED EXPRESSION -->
+    <!-- Eyebrows - slightly raised, relaxed -->
+    <path d="M148 180 Q165 176 183 182" stroke="#2a1f14" stroke-width="2.5" fill="none"/>
+    <path d="M217 182 Q235 176 252 180" stroke="#2a1f14" stroke-width="2.5" fill="none"/>
+
+    <!-- Eyes - crinkled with genuine amusement -->
+    <ellipse cx="165" cy="200" rx="16" ry="10" fill="white"/>
+    <ellipse cx="235" cy="200" rx="16" ry="10" fill="white"/>
+    <!-- Irises -->
+    <circle cx="167" cy="200" r="7" fill="#2a2a2a"/>
+    <circle cx="237" cy="200" r="7" fill="#2a2a2a"/>
+    <!-- Pupils -->
+    <circle cx="167" cy="200" r="3.5" fill="#0a0a0a"/>
+    <circle cx="237" cy="200" r="3.5" fill="#0a0a0a"/>
+    <!-- Eye highlights - brighter with amusement -->
+    <circle cx="169" cy="198" r="2.5" fill="white"/>
+    <circle cx="239" cy="198" r="2.5" fill="white"/>
+    <!-- Crow's feet - smile lines -->
+    <path d="M181 197 Q186 200 183 205" stroke="#c4a890" stroke-width="1" fill="none" opacity="0.5"/>
+    <path d="M219 197 Q214 200 217 205" stroke="#c4a890" stroke-width="1" fill="none" opacity="0.5"/>
+    <!-- Heavy lids -->
+    <path d="M149 197 Q165 193 181 197" stroke="#c4a890" stroke-width="2" fill="none"/>
+    <path d="M219 197 Q235 193 251 197" stroke="#c4a890" stroke-width="2" fill="none"/>
+
+    <!-- Nose unchanged -->
+    <path d="M200 195 L203 230 Q205 250 195 260 Q200 263 205 260 Q210 250 207 235 L200 195" fill="#d4bca8" stroke="#c4a890" stroke-width="1"/>
+    <line x1="200" y1="195" x2="200" y2="225" stroke="#e8d4c4" stroke-width="2" opacity="0.5"/>
+
+    <!-- Mouth - genuine amused smile -->
+    <path d="M175 272 Q200 285 225 272" stroke="#8b6b5a" stroke-width="2.5" fill="none"/>
+    <!-- Slight teeth showing -->
+    <path d="M182 275 Q200 280 218 275" fill="#7a5a4a" opacity="0.3"/>
+    <!-- Upper lip -->
+    <path d="M180 272 Q200 268 220 272" stroke="#9a7a6a" stroke-width="1.5" fill="none"/>
+    <!-- Dimples from smile -->
+    <ellipse cx="172" cy="276" rx="3" ry="2" fill="#c4a890" opacity="0.4"/>
+    <ellipse cx="228" cy="276" rx="3" ry="2" fill="#c4a890" opacity="0.4"/>
+
+    <!-- Chin -->
+    <path d="M185 295 Q200 315 215 295" fill="url(#mach_skin)"/>
+
+    <!-- 5 o'clock shadow -->
+    <ellipse cx="200" cy="280" rx="35" ry="25" fill="#c4a890" opacity="0.15"/>
+
+    <!-- Cap -->
+    <ellipse cx="200" cy="120" rx="72" ry="25" fill="url(#mach_robe)"/>
+    <ellipse cx="200" cy="115" rx="62" ry="20" fill="#2a2a2a"/>
+    <path d="M140 120 Q200 135 260 120" stroke="#3a3a3a" stroke-width="2" fill="none"/>
+
+    <!-- Deep-set eye shadows -->
+    <ellipse cx="165" cy="195" rx="20" ry="8" fill="#c4a890" opacity="0.3"/>
+    <ellipse cx="235" cy="195" rx="20" ry="8" fill="#c4a890" opacity="0.3"/>
+
+    <!-- Nasolabial lines - more pronounced with smile -->
+    <path d="M175 250 Q170 265 175 275" stroke="#c4a890" stroke-width="1" fill="none" opacity="0.7"/>
+    <path d="M225 250 Q230 265 225 275" stroke="#c4a890" stroke-width="1" fill="none" opacity="0.7"/>
+  </g>
+</svg>

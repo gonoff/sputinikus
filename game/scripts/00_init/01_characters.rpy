@@ -334,18 +334,28 @@ image cardinal warning = "images/characters/cardinal/cardinal_warning.png"
 
 # Bramante
 image bramante neutral = "images/characters/bramante/bramante_neutral.png"
+image bramante anxious = "images/characters/bramante/bramante_anxious.png"
+image bramante impressed = "images/characters/bramante/bramante_impressed.png"
 
 # Lorenzo Capponi
 image capponi neutral = "images/characters/capponi/capponi_neutral.png"
+image capponi impressed = "images/characters/capponi/capponi_impressed.png"
+image capponi skeptical = "images/characters/capponi/capponi_skeptical.png"
 
 # Giuliano de' Medici
 image giuliano_medici neutral = "images/characters/giuliano_medici/giuliano_medici_neutral.png"
+image giuliano_medici amused = "images/characters/giuliano_medici/giuliano_medici_amused.png"
+image giuliano_medici threatening = "images/characters/giuliano_medici/giuliano_medici_threatening.png"
 
 # Sangallo
 image sangallo neutral = "images/characters/sangallo/sangallo_neutral.png"
+image sangallo curious = "images/characters/sangallo/sangallo_curious.png"
+image sangallo impressed = "images/characters/sangallo/sangallo_impressed.png"
 
 # Machiavelli
 image machiavelli neutral = "images/characters/machiavelli/machiavelli_neutral.png"
+image machiavelli skeptical = "images/characters/machiavelli/machiavelli_skeptical.png"
+image machiavelli amused = "images/characters/machiavelli/machiavelli_amused.png"
 
 ###############################################################################
 # BACKGROUND IMAGE DEFINITIONS - Modern

@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 800">
+  <defs>
+    <linearGradient id="capponi_skin" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#e8beac"/>
+      <stop offset="100%" style="stop-color:#d4a088"/>
+    </linearGradient>
+    <linearGradient id="capponi_hair" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#4a3728"/>
+      <stop offset="100%" style="stop-color:#2d2118"/>
+    </linearGradient>
+    <linearGradient id="capponi_robe" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a365d"/>
+      <stop offset="100%" style="stop-color:#0f2444"/>
+    </linearGradient>
+    <linearGradient id="capponi_tunic" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#d4a44a"/>
+      <stop offset="100%" style="stop-color:#b8860b"/>
+    </linearGradient>
+    <filter id="capponi_shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="2" dy="4" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <g filter="url(#capponi_shadow)">
+    <!-- Body unchanged -->
+    <path d="M120 340 Q100 400 90 500 L90 800 L310 800 L310 500 Q300 400 280 340 Z" fill="url(#capponi_robe)"/>
+    <path d="M140 340 Q200 360 260 340 L270 380 Q200 400 130 380 Z" fill="#8b7355"/>
+    <circle cx="150" cy="355" r="2" fill="#a08060"/>
+    <circle cx="170" cy="365" r="2" fill="#a08060"/>
+    <circle cx="200" cy="370" r="2" fill="#a08060"/>
+    <circle cx="230" cy="365" r="2" fill="#a08060"/>
+    <circle cx="250" cy="355" r="2" fill="#a08060"/>
+    <path d="M160 380 L200 420 L240 380 Q200 395 160 380" fill="url(#capponi_tunic)"/>
+    <line x1="200" y1="420" x2="200" y2="800" stroke="#0d1d38" stroke-width="2"/>
+    <path d="M150 380 Q200 450 250 380" fill="none" stroke="#ffd700" stroke-width="3"/>
+    <circle cx="160" cy="390" r="4" fill="none" stroke="#ffd700" stroke-width="2"/>
+    <circle cx="180" cy="410" r="4" fill="none" stroke="#ffd700" stroke-width="2"/>
+    <circle cx="200" cy="420" r="4" fill="none" stroke="#ffd700" stroke-width="2"/>
+    <circle cx="220" cy="410" r="4" fill="none" stroke="#ffd700" stroke-width="2"/>
+    <circle cx="240" cy="390" r="4" fill="none" stroke="#ffd700" stroke-width="2"/>
+    <circle cx="200" cy="445" r="18" fill="#ffd700"/>
+    <circle cx="200" cy="445" r="14" fill="#daa520"/>
+    <text x="200" y="450" text-anchor="middle" font-size="16" fill="#8b6914" font-weight="bold">F</text>
+    <path d="M90 400 Q60 500 80 600 L100 600 Q90 500 120 420 Z" fill="url(#capponi_robe)"/>
+    <path d="M310 400 Q340 500 320 600 L300 600 Q310 500 280 420 Z" fill="url(#capponi_robe)"/>
+    <ellipse cx="90" cy="610" rx="20" ry="25" fill="url(#capponi_skin)"/>
+    <ellipse cx="310" cy="610" rx="20" ry="25" fill="url(#capponi_skin)"/>
+    <rect x="295" y="580" width="40" height="55" fill="#5c4033" rx="2"/>
+    <rect x="298" y="583" width="34" height="49" fill="#f5deb3"/>
+    <line x1="300" y1="590" x2="330" y2="590" stroke="#2d2118" stroke-width="1"/>
+    <line x1="300" y1="600" x2="330" y2="600" stroke="#2d2118" stroke-width="1"/>
+    <line x1="300" y1="610" x2="330" y2="610" stroke="#2d2118" stroke-width="1"/>
+    <line x1="300" y1="620" x2="320" y2="620" stroke="#2d2118" stroke-width="1"/>
+    <rect x="175" y="300" width="50" height="50" fill="url(#capponi_skin)"/>
+    <ellipse cx="200" cy="220" rx="75" ry="95" fill="url(#capponi_skin)"/>
+    <path d="M130 180 Q130 120 200 110 Q270 120 270 180 Q260 160 200 155 Q140 160 130 180" fill="url(#capponi_hair)"/>
+    <path d="M125 180 Q120 220 125 260 Q130 220 135 190 Z" fill="url(#capponi_hair)"/>
+    <path d="M275 180 Q280 220 275 260 Q270 220 265 190 Z" fill="url(#capponi_hair)"/>
+    <ellipse cx="125" cy="220" rx="12" ry="20" fill="url(#capponi_skin)"/>
+    <ellipse cx="275" cy="220" rx="12" ry="20" fill="url(#capponi_skin)"/>
+
+    <!-- SKEPTICAL EXPRESSION -->
+    <!-- Eyebrows - one raised, one lowered (classic skeptical look) -->
+    <path d="M150 182 Q165 188 180 185" stroke="#3d2e1f" stroke-width="3" fill="none"/>
+    <path d="M220 178 Q235 175 250 180" stroke="#3d2e1f" stroke-width="3" fill="none"/>
+
+    <!-- Eyes - slightly narrowed, one more than the other -->
+    <ellipse cx="165" cy="205" rx="17" ry="10" fill="white"/>
+    <ellipse cx="235" cy="205" rx="18" ry="12" fill="white"/>
+    <circle cx="167" cy="205" r="7" fill="#4a6583"/>
+    <circle cx="237" cy="205" r="8" fill="#4a6583"/>
+    <circle cx="167" cy="205" r="3.5" fill="#1a1a1a"/>
+    <circle cx="237" cy="205" r="4" fill="#1a1a1a"/>
+    <circle cx="169" cy="203" r="2" fill="white"/>
+    <circle cx="239" cy="202" r="2" fill="white"/>
+    <!-- More hooded on skeptical side -->
+    <path d="M147 202 Q165 198 183 202" stroke="url(#capponi_skin)" stroke-width="4" fill="none"/>
+    <path d="M217 200 Q235 196 253 200" stroke="url(#capponi_skin)" stroke-width="3" fill="none"/>
+
+    <!-- Nose unchanged -->
+    <path d="M200 200 L200 245 Q195 255 190 258 Q200 262 210 258 Q205 255 200 245" fill="#d4a088" stroke="#c49478" stroke-width="1"/>
+
+    <!-- Mouth - flat, pursed, unconvinced -->
+    <path d="M175 275 Q200 273 225 275" stroke="#8b6b5a" stroke-width="2.5" fill="none"/>
+    <!-- Slight downturn at corners -->
+    <path d="M175 275 Q172 277 170 276" stroke="#8b6b5a" stroke-width="1.5" fill="none"/>
+    <path d="M225 275 Q228 277 230 276" stroke="#8b6b5a" stroke-width="1.5" fill="none"/>
+
+    <!-- Chin dimple -->
+    <ellipse cx="200" cy="295" rx="5" ry="3" fill="#c49478" opacity="0.4"/>
+
+    <!-- Cap -->
+    <ellipse cx="200" cy="135" rx="80" ry="25" fill="url(#capponi_robe)"/>
+    <ellipse cx="200" cy="130" rx="70" ry="20" fill="#243a5e"/>
+    <ellipse cx="200" cy="140" rx="78" ry="8" fill="#ffd700" opacity="0.6"/>
+  </g>
+</svg>
